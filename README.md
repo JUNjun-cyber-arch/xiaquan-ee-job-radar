@@ -3,11 +3,16 @@
 面向厦门理工学院电气工程及其自动化本科生（2028 届）打造的**增量式企业调研、岗位技能统计与横向对比平台**。  
 采用“**每天深挖 1～2 家企业 → 校验落盘 → 自动重算全库技能热力榜**”的滚动模式，随着调研企业增多，5 大目标岗位的核心技能要求会越来越清晰。
 
-## 快速打开网站（免安装、支持离线与手机查看）
-- **电脑端**：直接双击打开 [`web/index.html`](file:///D:/Antigravity/XiaQuan_EE_Job_Radar/web/index.html)（已内嵌离线数据包 `web/data-bundle.js`，无需启动服务器）。
-- **数据更新**：每次新增或修改 `data/companies/*.json` 后，运行：
+## 快速打开网站（线上公网 + 本地离线双可用）
+- **线上公网网址（任何电脑和手机随时打开）**：[https://junjun-cyber-arch.github.io/xiaquan-ee-job-radar/](https://junjun-cyber-arch.github.io/xiaquan-ee-job-radar/)
+- **本机离线打开**：直接双击 [`web/index.html`](file:///D:/Antigravity/XiaQuan_EE_Job_Radar/web/index.html)（已内嵌离线数据包 `web/data-bundle.js`，无需启动服务器）。
+- **本地校验重建**：
   ```powershell
-  node D:\Antigravity\XiaQuan_EE_Job_Radar\scripts\build_and_verify.mjs
+  node D:/Antigravity/XiaQuan_EE_Job_Radar/scripts/build_and_verify.mjs
+  ```
+- **校验并自动推送至 GitHub Pages**：
+  ```powershell
+  python D:/Antigravity/XiaQuan_EE_Job_Radar/scripts/publish_pages.py
   ```
 
 ## 目录结构
