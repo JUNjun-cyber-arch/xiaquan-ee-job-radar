@@ -9,6 +9,7 @@
  * 4. 自动更新 reports/summary_skills_ranking.md 汇总报告
  */
 
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -346,13 +347,29 @@ function writeSummaryMarkdown(bundle) {
   fs.writeFileSync(path.join(REPORTS_DIR, "summary_skills_ranking.md"), lines.join("\n"), "utf8");
 }
 
+function fileHash(filePath) {
+  return crypto.createHash("sha256").update(fs.readFileSync(filePath)).digest("hex").slice(0, 8);
+}
+
 function syncWebToDocs() {
   fs.mkdirSync(DOCS_DIR, { recursive: true });
-  for (const file of ["index.html", "styles.css", "app.js", "data-bundle.js"]) {
+  for (const file of ["styles.css", "app.js", "data-bundle.js"]) {
     const src = path.join(WEB_DIR, file);
     if (fs.existsSync(src)) {
       fs.copyFileSync(src, path.join(DOCS_DIR, file));
     }
+  }
+  const indexSrc = path.join(WEB_DIR, "index.html");
+  if (fs.existsSync(indexSrc)) {
+    const cssV = fileHash(path.join(WEB_DIR, "styles.css"));
+    const dataV = fileHash(path.join(WEB_DIR, "data-bundle.js"));
+    const appV = fileHash(path.join(WEB_DIR, "app.js"));
+    const html = fs
+      .readFileSync(indexSrc, "utf8")
+      .replace('./styles.css"', `./styles.css?v=${cssV}"`)
+      .replace('./data-bundle.js"', `./data-bundle.js?v=${dataV}"`)
+      .replace('./app.js"', `./app.js?v=${appV}"`);
+    fs.writeFileSync(path.join(DOCS_DIR, "index.html"), html, "utf8");
   }
   fs.writeFileSync(path.join(DOCS_DIR, ".nojekyll"), "", "utf8");
 }
