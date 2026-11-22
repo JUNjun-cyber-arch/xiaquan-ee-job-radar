@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    try {
+      const saved = localStorage.getItem("xq-radar-color-scheme");
+      document.querySelector('meta[name="color-scheme"]').content = saved || "light dark";
+    } catch (_) {
+      // 忽略禁用存储时的异常，回退系统主题
+    }
+  </script>
+  <title>厦泉电气 2027 暑期实习情报雷达</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f5ef0'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%23ffffff' stroke-width='4' opacity='0.45'/%3E%3Ccircle cx='32' cy='32' r='9' fill='none' stroke='%23ffffff' stroke-width='4'/%3E%3Cline x1='32' y1='32' x2='48' y2='16' stroke='%2338d399' stroke-width='4.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-top">
+        <div class="brand-badge">XIAMEN &amp; QUANZHOU · 2027 暑期实习情报雷达</div>
+        <button type="button" id="themeToggle" class="theme-toggle" aria-label="切换浅色或深色主题">
+          <span class="theme-opt theme-opt--to-dark">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+            <span>深色模式</span>
+          </span>
+          <span class="theme-opt theme-opt--to-light">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41"/>
+            </svg>
+            <span>浅色模式</span>
+          </span>
+        </button>
+      </div>
+
+      <h1 class="hero-title">厦泉电气自动化岗位与企业深挖统计台</h1>
+      <p class="hero-subtitle">
+        每天深度调研 1～2 家厦门/泉州目标企业，用真实 JD 自动汇聚五大探索岗位的核心技能排行与横向对比，精准反推大三技能补课清单。
+      </p>
+
+      <div id="kpiGrid" class="kpi-grid" aria-label="核心统计指标"></div>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <div class="tabs-shell">
+      <div class="tablist-wrap">
+        <div id="mainTablist" class="tablist scroller" role="tablist" aria-label="情报雷达功能模块">
+          <button type="button" role="tab" id="tab-skills" class="tab-btn" aria-selected="true" data-panel="panel-skills">
+            技能热力榜
+          </button>
+          <button type="button" role="tab" id="tab-companies" class="tab-btn" aria-selected="false" tabindex="-1" data-panel="panel-companies">
+            企业雷达库
+          </button>
+          <button type="button" role="tab" id="tab-compare" class="tab-btn" aria-selected="false" tabindex="-1" data-panel="panel-compare">
+            多企横向对比 <span id="compareCountPill" class="tab-pill">2</span>
+          </button>
+          <button type="button" role="tab" id="tab-roles" class="tab-btn" aria-selected="false" tabindex="-1" data-panel="panel-roles">
+            五大岗位透视
+          </button>
+          <button type="button" role="tab" id="tab-queue" class="tab-btn" aria-selected="false" tabindex="-1" data-panel="panel-queue">
+            每日队列与进度
+          </button>
+        </div>
+      </div>
+
+      <div class="panels-stage">
+        <!-- Panel 1: 技能热力榜 & 个人技能缺口 -->
+        <section id="panel-skills" role="tabpanel" aria-labelledby="tab-skills" class="tab-panel" tabindex="0">
+          <div class="panel-inner">
+            <div class="section-head">
+              <div>
+                <h2>跨企业岗位技能频次热力榜</h2>
+                <p class="muted">按已深挖企业真实 JD 自动聚合；点击任意技能可查看具体出处，右侧可随时标记你当前的掌握状态。</p>
+              </div>
+              <div class="progress-summary-box" id="selfCheckSummary"></div>
+            </div>
+
+            <div class="filter-bar" aria-label="技能榜筛选">
+              <div class="filter-group">
+                <label for="skillRoleFilter">视角切换</label>
+                <select id="skillRoleFilter">
+                  <option value="all">全部岗位汇总（跨企业覆盖率）</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="skillCategoryFilter">技能分类</label>
+                <select id="skillCategoryFilter">
+                  <option value="all">全部分类</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="skillStatusFilter">掌握状态</label>
+                <select id="skillStatusFilter">
+                  <option value="all">全部状态</option>
+                  <option value="todo">仅看未开始（重点缺口）</option>
+                  <option value="learning">仅看学习中</option>
+                  <option value="mastered">仅看已掌握</option>
+                </select>
+              </div>
+            </div>
+
+            <div id="gapCallout" class="gap-callout" aria-live="polite"></div>
+
+            <div id="skillBarsContainer" class="skill-bars-list"></div>
+          </div>
+        </section>
+
+        <!-- Panel 2: 企业雷达库 -->
+        <section id="panel-companies" role="tabpanel" aria-labelledby="tab-companies" class="tab-panel" hidden="until-found">
+          <div class="panel-inner">
+            <div class="section-head">
+              <div>
+                <h2>已深挖企业雷达库</h2>
+                <p class="muted">每家档案均带公开信息出处，未披露项明确标注“待核实”。勾选「加入对比」后可在横向对比页并排细看。</p>
+              </div>
+              <button type="button" id="jumpToCompareBtn" class="btn btn-primary">进入横向对比</button>
+            </div>
+
+            <div class="filter-bar" aria-label="企业筛选条件">
+              <div class="filter-group">
+                <label for="companyCityFilter">城市</label>
+                <select id="companyCityFilter">
+                  <option value="all">全部城市</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="companyTrackFilter">赛道</label>
+                <select id="companyTrackFilter">
+                  <option value="all">全部赛道</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="companyRoleFilter">覆盖岗位</label>
+                <select id="companyRoleFilter">
+                  <option value="all">全部 5 大岗位</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="companySearchInput">关键词</label>
+                <input id="companySearchInput" type="search" placeholder="搜索企业、产品、PLC、示波器...">
+              </div>
+            </div>
+
+            <div id="companyCardsGrid" class="company-grid"></div>
+          </div>
+        </section>
+
+        <!-- Panel 3: 多企横向对比 -->
+        <section id="panel-compare" role="tabpanel" aria-labelledby="tab-compare" class="tab-panel" hidden="until-found">
+          <div class="panel-inner">
+            <div class="section-head">
+              <div>
+                <h2>多企业并排横向对比</h2>
+                <p class="muted">选择 2～4 家已深挖企业，一屏看清它们在赛道、工具栈、出差倒班、笔面试考点与厦门理工匹配度上的真实差异。</p>
+              </div>
+            </div>
+
+            <div id="comparePicker" class="compare-picker" aria-label="选择参与对比的企业"></div>
+
+            <div id="compareTableHost"></div>
+          </div>
+        </section>
+
+        <!-- Panel 4: 五大岗位透视 -->
+        <section id="panel-roles" role="tabpanel" aria-labelledby="tab-roles" class="tab-panel" hidden="until-found">
+          <div class="panel-inner">
+            <div class="section-head">
+              <div>
+                <h2>五大探索岗位全景透视</h2>
+                <p class="muted">逐个拆解真实工作内容、与你大三已学课程的对应关系、当前已统计出的核心技能，以及适合你的零硬件简历项目方向。</p>
+              </div>
+            </div>
+            <div id="rolesGrid" class="roles-grid"></div>
+          </div>
+        </section>
+
+        <!-- Panel 5: 每日深挖队列 & 进度导入导出 -->
+        <section id="panel-queue" role="tabpanel" aria-labelledby="tab-queue" class="tab-panel" hidden="until-found">
+          <div class="panel-inner">
+            <div class="section-head">
+              <div>
+                <h2>每日 1～2 企深挖队列与日志</h2>
+                <p class="muted">每次深挖新企业并运行构建脚本后，上方所有统计与技能热力榜自动增量重算，越往后越精准。</p>
+              </div>
+              <div class="backup-actions">
+                <button type="button" id="exportProgressBtn" class="btn btn-secondary">导出自检进度 JSON</button>
+                <label class="btn btn-secondary file-btn">
+                  导入进度
+                  <input type="file" id="importProgressInput" accept="application/json" hidden>
+                </label>
+              </div>
+            </div>
+
+            <div id="changelogTimeline" class="changelog-list"></div>
+
+            <h3 class="sub-heading">20 家厦泉目标企业滚动清单</h3>
+            <div id="queueTableHost"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>数据目录：<code>D:\Antigravity\XiaQuan_EE_Job_Radar</code> ｜ 离线可用，所有企业数据均附公开核验来源，未公开项如实标注“待核实”。</p>
+  </footer>
+
+  <!-- 企业完整深度档案弹窗 -->
+  <dialog id="companyDialog" class="radar-dialog" closedby="any" aria-labelledby="companyDialogTitle">
+    <div class="dialog-shell">
+      <div class="dialog-header">
+        <div>
+          <span id="companyDialogMeta" class="dialog-meta"></span>
+          <h2 id="companyDialogTitle" class="dialog-title">企业深度档案</h2>
+        </div>
+        <form method="dialog">
+          <button type="submit" class="icon-close-btn" aria-label="关闭企业档案弹窗">✕</button>
+        </form>
+      </div>
+      <div id="companyDialogBody" class="dialog-body"></div>
+      <div class="dialog-footer">
+        <form method="dialog">
+          <button type="submit" class="btn btn-primary">关闭</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 技能出处证据弹窗 -->
+  <dialog id="skillDialog" class="radar-dialog radar-dialog--narrow" closedby="any" aria-labelledby="skillDialogTitle">
+    <div class="dialog-shell">
+      <div class="dialog-header">
+        <div>
+          <span id="skillDialogMeta" class="dialog-meta"></span>
+          <h2 id="skillDialogTitle" class="dialog-title">技能 JD 依据</h2>
+        </div>
+        <form method="dialog">
+          <button type="submit" class="icon-close-btn" aria-label="关闭技能详情弹窗">✕</button>
+        </form>
+      </div>
+      <div id="skillDialogBody" class="dialog-body"></div>
+      <div class="dialog-footer">
+        <form method="dialog">
+          <button type="submit" class="btn btn-primary">知道了</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="./data-bundle.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
