@@ -68,9 +68,19 @@ function validateAndLoad() {
     assert(Array.isArray(c.coreProducts) && c.coreProducts.length > 0, `${file}: coreProducts 不能为空`);
     assert(Array.isArray(c.matchedRoles) && c.matchedRoles.length > 0, `${file}: matchedRoles 不能为空`);
     assert(Array.isArray(c.sources) && c.sources.length > 0, `${file}: 必须至少包含 1 条公开信息来源 sources`);
+    assert(c.internshipProfile && typeof c.internshipProfile === "object", `${file}: 缺少 internshipProfile（实习可行性档案）`);
+    assert(typeof c.internshipProfile.internType === "string" && c.internshipProfile.internType.trim(), `${file}: internshipProfile 缺少 internType`);
+    assert(typeof c.internshipProfile.summer2MonthOk === "string" && c.internshipProfile.summer2MonthOk.trim(), `${file}: internshipProfile 缺少 summer2MonthOk`);
+    assert(typeof c.internshipProfile.durationReq === "string" && c.internshipProfile.durationReq.trim(), `${file}: internshipProfile 缺少 durationReq`);
+    assert(typeof c.internshipProfile.weeklyDays === "string" && c.internshipProfile.weeklyDays.trim(), `${file}: internshipProfile 缺少 weeklyDays`);
+    assert(typeof c.internshipProfile.openWindowRef === "string" && c.internshipProfile.openWindowRef.trim(), `${file}: internshipProfile 缺少 openWindowRef`);
+    assert(typeof c.internshipProfile.conversionPolicy === "string" && c.internshipProfile.conversionPolicy.trim(), `${file}: internshipProfile 缺少 conversionPolicy`);
 
     for (const mr of c.matchedRoles) {
       assert(roleMap.has(mr.roleId), `${file}: 未知的 roleId "${mr.roleId}"`);
+      assert(mr.jdSourceType === "real-intern-jd" || mr.jdSourceType === "campus-ref", `${file} (${mr.roleId}): jdSourceType 必须为 real-intern-jd 或 campus-ref`);
+      assert(typeof mr.jdSourceLabel === "string" && mr.jdSourceLabel.trim(), `${file} (${mr.roleId}): 缺少 jdSourceLabel`);
+      assert(typeof mr.internTasks === "string" && mr.internTasks.trim(), `${file} (${mr.roleId}): 缺少 internTasks（实习生实际工作内容）`);
       assert(Array.isArray(mr.officialTitles) && mr.officialTitles.length > 0, `${file} (${mr.roleId}): officialTitles 不能为空`);
       assert(Array.isArray(mr.skills) && mr.skills.length > 0, `${file} (${mr.roleId}): skills 不能为空`);
       for (const sk of mr.skills) {
@@ -106,10 +116,13 @@ function buildAggregations({ roles, queue, changelog, companies }) {
   const totalCompanies = companies.length;
   const totalQueue = queue.items.length;
 
-  // 城市与赛道统计
+  // 城市、赛道与实习可行性统计
   const cityCounts = {};
   const trackCounts = {};
   let totalMatchedRoleInstances = 0;
+  let realInternJdRoles = 0;
+  let campusRefRoles = 0;
+  let summerSupportCount = 0;
 
   // 全局技能统计（按技能名称聚合）
   const overallSkillMap = new Map();
@@ -133,12 +146,17 @@ function buildAggregations({ roles, queue, changelog, companies }) {
   for (const company of companies) {
     cityCounts[company.city] = (cityCounts[company.city] || 0) + 1;
     trackCounts[company.track] = (trackCounts[company.track] || 0) + 1;
+    if (company.internshipProfile.summer2MonthOk.includes("支持")) {
+      summerSupportCount += 1;
+    }
 
     // 单企业内技能去重集合（计算跨企业覆盖率用）
     const companySkillSeen = new Map();
 
     for (const mr of company.matchedRoles) {
       totalMatchedRoleInstances += 1;
+      if (mr.jdSourceType === "real-intern-jd") realInternJdRoles += 1;
+      else campusRefRoles += 1;
       const rStat = roleStatsMap.get(mr.roleId);
       rStat.companyIds.add(company.id);
       rStat.companies.push({
@@ -272,6 +290,9 @@ function buildAggregations({ roles, queue, changelog, companies }) {
       pendingQueue: queue.items.filter((i) => i.status !== "done").length,
       completionPct: Math.round((totalCompanies / totalQueue) * 100),
       totalMatchedRoleInstances,
+      realInternJdRoles,
+      campusRefRoles,
+      summerSupportCount,
       uniqueSkillCount: skillStatsOverall.length,
       cityCounts,
       trackCounts
@@ -290,13 +311,13 @@ function writeSummaryMarkdown(bundle) {
   const { overview, skillStatsOverall, roleStats, companies, changelog } = bundle;
   const lines = [];
 
-  lines.push("# 厦泉电气 2027 暑期实习岗位技能频次总榜（自动滚动汇总）");
+  lines.push("# 厦泉电气 2027 暑期/日常实习岗位技能频次总榜（参考 2025–2026 实习 JD 自动汇总）");
   lines.push("");
-  lines.push(`> 自动生成日期：${bundle.generatedAt} ｜ 已深挖企业：**${overview.totalCompanies} / ${overview.totalQueue}** 家（完成度 ${overview.completionPct}%）｜ 已统计真实岗位条目：**${overview.totalMatchedRoleInstances}** 条 ｜ 归集核心技能：**${overview.uniqueSkillCount}** 项`);
+  lines.push(`> 自动生成日期：${bundle.generatedAt} ｜ 已深挖企业：**${overview.totalCompanies} / ${overview.totalQueue}** 家（支持暑期 2～3 个月：**${overview.summerSupportCount}** 家）｜ 实习岗位条目：**${overview.totalMatchedRoleInstances}** 条（其中真实实习 JD **${overview.realInternJdRoles}** 条，参照校招折算 **${overview.campusRefRoles}** 条）｜ 归集核心技能：**${overview.uniqueSkillCount}** 项`);
   lines.push("");
-  lines.push("## 一、全库跨企业高频技能总榜");
+  lines.push("## 一、全库跨企业实习技能热力总榜（按 Offer 底线优先排序）");
   lines.push("");
-  lines.push("| 排名 | 技能名称 | 类别 | 覆盖企业数 | 企业覆盖率 | 必备(Must)次数 | 加分(Plus)次数 |");
+  lines.push("| 排名 | 技能名称 | 类别 | 覆盖企业数 | 企业覆盖率 | 实习底线(Must)次数 | 实习加分(Plus)次数 |");
   lines.push("| :---: | :--- | :--- | :---: | :---: | :---: | :---: |");
 
   skillStatsOverall.forEach((sk, idx) => {

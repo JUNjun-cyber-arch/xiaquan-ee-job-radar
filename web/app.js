@@ -21,6 +21,7 @@
     companyCity: "all",
     companyTrack: "all",
     companyRole: "all",
+    companySummer: "all",
     companyQuery: ""
   };
 
@@ -214,19 +215,19 @@
 
     document.getElementById("kpiGrid").innerHTML = `
       <div class="kpi-card">
-        <div class="kpi-label">已深挖目标企业</div>
+        <div class="kpi-label">已深挖实习企业</div>
         <div class="kpi-value">${ov.totalCompanies} <span style="font-size:0.9rem;color:var(--text-muted)">/ ${ov.totalQueue}</span></div>
-        <div class="kpi-sub">${escapeHtml(citySummary)}（进度 ${ov.completionPct}%）</div>
+        <div class="kpi-sub">${escapeHtml(citySummary)} · 支持暑期 ${ov.summerSupportCount} 家</div>
       </div>
       <div class="kpi-card">
-        <div class="kpi-label">已拆解真实岗位</div>
+        <div class="kpi-label">已拆解实习岗位</div>
         <div class="kpi-value">${ov.totalMatchedRoleInstances}</div>
-        <div class="kpi-sub">覆盖 ${DATA.roleStats.filter((r) => r.companyCount > 0).length} / 5 个探索方向</div>
+        <div class="kpi-sub">真实实习 JD ${ov.realInternJdRoles} 条 · 校招折算 ${ov.campusRefRoles} 条</div>
       </div>
       <div class="kpi-card">
-        <div class="kpi-label">归集高频技能项</div>
+        <div class="kpi-label">归集实习技能项</div>
         <div class="kpi-value">${ov.uniqueSkillCount}</div>
-        <div class="kpi-sub">随每日深挖自动重算排序</div>
+        <div class="kpi-sub">区分「拿 Offer 底线」与「加分进阶」</div>
       </div>
       <div class="kpi-card">
         <div class="kpi-label">我的技能自检</div>
@@ -320,13 +321,13 @@
 
     const gapEl = document.getElementById("gapCallout");
     if (denominator === 0) {
-      gapEl.innerHTML = `<strong>当前提示：</strong>该岗位暂未有已深挖企业命中，后续每日调研推进至半导体/面板/制造企业后将自动生成技能排行。`;
+      gapEl.innerHTML = `<strong>当前提示：</strong>该实习方向暂未有已深挖企业命中，后续每日调研推进后将自动生成技能排行。`;
     } else if (hotGaps.length > 0) {
-      gapEl.innerHTML = `<strong>当前优先补课缺口（高频必备且未开始）：</strong>${hotGaps
+      gapEl.innerHTML = `<strong>明年 3 月投实习前优先补齐（高频实习底线且未开始）：</strong>${hotGaps
         .map((g) => `<strong>${escapeHtml(g.name)}</strong>（${g.count}/${denominator}）`)
         .join("、")}。`;
     } else {
-      gapEl.innerHTML = `<strong>状态良好：</strong>当前视角下的全部高频必备技能你均已标记为「学习中」或「已掌握」！`;
+      gapEl.innerHTML = `<strong>状态良好：</strong>当前视角下的全部高频实习底线技能你均已标记为「学习中」或「已掌握」！`;
     }
 
     const filtered = items.filter((s) => {
@@ -352,8 +353,8 @@
               <div class="skill-head">
                 <button type="button" class="skill-name-btn" data-open-skill="${escapeHtml(sk.name)}">${escapeHtml(sk.name)}</button>
                 <span class="badge badge-neutral">${escapeHtml(sk.category)}</span>
-                ${sk.mustCount > 0 ? `<span class="badge badge-must">必备×${sk.mustCount}</span>` : ""}
-                ${sk.plusCount > 0 ? `<span class="badge badge-accent">加分×${sk.plusCount}</span>` : ""}
+                ${sk.mustCount > 0 ? `<span class="badge badge-must">实习底线×${sk.mustCount}</span>` : ""}
+                ${sk.plusCount > 0 ? `<span class="badge badge-accent">加分进阶×${sk.plusCount}</span>` : ""}
               </div>
               <div class="skill-bar-track" aria-hidden="true">
                 <div class="skill-bar-fill ${isHot ? "skill-bar-fill--hot" : ""}" style="width:${Math.max(sk.pct, 6)}%"></div>
@@ -384,8 +385,8 @@
       .map((ev) => {
         const rName = roleMap.get(ev.roleId)?.shortName || ev.roleId;
         const lvBadge = ev.level === "must"
-          ? `<span class="badge badge-must">红线必备</span>`
-          : `<span class="badge badge-accent">面试加分</span>`;
+          ? `<span class="badge badge-must">拿实习 Offer 底线</span>`
+          : `<span class="badge badge-accent">实习加分 / 进阶</span>`;
         return `
           <div class="dialog-section">
             <div class="badge-row" style="margin-block-end:6px">
@@ -411,6 +412,9 @@
       if (state.companyCity !== "all" && c.city !== state.companyCity) return false;
       if (state.companyTrack !== "all" && c.track !== state.companyTrack) return false;
       if (state.companyRole !== "all" && !c.matchedRoles.some((m) => m.roleId === state.companyRole)) return false;
+      const isSummerOk = c.internshipProfile.summer2MonthOk.includes("支持");
+      if (state.companySummer === "summer-ok" && !isSummerOk) return false;
+      if (state.companySummer === "other" && isSummerOk) return false;
       if (q) {
         const haystack = JSON.stringify(c).toLowerCase();
         if (!haystack.includes(q)) return false;
@@ -420,13 +424,21 @@
 
     const host = document.getElementById("companyCardsGrid");
     if (list.length === 0) {
-      host.innerHTML = `<div class="empty-state">没有符合条件的企业，请放宽筛选条件。</div>`;
+      host.innerHTML = `<div class="empty-state">没有符合条件的实习企业，请放宽筛选条件。</div>`;
       return;
     }
 
     host.innerHTML = list
       .map((c) => {
         const checked = state.compareIds.includes(c.id);
+        const ip = c.internshipProfile;
+        const hasRealInternJd = c.matchedRoles.some((m) => m.jdSourceType === "real-intern-jd");
+        const summerOk = ip.summer2MonthOk.includes("支持");
+        const summerShortBadge = ip.summer2MonthOk.includes("6–9")
+          ? "暑期约 3 月(6–9月)"
+          : summerOk
+            ? "支持暑期 2～3 月"
+            : "长期 / 待核实";
         const roleBadges = c.matchedRoles
           .map((m) => `<span class="badge badge-accent">${escapeHtml(roleMap.get(m.roleId)?.shortName || m.roleId)}</span>`)
           .join("");
@@ -441,7 +453,8 @@
                 <h3 class="company-name">${escapeHtml(c.name)}</h3>
                 <div class="badge-row">
                   <span class="badge badge-ok">${escapeHtml(c.city)}</span>
-                  <span class="badge badge-neutral">${escapeHtml(c.track)}</span>
+                  <span class="badge ${summerOk ? "badge-ok" : "badge-warn"}">${escapeHtml(summerShortBadge)}</span>
+                  <span class="badge ${hasRealInternJd ? "badge-accent" : "badge-neutral"}">${hasRealInternJd ? "含真实实习 JD" : "参照校招折算"}</span>
                 </div>
               </div>
               <span class="badge badge-neutral">${escapeHtml(c.researchedAt)}</span>
@@ -450,10 +463,10 @@
             <div class="card-content">
               <div class="badge-row">${roleBadges}</div>
               <dl class="info-kv">
-                <div><dt>核心产品</dt><dd>${escapeHtml(c.coreProducts.join("、"))}</dd></div>
-                <div><dt>厦理匹配</dt><dd>${escapeHtml(c.fitForXmut.level)}</dd></div>
-                <div><dt>出差倒班</dt><dd>${escapeHtml(c.workConditionSummary.travelLevel)}</dd></div>
-                <div><dt>高频必备</dt><dd>${escapeHtml(topSkills.join(" / "))}</dd></div>
+                <div><dt>实习类型</dt><dd>${escapeHtml(ip.internType)}</dd></div>
+                <div><dt>出勤时长</dt><dd>${escapeHtml(ip.weeklyDays)}；${escapeHtml(ip.durationReq)}</dd></div>
+                <div><dt>转正通道</dt><dd>${escapeHtml(ip.conversionPolicy)}</dd></div>
+                <div><dt>实习底线</dt><dd>${escapeHtml(topSkills.join(" / "))}</dd></div>
               </dl>
             </div>
 
@@ -462,7 +475,7 @@
                 <input type="checkbox" class="compare-check" data-compare-id="${escapeHtml(c.id)}" ${checked ? "checked" : ""}>
                 <span>加入对比</span>
               </label>
-              <button type="button" class="btn btn-primary" data-open-company="${escapeHtml(c.id)}">查看完整档案</button>
+              <button type="button" class="btn btn-primary" data-open-company="${escapeHtml(c.id)}">查看实习档案</button>
             </footer>
           </article>
         `;
@@ -474,28 +487,33 @@
     const c = companyMap.get(companyId);
     if (!c) return;
 
-    document.getElementById("companyDialogMeta").textContent = `${c.city} · ${c.track} · ${c.companyType} · 核验于 ${c.researchedAt}`;
+    const ip = c.internshipProfile;
+    document.getElementById("companyDialogMeta").textContent = `${c.city} · ${c.track} · ${c.companyType} · 参考 2025/2026 实习核验于 ${c.researchedAt}`;
     document.getElementById("companyDialogTitle").textContent = `${c.name}（${c.fullName}）`;
 
     const rolesHtml = c.matchedRoles
       .map((mr) => {
         const rName = roleMap.get(mr.roleId)?.name || mr.roleId;
+        const isReal = mr.jdSourceType === "real-intern-jd";
         const skillTags = mr.skills
-          .map((sk) => `<span class="badge ${sk.level === "must" ? "badge-must" : "badge-accent"}" title="${escapeHtml(sk.detail)}">${sk.level === "must" ? "必" : "加"} · ${escapeHtml(sk.name)}</span>`)
+          .map((sk) => `<span class="badge ${sk.level === "must" ? "badge-must" : "badge-accent"}" title="${escapeHtml(sk.detail)}">${sk.level === "must" ? "底线" : "加分"} · ${escapeHtml(sk.name)}</span>`)
           .join("");
         return `
           <div class="dialog-section">
             <div class="badge-row" style="margin-block-end:8px">
               <strong>${escapeHtml(rName)}</strong>
+              <span class="badge ${isReal ? "badge-ok" : "badge-warn"}">${escapeHtml(mr.jdSourceLabel)}</span>
               <span class="badge badge-neutral">倒班：${escapeHtml(mr.shiftWork)}</span>
               <span class="badge badge-warn">出差：${escapeHtml(mr.travelLevel)}</span>
             </div>
-            <p class="muted" style="margin-block-end:8px">官方常见岗位名：${escapeHtml(mr.officialTitles.join(" / "))}</p>
-            <p style="font-weight:700;margin-block-end:4px">核心职责</p>
+            <p class="muted" style="margin-block-end:8px">官方常见实习岗位名：${escapeHtml(mr.officialTitles.join(" / "))}</p>
+            <p style="font-weight:700;margin-block-end:4px">实习生进去实际干什么</p>
+            <p style="margin-block-end:10px">${escapeHtml(mr.internTasks)}</p>
+            <p style="font-weight:700;margin-block-end:4px">核心职责要点</p>
             <ul style="margin-block-end:10px">${mr.responsibilities.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>
-            <p style="font-weight:700;margin-block-end:6px">提取技能栈</p>
+            <p style="font-weight:700;margin-block-end:6px">技能要求（红标=拿实习 Offer 底线，蓝标=加分/入职带教进阶）</p>
             <div class="skill-chip-list" style="margin-block-end:10px">${skillTags}</div>
-            <p style="font-weight:700;margin-block-end:4px">笔试 / 面试高频关注点</p>
+            <p style="font-weight:700;margin-block-end:4px">实习笔试 / 面试高频关注点</p>
             <ul>${mr.interviewFocus.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>
           </div>
         `;
@@ -504,23 +522,35 @@
 
     document.getElementById("companyDialogBody").innerHTML = `
       <div class="dialog-section">
-        <h3>基地位置、产品与校招概览</h3>
+        <h3>2027 暑期 / 日常实习可行性档案（参考 2025–2026 批次）</h3>
+        <dl class="info-kv">
+          <div><dt>实习类型</dt><dd><strong>${escapeHtml(ip.internType)}</strong></dd></div>
+          <div><dt>暑假 2 月</dt><dd><strong>${escapeHtml(ip.summer2MonthOk)}</strong></dd></div>
+          <div><dt>时长要求</dt><dd>${escapeHtml(ip.durationReq)}</dd></div>
+          <div><dt>每周出勤</dt><dd>${escapeHtml(ip.weeklyDays)}</dd></div>
+          <div><dt>往年窗口</dt><dd>${escapeHtml(ip.openWindowRef)}</dd></div>
+          <div><dt>转正政策</dt><dd>${escapeHtml(ip.conversionPolicy)}</dd></div>
+          <div><dt>实习补贴</dt><dd>${escapeHtml(ip.stipendNote)}</dd></div>
+        </dl>
+      </div>
+
+      <div class="dialog-section">
+        <h3>基地位置、产品与投递渠道</h3>
         <dl class="info-kv">
           <div><dt>工作地点</dt><dd>${escapeHtml(c.districts.join("；"))}</dd></div>
           <div><dt>核心产品</dt><dd>${escapeHtml(c.coreProducts.join("、"))}</dd></div>
           <div><dt>厦理适配</dt><dd><strong>${escapeHtml(c.fitForXmut.level)}</strong> — ${escapeHtml(c.fitForXmut.reason)}</dd></div>
-          <div><dt>培养机制</dt><dd>${escapeHtml(c.internshipAndRecruit.program)}</dd></div>
           <div><dt>投递渠道</dt><dd>${escapeHtml(c.internshipAndRecruit.channels.join("、"))}</dd></div>
-          <div><dt>2027 实习</dt><dd>${escapeHtml(c.internshipAndRecruit.timelineNote)}</dd></div>
+          <div><dt>培养机制</dt><dd>${escapeHtml(c.internshipAndRecruit.program)}</dd></div>
           <div><dt>配套福利</dt><dd>${escapeHtml(c.internshipAndRecruit.benefits.join("、"))}</dd></div>
-          <div><dt>证书/安全</dt><dd>${escapeHtml(c.workConditionSummary.certNote)}</dd></div>
+          <div><dt>安全/证书</dt><dd>${escapeHtml(c.workConditionSummary.certNote)}</dd></div>
         </dl>
       </div>
 
       ${rolesHtml}
 
       <div class="dialog-section">
-        <h3>优势与避坑提醒</h3>
+        <h3>本科生投实习的优势与避坑提醒</h3>
         <p style="font-weight:700;color:var(--ok);margin-block-end:4px">主要亮点</p>
         <ul style="margin-block-end:10px">${c.prosAndCons.pros.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>
         <p style="font-weight:700;color:var(--warn);margin-block-end:4px">投递前需注意</p>
@@ -569,48 +599,52 @@
 
     const rows = [
       {
-        label: "所在城市与片区",
+        label: "实习类型与暑假可行性",
+        cell: (c) => `<strong>${escapeHtml(c.internshipProfile.summer2MonthOk)}</strong><br><span class="muted">${escapeHtml(c.internshipProfile.internType)}</span>`
+      },
+      {
+        label: "每周出勤与时长要求",
+        cell: (c) => `<strong>${escapeHtml(c.internshipProfile.weeklyDays)}</strong><br>${escapeHtml(c.internshipProfile.durationReq)}`
+      },
+      {
+        label: "转正通道与往年窗口",
+        cell: (c) => `${escapeHtml(c.internshipProfile.conversionPolicy)}<br><span class="muted">${escapeHtml(c.internshipProfile.openWindowRef)}</span>`
+      },
+      {
+        label: "所在城市与基地片区",
         cell: (c) => `${escapeHtml(c.city)}<br><span class="muted">${escapeHtml(c.districts.join("；"))}</span>`
       },
       {
-        label: "主营赛道与产品",
-        cell: (c) => `<strong>${escapeHtml(c.track)}</strong><br>${escapeHtml(c.coreProducts.join("、"))}`
+        label: "可投实习方向（含 JD 来源）",
+        cell: (c) => c.matchedRoles.map((m) => `<span class="badge ${m.jdSourceType === "real-intern-jd" ? "badge-ok" : "badge-warn"}" style="margin:2px 4px 2px 0">${escapeHtml(roleMap.get(m.roleId)?.shortName || m.roleId)} · ${m.jdSourceType === "real-intern-jd" ? "实JD" : "校招折算"}</span>`).join("")
       },
       {
-        label: "匹配你的探索岗位",
-        cell: (c) => c.matchedRoles.map((m) => `<span class="badge badge-accent" style="margin:2px 4px 2px 0">${escapeHtml(roleMap.get(m.roleId)?.shortName || m.roleId)}</span>`).join("")
-      },
-      {
-        label: "红线必备硬技能",
+        label: "拿实习 Offer 底线技能",
         cell: (c) => {
           const musts = Array.from(new Set(c.matchedRoles.flatMap((m) => m.skills.filter((s) => s.level === "must").map((s) => s.name))));
           return `<ul>${musts.map((s) => `<li>${escapeHtml(s)}</li>`).join("")}</ul>`;
         }
       },
       {
-        label: "加分项",
+        label: "实习加分 / 进阶项",
         cell: (c) => {
           const plus = Array.from(new Set(c.matchedRoles.flatMap((m) => m.skills.filter((s) => s.level === "plus").map((s) => s.name))));
           return plus.length ? `<ul>${plus.map((s) => `<li>${escapeHtml(s)}</li>`).join("")}</ul>` : `<span class="muted">暂无单独列示</span>`;
         }
       },
       {
-        label: "倒班与出差常态",
+        label: "实习期倒班与出差",
         cell: (c) => `<strong>倒班：</strong>${escapeHtml(c.workConditionSummary.shiftWork)}<br><strong>出差：</strong>${escapeHtml(c.workConditionSummary.travelLevel)}`
       },
       {
-        label: "笔面试高频考点",
+        label: "实习笔面试高频考点",
         cell: (c) => {
           const qs = c.matchedRoles.flatMap((m) => m.interviewFocus).slice(0, 4);
           return `<ul>${qs.map((q) => `<li>${escapeHtml(q)}</li>`).join("")}</ul>`;
         }
       },
       {
-        label: "校招培养与福利",
-        cell: (c) => `${escapeHtml(c.internshipAndRecruit.program)}<br><span class="muted">${escapeHtml(c.internshipAndRecruit.benefits.join(" / "))}</span>`
-      },
-      {
-        label: "厦门理工匹配建议",
+        label: "厦门理工大三投递建议",
         cell: (c) => `<strong>${escapeHtml(c.fitForXmut.level)}</strong><br>${escapeHtml(c.fitForXmut.reason)}`
       }
     ];
@@ -779,6 +813,10 @@
     });
     document.getElementById("companyRoleFilter").addEventListener("change", (e) => {
       state.companyRole = e.target.value;
+      renderCompaniesPanel();
+    });
+    document.getElementById("companySummerFilter").addEventListener("change", (e) => {
+      state.companySummer = e.target.value;
       renderCompaniesPanel();
     });
     document.getElementById("companySearchInput").addEventListener("input", (e) => {

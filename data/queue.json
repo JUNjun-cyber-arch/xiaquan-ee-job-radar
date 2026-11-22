@@ -53,8 +53,8 @@
       "city": "厦门",
       "track": "电力电子/储能与配电",
       "priority": "S",
-      "status": "pending",
-      "researchedAt": null,
+      "status": "done",
+      "researchedAt": "2026-11-22",
       "focusHint": "全球继电器龙头，重点扒设备电气/自动化装备开发/产品测试岗"
     },
     {
@@ -64,8 +64,8 @@
       "city": "厦门",
       "track": "电力电子/储能与配电",
       "priority": "A",
-      "status": "pending",
-      "researchedAt": null,
+      "status": "done",
+      "researchedAt": "2026-11-22",
       "focusHint": "外企中低压配电与工业自动化，对比ABB看实习门槛与岗位差异"
     },
     {

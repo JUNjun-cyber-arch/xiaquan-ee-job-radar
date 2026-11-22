@@ -38,9 +38,9 @@
         </button>
       </div>
 
-      <h1 class="hero-title">厦泉电气自动化岗位与企业深挖统计台</h1>
+      <h1 class="hero-title">厦泉电气 2027 暑期 / 日常实习情报统计台</h1>
       <p class="hero-subtitle">
-        每天深度调研 1～2 家厦门/泉州目标企业，用真实 JD 自动汇聚五大探索岗位的核心技能排行与横向对比，精准反推大三技能补课清单。
+        聚焦本科实习生视角，参考 2025–2026 年公开实习生招聘 JD，每天深挖 1～2 家厦门/泉州企业，明确区分「真实实习 JD」与「校招折算」，精准统计拿实习 Offer 的底线技能与暑期可行性。
       </p>
 
       <div id="kpiGrid" class="kpi-grid" aria-label="核心统计指标"></div>
@@ -75,8 +75,8 @@
           <div class="panel-inner">
             <div class="section-head">
               <div>
-                <h2>跨企业岗位技能频次热力榜</h2>
-                <p class="muted">按已深挖企业真实 JD 自动聚合；点击任意技能可查看具体出处，右侧可随时标记你当前的掌握状态。</p>
+                <h2>跨企业实习技能热力榜（拿 Offer 底线 vs 加分进阶）</h2>
+                <p class="muted">基于 2025–2026 实习生公开要求自动聚合；红标为「拿实习 Offer 底线」，蓝标为「实习加分/入职带教进阶」，点击技能名可看逐企出处。</p>
               </div>
               <div class="progress-summary-box" id="selfCheckSummary"></div>
             </div>
@@ -136,14 +136,22 @@
                 </select>
               </div>
               <div class="filter-group">
-                <label for="companyRoleFilter">覆盖岗位</label>
+                <label for="companyRoleFilter">实习方向</label>
                 <select id="companyRoleFilter">
-                  <option value="all">全部 5 大岗位</option>
+                  <option value="all">全部 5 大实习方向</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="companySummerFilter">暑期 2 个月可行性</label>
+                <select id="companySummerFilter">
+                  <option value="all">全部实习类型</option>
+                  <option value="summer-ok">支持暑期 2～3 个月</option>
+                  <option value="other">需长期 / 待核实</option>
                 </select>
               </div>
               <div class="filter-group">
                 <label for="companySearchInput">关键词</label>
-                <input id="companySearchInput" type="search" placeholder="搜索企业、产品、PLC、示波器...">
+                <input id="companySearchInput" type="search" placeholder="搜索企业、转正、PLC、示波器...">
               </div>
             </div>
 

@@ -605,11 +605,14 @@ code {
 .badge {
   display: inline-flex;
   align-items: center;
+  max-inline-size: 100%;
   padding: 2px 8px;
   border-radius: 999px;
   font-size: 0.76rem;
   font-weight: 600;
-  white-space: nowrap;
+  line-height: 1.35;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .badge-neutral {
@@ -647,6 +650,7 @@ code {
 .card.company-card {
   container-type: inline-size;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto 1fr auto;
   gap: 12px;
   padding: 16px;
@@ -654,6 +658,7 @@ code {
   border: 2px solid var(--border);
   background: var(--surface-elevated);
   box-shadow: var(--shadow-sm);
+  min-width: 0;
 }
 
 .card.company-card:has(.compare-check:checked) {
@@ -665,6 +670,12 @@ code {
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
+  min-width: 0;
+}
+
+.card.company-card > header > div {
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .company-name {
