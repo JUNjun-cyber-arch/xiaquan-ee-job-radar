@@ -84,6 +84,11 @@ def run(cmd, env=None, capture=False):
 
 
 def main():
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    if hasattr(sys.stderr, "reconfigure"):
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
     # 1. 先运行构建与全量校验，确保数据与 docs/ 发布目录完全一致
     run(["node", str(BUILD_SCRIPT)])
 
@@ -96,14 +101,14 @@ def main():
             today = datetime.date.today().isoformat()
             msg = sys.argv[1] if len(sys.argv) > 1 else f"chore(daily): update XiaQuan EE radar ({today})"
             run(["git", "commit", "-m", msg])
-            print(f"✅ 已完成本地提交：{msg}")
+            print(f"[OK] 已完成本地提交：{msg}")
     else:
-        print("ℹ️ 工作区无新增改动，检查是否需要同步远程分支...")
+        print("[INFO] 工作区无新增改动，检查是否需要同步远程分支...")
 
     # 3. 检查本地 main 是否领先于 origin/main
     ahead = run(["git", "rev-list", "--count", "origin/main..main"], capture=True).stdout.strip()
     if ahead == "0":
-        print("✅ 远程 origin/main 已是最新，无需重复推送。")
+        print("[OK] 远程 origin/main 已是最新，无需重复推送。")
         return
 
     # 4. 读取凭据并通过非交互 GIT_ASKPASS 推送
@@ -116,7 +121,7 @@ def main():
     env["GCM_INTERACTIVE"] = "never"
 
     run(["git", "-c", "credential.helper=", "push", "origin", "main"], env=env)
-    print("🚀 已自动推送至 GitHub Pages：https://junjun-cyber-arch.github.io/xiaquan-ee-job-radar/")
+    print("[PUSH] 已自动推送至 GitHub Pages：https://junjun-cyber-arch.github.io/xiaquan-ee-job-radar/")
 
 
 if __name__ == "__main__":
