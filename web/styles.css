@@ -347,10 +347,18 @@ code {
 /* hidden="until-found" 面板不放 padding/border/margin，由内部 .panel-inner 承载 */
 .panels-stage {
   display: grid;
+  align-items: start;
 }
 
 .tab-panel {
   grid-area: 1 / 1;
+  position: relative;
+  z-index: 1;
+}
+
+.tab-panel[hidden] {
+  pointer-events: none;
+  z-index: 0;
 }
 
 .panel-inner {
