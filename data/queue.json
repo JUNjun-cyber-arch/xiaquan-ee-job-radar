@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22",
+  "updatedAt": "2026-11-23",
   "dailyTargetCount": 2,
   "items": [
     {
@@ -75,8 +75,8 @@
       "city": "厦门",
       "track": "电力电子/储能与配电",
       "priority": "A",
-      "status": "pending",
-      "researchedAt": null,
+      "status": "done",
+      "researchedAt": "2026-11-23",
       "focusHint": "薄膜电容全球龙头，扒设备电气/测试与产线自动化岗"
     },
     {
@@ -86,8 +86,8 @@
       "city": "厦门",
       "track": "半导体/光电与精密制造",
       "priority": "A",
-      "status": "pending",
-      "researchedAt": null,
+      "status": "done",
+      "researchedAt": "2026-11-23",
       "focusHint": "翔安显示面板大厂，扒设备工程师/厂务电气真实倒班与培养情况"
     },
     {
