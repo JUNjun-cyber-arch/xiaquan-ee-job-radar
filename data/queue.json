@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-25",
   "dailyTargetCount": 2,
   "items": [
     {
@@ -120,8 +120,8 @@
       "city": "厦门",
       "track": "半导体/光电与精密制造",
       "priority": "A",
-      "status": "pending",
-      "researchedAt": null,
+      "status": "done",
+      "researchedAt": "2026-11-25",
       "focusHint": "海沧功率半导体晶圆制造，扒设备工程与测试岗"
     },
     {
@@ -131,8 +131,8 @@
       "city": "泉州",
       "track": "高端装备与智能制造",
       "priority": "A",
-      "status": "pending",
-      "researchedAt": null,
+      "status": "done",
+      "researchedAt": "2026-11-25",
       "focusHint": "（已前置优先补齐泉州与 PLC 样本）南安 5G 智能工厂标杆，重点核实设施运维/产线电气与 PLC 编程岗"
     },
     {

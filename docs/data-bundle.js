@@ -3,30 +3,30 @@ window.__RADAR_DATA__ = {
   "schemaVersion": 2,
   "generatedAt": "2026-11-25",
   "overview": {
-    "totalCompanies": 10,
+    "totalCompanies": 12,
     "totalQueue": 20,
-    "pendingQueue": 10,
-    "completionPct": 50,
-    "totalMatchedRoleInstances": 30,
-    "realInternJdRoles": 18,
-    "campusRefRoles": 12,
+    "pendingQueue": 8,
+    "completionPct": 60,
+    "totalMatchedRoleInstances": 36,
+    "realInternJdRoles": 19,
+    "campusRefRoles": 17,
     "summerSupportCount": 5,
     "summerFitCounts": {
       "fit-8w": 5,
       "short-4w": 1,
       "need-3m": 1,
       "negotiable": 1,
-      "long-or-senior": 2
+      "long-or-senior": 4
     },
     "uniqueSkillCount": 28,
     "cityCounts": {
-      "厦门": 9,
-      "泉州": 2
+      "厦门": 10,
+      "泉州": 3
     },
     "trackCounts": {
       "电力电子/储能与配电": 6,
-      "高端装备与智能制造": 1,
-      "半导体/光电与精密制造": 3
+      "高端装备与智能制造": 2,
+      "半导体/光电与精密制造": 4
     }
   },
   "roles": [
@@ -104,7 +104,7 @@ window.__RADAR_DATA__ = {
   ],
   "queue": {
     "schemaVersion": 2,
-    "updatedAt": "2026-11-24",
+    "updatedAt": "2026-11-25",
     "dailyTargetCount": 2,
     "items": [
       {
@@ -224,8 +224,8 @@ window.__RADAR_DATA__ = {
         "city": "厦门",
         "track": "半导体/光电与精密制造",
         "priority": "A",
-        "status": "pending",
-        "researchedAt": null,
+        "status": "done",
+        "researchedAt": "2026-11-25",
         "focusHint": "海沧功率半导体晶圆制造，扒设备工程与测试岗"
       },
       {
@@ -235,8 +235,8 @@ window.__RADAR_DATA__ = {
         "city": "泉州",
         "track": "高端装备与智能制造",
         "priority": "A",
-        "status": "pending",
-        "researchedAt": null,
+        "status": "done",
+        "researchedAt": "2026-11-25",
         "focusHint": "（已前置优先补齐泉州与 PLC 样本）南安 5G 智能工厂标杆，重点核实设施运维/产线电气与 PLC 编程岗"
       },
       {
@@ -465,6 +465,18 @@ window.__RADAR_DATA__ = {
       ],
       "headline": "双企深挖：「三安光电（厦门/泉州）」×「联芯集成电路（翔安 12 寸晶圆厂）」",
       "keyTakeaway": "全库进度过半至 10/20 企。① 联芯每年 5 月前后开放的暑期项目暨校招提前批通常约 4 周并附秋招直通卡（如需拉满 8 周须面试协商，2025 公开公告列工艺整合/工艺/良率方向，设备本科暑期直投须当期核实）；② 三安光电以毕业顶岗及提前批为主（标为 campus-ref），在厦门与泉州南安双基地均设有厂务与设备方向。"
+    },
+    {
+      "day": 6,
+      "date": "2026-11-25",
+      "batchId": "day-6",
+      "reportFile": "daily-2026-11-25-day-6.md",
+      "addedCompanies": [
+        "silan-xiamen",
+        "jomoo"
+      ],
+      "headline": "双企深挖：「士兰集科 / 士兰明镓（海沧）」×「九牧集团·智能工厂（南安）」",
+      "keyTakeaway": "全库推进至 12/20 企。① 士兰厦门制造中心校招本科设备（80人）/测试设备（8人）对口度高，但已公开实习简章为士兰明镓 12 小时两班倒「生产实习生」，暂缺大三 8 周研发暑期夏令营（标为 long-or-senior）；② 九牧南安 5G 灯塔工厂在 NCSS 明确招募「电气设计百川生」（6.5–7.5K/月，要求 CAD+PLC）与「生产技术（电气）」，同样以春秋招/订单班为主（标为 campus-ref + long-or-senior），配标双公寓及厦泉南安周末班车。"
     }
   ],
   "companies": [
@@ -3142,6 +3154,564 @@ window.__RADAR_DATA__ = {
       "cities": [
         "厦门"
       ]
+    },
+    {
+      "id": "silan-xiamen",
+      "name": "士兰集科 / 士兰明镓",
+      "fullName": "厦门士兰集科微电子有限公司 / 厦门士兰明镓化合物半导体有限公司（士兰半导体制造事业总部·厦门制造中心）",
+      "city": "厦门",
+      "districts": [
+        "厦门市海沧区兰英路 89 号 / 99 号（士兰微电子厦门制造中心：12 吋线士兰集科、化合物/SiC 线士兰明镓、8 吋 SiC 线士兰集宏）"
+      ],
+      "track": "半导体/光电与精密制造",
+      "companyType": "A股上市 IDM 半导体大厂子公司（SH 600460 杭州士兰微电子 × 厦门半导体投资集团合资）",
+      "coreProducts": [
+        "12 英寸特色工艺功率器件与 MEMS 传感器晶圆制造（士兰集科）",
+        "化合物半导体、高端 LED 与第三代半导体 SiC 芯片（士兰明镓）",
+        "8 英寸 SiC 功率器件芯片生产线（士兰集宏）"
+      ],
+      "researchedAt": "2026-11-25",
+      "internshipProfile": {
+        "internType": "秋招/春招正式校招为主 + 产线「生产实习生」及毕业前实习留用通道（暂未见独立大三 2 个月研发暑期统招网申）",
+        "summer2MonthOk": "较少独立大三 2 个月研发暑期网申；士兰明镓在本地高校招收「生产实习生」（需穿无尘服且白夜两班倒），大三暑期工程岗须春季直联 HR 协商",
+        "durationReq": "常规实习多倾向毕业前留用或 3 个月以上衔接转正；士兰明镓生产实习生按产线班次排期，未见面向大三的统一 8 周夏令营",
+        "weeklyDays": "工程研发与校招岗平时全职 5 天（一线 EE 需轮值/倒班）；产线生产实习生公开简章明确 8:00–20:00 / 20:00–8:00 两班倒、月休 4–6 天",
+        "openWindowRef": "参考 2025/2026：每年 9–10 月启动秋季校园招聘（厦大等高校线下宣讲，投递邮箱 fenglinlin@silanic.com.cn），12 月及春季面向省内院校开展生产实习生与春招补录",
+        "conversionPolicy": "产线实习生提供实习证明，毕业取得学位且考核合格可按岗位需求转正留用；校招提供人才 IDP 培养体系与多轨晋升通道",
+        "stipendNote": "招聘平台公开信息显示工程/制造类实习津贴参考约 3,000–6,000 元/月（大三短期暑期日薪未见官方统一披露，待核实）；校招本科设备工程师月薪公开列 9,500–10,499 元/月，配免费 2–3 人间宿舍（空调/独卫/热水器/宽带）与餐补",
+        "summerFit": "long-or-senior",
+        "windowGroup": "autumn-watch",
+        "evidenceStatus": "campus-inferred"
+      },
+      "fitForXmut": {
+        "level": "中高匹配（海沧功率半导体与第三代半导体集群，本科设备岗容量大但须区分“生产实习生”与“设备工程师”）",
+        "reason": "士兰厦门制造中心校招中，本科设备工程师（80 人）与测试设备工程师（8 人）明确招收电气工程及其自动化、自动化及测控专业，且对福建本地工科院校友好；但大三暑假目前缺乏独立 8 周研发实习项目，已公开的实习生公告偏 12 小时两班倒产线“生产实习生”，投递前必须看清岗位层级与倒班强度。"
+      },
+      "internshipAndRecruit": {
+        "channels": [
+          "士兰半导体制造事业总部官方网申平台（silanslw.zhiye.com）",
+          "官方校园招聘指定邮箱：fenglinlin@silanic.com.cn（简章注明投递需附成绩单与英语四六级）",
+          "厦门大学、厦大嘉庚学院等本地高校就业网及“士兰微招聘”微信公众号"
+        ],
+        "program": "人才 IDP 培养培训体系 + 专业技能提升培训 + 产线实习留用考核通道",
+        "timelineNote": "建议 2027 年 3–5 月关注本地高校招聘网或联系厦门制造中心 HR（0592-3773999 转 85056）确认是否有白班工程类日常实习；若目标正式设备/测试设备岗，务必在 2027 年 9–10 月备齐成绩单与四六级冲刺秋招。",
+        "benefits": [
+          "提供免费 2–3 人间员工宿舍（空调、独立卫生间、热水器、免费宽带）",
+          "海沧厂区自建自营餐厅与工作餐补、通讯补贴及佳节福利（约 2,000–3,000 元/年）",
+          "五险一金、年度免费体检、厂区健身房/篮球场/羽毛球场及厦门海沧重点产业人才补贴（符合条件可享上浮政策）"
+        ]
+      },
+      "workConditionSummary": {
+        "shiftWork": "需重点关注：士兰明镓「生产实习生」简章明确白班 8:00–20:00、夜班 20:00–8:00 两班倒且月休 4–6 天；正式设备工程师因晶圆厂 24 小时运转亦多需倒班或轮流值班；测试开发/厂务规划相对偏白班",
+        "travelLevel": "实习与工作均集中在厦门海沧区兰英路制造基地，极少出差",
+        "certNote": "需穿戴全套无尘服进入洁净室；校招投递简章明确要求附上成绩单和英语四六级证书，厂务强电方向持电工证或熟悉高压安全规程更稳妥。"
+      },
+      "matchedRoles": [
+        {
+          "roleId": "fab-equip",
+          "jdSourceType": "real-intern-jd",
+          "jdSourceLabel": "真实实习简章为「士兰明镓生产实习生（产线高精设备操作，mee.xujc.com）」；工程级「设备工程师（80人）」参照 2026 届士兰集科校招简章折算",
+          "officialTitles": [
+            "生产实习生（士兰明镓 · 芯片制程与高精设备操作真实实习 JD）",
+            "设备工程师（士兰集科 · 参照校招本科 80 人需求折算）"
+          ],
+          "internTasks": "生产实习生在海沧无尘车间承担芯片制造高精机台操作、生产异常记录与数据分析；设备工程师方向则负责 12 吋或 SiC 产线光刻/刻蚀/薄膜/外延机台的日常点检（PM）、故障排查、装机调试与 SOP 编写。",
+          "responsibilities": [
+            "协助开展半导体制造高精机台的日常运行监控、预防性点检（PM）与异常处理",
+            "记录机台报警日志、生产异常数据及备件消耗，提升设备 Uptime 与 OEE",
+            "配合工程师参与新机台装机验收、电气/气动回路调试及作业指导书（SOP）整理"
+          ],
+          "skills": [
+            {
+              "name": "电路与模数电基础",
+              "category": "基础理论",
+              "level": "must",
+              "detail": "【实习/校招底线】具备扎实的电路分析、电子技术与自动控制工科基础"
+            },
+            {
+              "name": "电气原理图识读",
+              "category": "电气制图与选型",
+              "level": "must",
+              "detail": "【校招折算底线】能看懂半导体精密机台控制柜图纸与传感器接线逻辑"
+            },
+            {
+              "name": "设备点检保养（PM）与 OEE 改善",
+              "category": "产线设备运维",
+              "level": "must",
+              "detail": "【实习底线】理解设备点检保养（PM）、异常处理流程与洁净室 SOP 红线"
+            },
+            {
+              "name": "现场故障诊断与排故思维",
+              "category": "工程与软实力",
+              "level": "must",
+              "detail": "【实习底线】抗压踏实，明确适应穿无尘服、两班倒（12 小时制）或产线值班节奏"
+            },
+            {
+              "name": "主流 PLC 编程（西门子/三菱等）",
+              "category": "PLC与自动化",
+              "level": "plus",
+              "detail": "【实习加分】熟悉 PLC 控制逻辑或工业自动化机电控制项目在设备岗面试加分"
+            },
+            {
+              "name": "机械识图与气动液压基础",
+              "category": "产线设备运维",
+              "level": "plus",
+              "detail": "【实习加分】了解机械传动、真空系统与气动阀门控制上手更快"
+            },
+            {
+              "name": "英语读写与技术交流",
+              "category": "工程与软实力",
+              "level": "plus",
+              "detail": "【校招明确项】简章要求投递附四六级，能读懂进口机台英文界面与手册"
+            }
+          ],
+          "interviewFocus": [
+            "硬核核对：是否接受无尘车间全套无尘服及 12 小时白夜两班倒/设备科轮班制度",
+            "硬件与资料门槛：本科成绩单、四六级成绩（官方邮箱投递必附项）",
+            "排故与动手：在校电工/机械实践经历及面对机台报警时的安全排查步骤"
+          ],
+          "shiftWork": "生产实习生明确两班倒（8:00–20:00 / 20:00–8:00，月休 4–6 天）；正式设备工程师通常涉及轮班或 On-call",
+          "travelLevel": "极少出差"
+        },
+        {
+          "roleId": "ee-test",
+          "jdSourceType": "campus-ref",
+          "jdSourceLabel": "未见独立大三暑期测试实习 JD · 参照 2026 届士兰集科校招「测试设备工程师（8人）/ 测试工艺工程师（11人）」折算",
+          "officialTitles": [
+            "测试设备工程师（参照校招本科岗折算）",
+            "测试工艺工程师 / ATE 芯片测试工程师（参照校招折算）"
+          ],
+          "internTasks": "协助维护功率器件与 MEMS 芯片的 CP 中测及 FT 成品测试设备（ATE/探针台/分选机），参与测试负载板与治具硬件调试，操作示波器排查信号异常并统计良率数据。",
+          "responsibilities": [
+            "协助开展芯片测试机台、探针台与分选机的日常点检、硬件维护及治具调试",
+            "配合工程师分析测试异常（Test Fail）与产线良率波动，协助定位器件或测试板问题",
+            "整理芯片电性测试数据、规格书参考曲线及测试设备作业规范"
+          ],
+          "skills": [
+            {
+              "name": "电路与模数电基础",
+              "category": "基础理论",
+              "level": "must",
+              "detail": "【校招折算底线】熟悉模拟/数字电路及功率器件（MOSFET/IGBT/SiC）基本电性"
+            },
+            {
+              "name": "示波器与万用表实操",
+              "category": "仪器测试",
+              "level": "must",
+              "detail": "【校招折算底线】熟练使用示波器、万用表等电测仪器调试测试硬件与治具信号"
+            },
+            {
+              "name": "技术文档与测试报告编写",
+              "category": "工程与软实力",
+              "level": "must",
+              "detail": "【校招折算底线】细致严谨，能规范整理测试良率报表与硬件故障记录"
+            },
+            {
+              "name": "C 语言与自动化脚本基础",
+              "category": "软件与脚本",
+              "level": "plus",
+              "detail": "【实习加分】会用 C/C++ 或脚本工具处理 ATE 测试数据或编写简易测试程序极加分"
+            },
+            {
+              "name": "功率分析仪与电子负载",
+              "category": "仪器测试",
+              "level": "plus",
+              "detail": "【实习加分】了解大功率器件测试中的电参数测量与开尔文四线制接线常识"
+            },
+            {
+              "name": "英语读写与技术交流",
+              "category": "工程与软实力",
+              "level": "plus",
+              "detail": "【实习加分】能看懂英文芯片 Datasheet 与进口测试机台技术手册"
+            }
+          ],
+          "interviewFocus": [
+            "专业基础：功率半导体器件开关特性、模电运放电路与测试夹具干扰排查",
+            "工具能力：示波器实测经历与 C 语言/数据处理脚本基础",
+            "考察对测试产线跟线验证及洁净室环境的配合度"
+          ],
+          "shiftWork": "测试工艺/开发偏白班跟产；测试设备维护视产线需求可能涉及轮班或值班",
+          "travelLevel": "极少出差"
+        },
+        {
+          "roleId": "equip-elec",
+          "jdSourceType": "campus-ref",
+          "jdSourceLabel": "未见独立大三暑期厂务实习 JD · 参照厦门制造中心厂务电气/动力系统运维需求折算",
+          "officialTitles": [
+            "厂务电气 / 动力系统维护工程师（参照校招及社招同类岗折算）",
+            "洁净室供配电及自控设施运维岗"
+          ],
+          "internTasks": "协助厂务工程团队巡检 12 吋与 SiC 晶圆厂的高低压供配电室、UPS 不间断电源、动力设备及自控监测点，整理配电图纸、巡检台账与 EHS 安全记录。",
+          "responsibilities": [
+            "协助巡检晶圆制造厂房高低压供配电柜、变压器及 UPS 备用电源运行状态",
+            "跟学厂务机电设备预防性维保与供配电突发异常应急处理规范",
+            "协助整理厂务电气一次/二次系统图纸及能耗统计台账"
+          ],
+          "skills": [
+            {
+              "name": "电路与模数电基础",
+              "category": "基础理论",
+              "level": "must",
+              "detail": "【校招折算底线】电气工程及其自动化核心对口：扎实的电路与电力系统基础"
+            },
+            {
+              "name": "电气原理图识读",
+              "category": "电气制图与选型",
+              "level": "must",
+              "detail": "【校招折算底线】能读懂工业厂房高低压配电系统图与二次控制回路"
+            },
+            {
+              "name": "低压配电与元器件选型",
+              "category": "电气制图与选型",
+              "level": "must",
+              "detail": "【校招折算底线】掌握断路器、接触器、配电柜器件常识与强电安全规程"
+            },
+            {
+              "name": "中低压开关柜一次/二次回路与继保",
+              "category": "基础理论",
+              "level": "plus",
+              "detail": "【实习加分】熟悉双电源自动切换（ATS）、UPS 与继电保护基础极加分"
+            },
+            {
+              "name": "AutoCAD / EPLAN 电气制图",
+              "category": "电气制图与选型",
+              "level": "plus",
+              "detail": "【实习加分】会用 AutoCAD 查阅或修订厂务配电施工图纸"
+            },
+            {
+              "name": "现场故障诊断与排故思维",
+              "category": "工程与软实力",
+              "level": "plus",
+              "detail": "【实习加分】具备高压安全红线意识与冷静的故障隔离思路"
+            }
+          ],
+          "interviewFocus": [
+            "强电基础：三相供配电、UPS 作用及高压停送电安全防护意识",
+            "稳定性考察：对海沧厂区长期发展及厂务值班排班的接受度"
+          ],
+          "shiftWork": "工程技术偏白班，动力供电运行保障涉及轮流值班",
+          "travelLevel": "极少出差"
+        }
+      ],
+      "prosAndCons": {
+        "pros": [
+          "海沧本地集齐 12 吋功率/MEMS 线（士兰集科）、化合物线（士兰明镓）与 8 吋 SiC 线（士兰集宏），本科设备工程师校招需求体量大（单季 80+8 人），电气/自动化专业直接对口",
+          "校招公开本科设备岗月薪 9.5K–10.5K 起，免费提供 2–3 人间独卫空调宿舍与自营餐厅餐补，还可叠加厦门/海沧重点产业人才补贴",
+          "与厦大、厦大嘉庚学院等本地高校互动频繁，对省内理工本科生的简历与沟通门槛相对务实"
+        ],
+        "watchouts": [
+          "目前未见面向大三的 8 周研发暑期夏令营；已发布的「生产实习生」属于 12 小时白夜两班倒、月休 4–6 天的产线操作跟班，含金量与作息预期需与设备工程师岗位严格区分",
+          "官方校招简章明确要求投递附本科成绩单和英语四六级，大三期间成绩单和四六级过线不能掉以轻心"
+        ]
+      },
+      "sources": [
+        {
+          "label": "厦门大学管理学院就业网：厦门士兰集科（含厦门制造中心）2026 届秋招简章与岗位薪资表（smcareer.xmu.edu.cn）",
+          "date": "2026-11-25",
+          "sourceKind": "campus-notice",
+          "url": "https://smcareer.xmu.edu.cn/info/1008/26795.htm",
+          "lead": null
+        },
+        {
+          "label": "厦大嘉庚学院机电学院：厦门士兰明镓生产实习生招聘与两班倒排班公告（mee.xujc.com）",
+          "date": "2026-11-25",
+          "sourceKind": "intern-notice",
+          "url": "https://mee.xujc.com/2025/1224/c2715a164227/page.htm",
+          "lead": null
+        },
+        {
+          "label": "士兰半导体制造事业总部官方校招网申系统（silanslw.zhiye.com）",
+          "date": "2026-11-25",
+          "sourceKind": "official-portal",
+          "url": "https://silanslw.zhiye.com/campus/detail?jobAdId=642e8bfb-d101-4162-ad21-0063c3c5acea",
+          "lead": null
+        }
+      ],
+      "cities": [
+        "厦门"
+      ]
+    },
+    {
+      "id": "jomoo",
+      "name": "九牧集团（智能工厂）",
+      "fullName": "九牧厨卫股份有限公司 / 九牧集团（泉州南安总部及 5G 智能灯塔工厂群）",
+      "city": "泉州",
+      "districts": [
+        "泉州市南安市南安经济开发区九牧工业园 / 仑苍镇（5G 智能马桶黑灯工厂与高端数智灯塔工厂群）",
+        "注：软件/硬件产品研发部分岗位设于厦门，制造类生产技术、电气设计与工厂设备岗位集中于泉州南安"
+      ],
+      "track": "高端装备与智能制造",
+      "companyType": "全球卫浴与智能制造领军民企（5G 零碳灯塔工厂 / 绿色黑灯工厂标杆）",
+      "coreProducts": [
+        "智能马桶与全屋数智卫浴系统",
+        "5G 智能灯塔工厂与黑灯工厂自动化产线（施釉/装配机器人工作站）",
+        "智牧机器人与智能硬件电控平台"
+      ],
+      "researchedAt": "2026-11-25",
+      "internshipProfile": {
+        "internType": "「百川计划（百川生）」校园招聘为主 + 局部合作院校订单班/产教融合顶岗实习（较少独立大三 8 周暑期夏令营统招）",
+        "summer2MonthOk": "较少独立大三 2 个月暑期统招网申；主要通过 3 月春招、9 月秋招（百川生）及高校实习基地切入，大三暑期须春季联系南安工厂 HR 或走校友内推协商",
+        "durationReq": "未见统一 8 周大三暑期项目公告；常规工厂自动化/技术类实习一般希望持续 2–3 个月以上或直接衔接毕业定岗",
+        "weeklyDays": "全职标准工时（每周 5 天，南安智能工厂现场技改与设备调试需配合车间生产节拍）",
+        "openWindowRef": "参考 2025/2026：3 月春季补录及 9 月全面开启全球校园招聘（「百川计划」含制造类·生产技术电气方向与电气设计百川生），Moka 校招门户长期承接投递",
+        "conversionPolicy": "「百川生」入职后由产业赋能教育中心开展集训与轮岗培养；合作院校实习或日常实习表现优异者可在毕业前后通过内部考核转正签约",
+        "stipendNote": "国家大学生就业服务平台（NCSS）公开「电气设计百川生」本科校招参考月薪 6,500–7,500 元/月（大三短期暑期实习日薪未见官方统一披露，待核实）；入职南安工厂区域本科生提供标双员工公寓及南安-泉州-厦门周末免费班车",
+        "summerFit": "long-or-senior",
+        "windowGroup": "autumn-watch",
+        "evidenceStatus": "campus-inferred"
+      },
+      "fitForXmut": {
+        "level": "中高匹配（泉州南安 5G 智能工厂标杆，PLC 与工厂电气设计极度对口，但更偏校招与春季直联）",
+        "reason": "九牧在泉州南安拥有多座 5G 自动化灯塔工厂，且在 NCSS 明确招募「电气设计百川生」与「生产技术（电气/自动化）」本科生，实操覆盖西门子 PLC、EPLAN/CAD、变频伺服与工业机器人产线运维；因较少单开大三 2 个月暑期网申，建议泉州生源或关注 PLC 方向的同学在 2027 年 3 月春招季主动对接 HR 或通过本地校友内推争取暑期进厂机会。"
+      },
+      "internshipAndRecruit": {
+        "channels": [
+          "九牧集团官方 Moka 校园招聘系统（app.mokahr.com/campus-recruitment/jomoo）",
+          "“九牧招聘”官方微信公众号及国家大学生就业服务平台（ncss.cn）",
+          "厦大嘉庚学院、东华大学等高校宣讲会及 Boss 直聘/智联（搜“九牧厨卫 南安 电气/设备”）"
+        ],
+        "program": "“百川计划”人才培养体系 + 产业赋能教育中心专业/管理双通道培训",
+        "timelineNote": "2027 年 3–4 月留意九牧春季校园招聘公告与福建本地高校宣讲，带电路/PLC 课设作品尝试协商南安基地暑期跟岗；2027 年 9 月秋招黄金期可直接冲刺「电气设计百川生」或「生产技术（电气/自动化）」校招岗。",
+        "benefits": [
+          "入职南安工厂区域提供本科生标准双人间员工公寓（配空调、独立卫浴、热水器，拎包入住）",
+          "每周末提供往返南安、泉州、厦门三地的免费接驳班车，兼顾泉厦双城通勤",
+          "福利食堂、节日礼金、员工互助医疗/意外险、文体协会及泉州/南安高校人才安居补贴"
+        ]
+      },
+      "workConditionSummary": {
+        "shiftWork": "工厂自动化/电气设计岗以常白班为主，但产线出现紧急电气故障、产线技改或设备联调时需深入车间现场配合加班或应急响应",
+        "travelLevel": "工作集中在泉州南安各智能制造园区（研发电子类部分在厦门），极少跨省出差",
+        "certNote": "重车间现场实操与电气安全规范；若能在校补齐 AutoCAD/EPLAN 制图与西门子 PLC 基础（官方 JD 明确优先项），竞争优势明显。"
+      },
+      "matchedRoles": [
+        {
+          "roleId": "plc-debug",
+          "jdSourceType": "campus-ref",
+          "jdSourceLabel": "未见独立大三暑期 PLC 实习 JD · 参照 2025/2026 九牧校招「生产技术（电气/自动化）」及南安智造产线自动化工程师要求折算",
+          "officialTitles": [
+            "生产技术（电气 / 自动化方向 · 参照校招折算）",
+            "PLC 编程与非标自动化设备调试工程师（南安灯塔工厂）"
+          ],
+          "internTasks": "协助灯塔工厂自动化工程师开展非标产线与机器人工作站的 PLC 控制逻辑编写（西门子 S7-1200/1500 等）、HMI 界面维护、伺服变频参数核对及厂内产线技改联调。",
+          "responsibilities": [
+            "协助参与智能卫浴自动化产线及非标设备的 PLC 程序编写、备份与信号联调",
+            "配合调试伺服电机、变频器、传感器及工业总线通信（Modbus / Profinet 等）",
+            "跟进车间产线升级改造现场调试，快速记录并协同解决自动化控制异常"
+          ],
+          "skills": [
+            {
+              "name": "主流 PLC 编程（西门子/三菱等）",
+              "category": "PLC与自动化",
+              "level": "must",
+              "detail": "【校招折算底线】官方岗位明确优先与核心要求：掌握西门子/三菱 PLC 基础与程序逻辑"
+            },
+            {
+              "name": "电气原理图识读",
+              "category": "电气制图与选型",
+              "level": "must",
+              "detail": "【校招折算底线】能读懂非标自动化设备电柜图纸与传感器/执行器接线图"
+            },
+            {
+              "name": "现场故障诊断与排故思维",
+              "category": "工程与软实力",
+              "level": "must",
+              "detail": "【校招折算底线】具备现场设备电气异常排查能力，能适应智造车间现场节奏"
+            },
+            {
+              "name": "变频器与电机调试",
+              "category": "PLC与自动化",
+              "level": "plus",
+              "detail": "【实习加分】熟悉伺服驱动、变频器参数整定及电机控制原理在灯塔工厂产线很实用"
+            },
+            {
+              "name": "HMI 触摸屏与组态软件",
+              "category": "PLC与自动化",
+              "level": "plus",
+              "detail": "【实习加分】会做基础 HMI 人机界面组态与报警页面方便参与产线调试"
+            },
+            {
+              "name": "Modbus / CAN / RS485 通信",
+              "category": "通信协议",
+              "level": "plus",
+              "detail": "【实习加分】了解 Modbus/Profinet 等工业现场总线与仪表通信调试"
+            },
+            {
+              "name": "技术文档与测试报告编写",
+              "category": "工程与软实力",
+              "level": "plus",
+              "detail": "【实习加分】规范整理程序备份、调试台账与技改验收文档"
+            }
+          ],
+          "interviewFocus": [
+            "工控实操题：PLC 自锁/互锁/报警逻辑、传感器 NPN/PNP 接线及常见通讯故障排查思路",
+            "项目与抗压：是否做过课程设计/实训项目，以及对深入南安智能工厂车间的意愿"
+          ],
+          "shiftWork": "自动化与技改岗偏白班为主，产线大修或设备联调阶段需配合现场加班",
+          "travelLevel": "极少出差（集中在南安各园区）"
+        },
+        {
+          "roleId": "equip-elec",
+          "jdSourceType": "campus-ref",
+          "jdSourceLabel": "未见独立大三暑期电气设计实习 JD · 参照国家大学生就业服务平台「九牧电气设计百川生」真实校招 JD 折算",
+          "officialTitles": [
+            "电气设计百川生（NCSS 真实校招 JD，6.5–7.5K/月，南安）",
+            "生产技术（电气工程方向 · 参照校招折算）"
+          ],
+          "internTasks": "前期深入工厂参与电气设备及控制系统巡检维护，协助完成局部电气改造图纸整理（AutoCAD/EPLAN）、元器件选型核对、设备电气台账编制及现场电气异常协同支持。",
+          "responsibilities": [
+            "前期参与南安工厂电气设备、控制系统的日常巡检、维护与故障排查基础工作",
+            "协助开展电气改造、产线升级项目的电气图纸整理、BOM 清单核对与现场实施",
+            "跨部门对接生产与设备团队，记录设备运行数据并编制标准化电气技术文档"
+          ],
+          "skills": [
+            {
+              "name": "电路与模数电基础",
+              "category": "基础理论",
+              "level": "must",
+              "detail": "【校招 JD 底线】本科电气工程/自动化专业对口，对电气参数与电路原理敏感"
+            },
+            {
+              "name": "电气原理图识读",
+              "category": "电气制图与选型",
+              "level": "must",
+              "detail": "【校招 JD 底线】能读懂并整理工厂自动化设备及配电控制回路原理图"
+            },
+            {
+              "name": "低压配电与元器件选型",
+              "category": "电气制图与选型",
+              "level": "must",
+              "detail": "【校招 JD 底线】熟悉传感器、变频器、断路器、接触器等常见低压电器规格"
+            },
+            {
+              "name": "AutoCAD / EPLAN 电气制图",
+              "category": "电气制图与选型",
+              "level": "must",
+              "detail": "【校招明确优先项】熟练使用 AutoCAD（或 EPLAN）绘制与修订电气图纸"
+            },
+            {
+              "name": "主流 PLC 编程（西门子/三菱等）",
+              "category": "PLC与自动化",
+              "level": "plus",
+              "detail": "【校招明确优先项】JD 明确写出「掌握 CAD、PLC 基础者优先」"
+            },
+            {
+              "name": "技术文档与测试报告编写",
+              "category": "工程与软实力",
+              "level": "plus",
+              "detail": "【校招 JD 要求】协助完成电气台账、程序备份与技术文档编制"
+            }
+          ],
+          "interviewFocus": [
+            "真实 JD 高频点：CAD 画图熟练度、PLC 基础认知及低压电工安全规范",
+            "沟通与下沉意愿：NCSS JD 明确强调跨部门对接生产/设备团队与吃苦耐劳踏实成长"
+          ],
+          "shiftWork": "以白班现场及工程办公为主，技改上线期间配合车间排期",
+          "travelLevel": "极少出差"
+        },
+        {
+          "roleId": "fab-equip",
+          "jdSourceType": "campus-ref",
+          "jdSourceLabel": "未见独立大三暑期设备运维实习 JD · 参照九牧灯塔工厂设施运维及智能产线设备管理要求折算",
+          "officialTitles": [
+            "自动化产线设备运维工程师（南安灯塔工厂 · 参照校/社招折算）",
+            "生产设备管理与点检技术岗"
+          ],
+          "internTasks": "协助跟进智能工厂机械臂、施釉/装配自动化工作站及动力辅助设施的日常点检、预防性保养（PM）、运行数据统计与故障台账归档。",
+          "responsibilities": [
+            "协助执行灯塔工厂自动化设备及动力管网的日常巡检、预防性维保（PM）",
+            "协助整理设备故障停机日志、备品备件记录及 OEE 运行分析数据",
+            "配合设备工程师落实传感器、气动/液压元件及执行机构的小故障排查"
+          ],
+          "skills": [
+            {
+              "name": "设备点检保养（PM）与 OEE 改善",
+              "category": "产线设备运维",
+              "level": "must",
+              "detail": "【校招折算底线】理解设备点检保养制度、设备台账及故障停机数据分析"
+            },
+            {
+              "name": "电气原理图识读",
+              "category": "电气制图与选型",
+              "level": "must",
+              "detail": "【校招折算底线】能看懂产线设备强弱电供电与安全互锁回路"
+            },
+            {
+              "name": "现场故障诊断与排故思维",
+              "category": "工程与软实力",
+              "level": "must",
+              "detail": "【校招折算底线】具备快速排查现场传感器、继电器及执行器异常的条理性"
+            },
+            {
+              "name": "机械识图与气动液压基础",
+              "category": "产线设备运维",
+              "level": "plus",
+              "detail": "【实习加分】熟悉气动电磁阀、气缸及机械传动结构维护更易上手黑灯工厂机台"
+            },
+            {
+              "name": "低压配电与元器件选型",
+              "category": "电气制图与选型",
+              "level": "plus",
+              "detail": "【实习加分】熟悉厂区车间配电箱开关、保护器与安全接地规范"
+            },
+            {
+              "name": "技术文档与测试报告编写",
+              "category": "工程与软实力",
+              "level": "plus",
+              "detail": "【实习加分】规范编写设备点检 SOP 与故障复盘记录"
+            }
+          ],
+          "interviewFocus": [
+            "设备运维思维：如何平衡产线不停机生产与预防性保养（PM）",
+            "对工业机器人/黑灯工厂自动化设备的兴趣及长期扎根泉州南安制造园区的稳定性"
+          ],
+          "shiftWork": "工程管理偏白班，部分连续生产工段或黑灯产线值守需配合排班/值班",
+          "travelLevel": "极少出差"
+        }
+      ],
+      "prosAndCons": {
+        "pros": [
+          "泉州南安本地数智制造标杆（5G 智能灯塔工厂/黑灯工厂），「电气设计百川生」与「生产技术（电气）」直接考察 CAD + PLC，与设备电气/PLC 调试职业探索高度同频",
+          "南安工厂区入职本科生配标双公寓，且周末提供南安—泉州—厦门三地免费班车，厦门就读/泉州安居衔接成本低",
+          "产业赋能教育中心培养体系成熟，从产线电气巡检→PLC 调试→产线技改路径清晰"
+        ],
+        "watchouts": [
+          "公开渠道以 3 月春招、9 月秋招「百川生」及合作院校订单班为主，缺乏面向大三的 8 周暑期夏令营统一网申，想在大三暑假进厂须春季主动对接 HR 或通过本地校友内推",
+          "校招起薪（NCSS 电气设计百川生 6.5–7.5K/月）在民营大厂中属稳健型，且工厂自动化岗需要下车间盯现场联调"
+        ]
+      },
+      "sources": [
+        {
+          "label": "国家大学生就业服务平台（NCSS）：九牧厨卫「电气设计百川生」南安校招岗位职责与薪资要求（ncss.cn）",
+          "date": "2026-11-25",
+          "sourceKind": "campus-notice",
+          "url": "https://www.ncss.cn/student/jobs/9GJTZH8W5mrCr4J7qu83Uo/detail.html",
+          "lead": null
+        },
+        {
+          "label": "厦大嘉庚学院就业网：九牧集团 2026 校招岗位、南安公寓与厦泉南安周末班车说明（career.xujc.com）",
+          "date": "2026-11-25",
+          "sourceKind": "campus-notice",
+          "url": "https://career.xujc.com/2025/0905/c3959a161608/page.htm",
+          "lead": null
+        },
+        {
+          "label": "厦大嘉庚学院就业网：九牧集团春招制造类「生产技术（电子/电气/机械/工艺）」岗位目录（career.xujc.com）",
+          "date": "2026-11-25",
+          "sourceKind": "campus-notice",
+          "url": "https://career.xujc.com/2025/0314/c3959a158688/page.htm",
+          "lead": null
+        },
+        {
+          "label": "东华大学就业网：九牧集团 2027 届全球校园招聘公告及 Moka 网申入口（ejob.dhu.edu.cn）",
+          "date": "2026-11-25",
+          "sourceKind": "campus-notice",
+          "url": "https://ejob.dhu.edu.cn/pros_wjdc/s/cms/DongHua/single/2026/09/29/26092916002192136603",
+          "lead": null
+        }
+      ],
+      "cities": [
+        "泉州"
+      ]
     }
   ],
   "skillsCatalog": {
@@ -3519,6 +4089,19 @@ window.__RADAR_DATA__ = {
   },
   "dailyReports": [
     {
+      "batchId": "day-6",
+      "day": 6,
+      "date": "2026-11-25",
+      "file": "daily-2026-11-25-day-6.md",
+      "title": "Day 6 双企实习门槛对比简报：士兰集科/士兰明镓（厦门）× 九牧集团·智能工厂（泉州）（2026-11-25）",
+      "headline": "双企深挖：「士兰集科 / 士兰明镓（海沧）」×「九牧集团·智能工厂（南安）」",
+      "addedCompanies": [
+        "silan-xiamen",
+        "jomoo"
+      ],
+      "content": "# Day 6 双企实习门槛对比简报：士兰集科/士兰明镓（厦门）× 九牧集团·智能工厂（泉州）（2026-11-25）\n\n> 本日按 `queue.json` 顺序完成第 11、12 家企业深挖，全库进度推进至 **12 / 20 企**：**#11 士兰集科 / 士兰明镓（厦门海沧·功率半导体与第三代半导体晶圆制造）** × **#12 九牧集团·智能工厂（泉州南安·5G 智能灯塔工厂与黑灯工厂）**。  \n> 调研原则：严格区分真实实习 JD 与校招折算——士兰明镓已公开 `生产实习生` 真实简章（`real-intern-jd`，明确 12 小时白夜两班倒），测试与厂务标为 `campus-ref`；九牧暂未见大三独立 8 周暑期统招，3 条岗位均参照国家大学生就业服务平台「电气设计百川生」及春/秋招简章如实标注 `campus-ref`。\n\n---\n\n## 一、今日双企实习门槛与可行性横向对比\n\n| 对比维度 | 士兰集科 / 士兰明镓（厦门海沧） | 九牧集团·智能工厂（泉州南安） |\n| :--- | :--- | :--- |\n| **企业属性与赛道** | A 股上市 IDM 半导体大厂子公司（SH 600460，12 吋功率/MEMS + 化合物/8 吋 SiC 线） | 全球卫浴与数智制造领军民企（5G 智能灯塔工厂 / 绿色黑灯工厂标杆） |\n| **大三暑假 2 个月可行性** | **较少大三 8 周研发暑期夏令营**（以春秋校招 + 12 小时两班倒「生产实习生」及毕业前留用为主；`long-or-senior`） | **较少大三 8 周暑期统招**（以「百川计划」春秋招 + 合作院校订单班为主，需春季主动对接 HR 或走内推；`long-or-senior`） |\n| **JD 来源透明度** | `fab-equip` 含真实 `生产实习生` JD（`real-intern-jd`）+ 校招设备工程师对照；测试与厂务 `campus-ref` | 3 条岗位均标为 `campus-ref`（参照 NCSS「电气设计百川生」与「生产技术·电气/自动化」校招折算） |\n| **双非工科匹配度** | **中高匹配**：校招本科设备（80人）+ 测试设备（8人）明确招电气/自动化/测控，但投递需附成绩单与四六级 | **中高匹配**：泉州南安智能工厂明确招本科电气/自动化，CAD 与 PLC 基础是核心硬通货 |\n| **最推荐电气本科岗位** | 校招重点冲「设备工程师」「测试设备工程师」「厂务电气」；谨慎评估「生产实习生」班制 | **「电气设计百川生」**、**「生产技术（电气/自动化方向·PLC 调试）」**、自动化设备运维 |\n| **拿 Offer / 面试底线** | 电路与模数电基础、电气原理图识读、PM/SOP 意识、**成绩单 + 英语四六级**、接受无尘服与轮班 | **电气原理图识读 + AutoCAD/EPLAN + 低压配电选型**、现场故障诊断、**PLC 基础（官方明确优先）** |\n| **最容易拉分的加分项** | PLC 控制逻辑、ATE/示波器测试与 C 脚本（测试岗）、高低压/UPS 继保（厂务岗） | **西门子 S7-1200/1500 PLC 实操**、变频器/伺服调试、HMI 组态与 Modbus/Profinet 通信 |\n| **工作环境与倒班真相** | 生产实习生明确 **8:00–20:00 / 20:00–8:00 两班倒、月休 4–6 天**且穿无尘服；设备岗多涉轮班/On-call | 自动化与电气设计岗偏白班为主，产线技改/设备联调或突发异常需深入车间现场加班 |\n| **食宿与薪酬机制** | 实习参考 3,000–6,000 元/月；校招本科设备岗 9.5K–10.5K/月；配免费 2–3 人间独卫空调宿舍与餐补 | NCSS「电气设计百川生」本科校招 6.5–7.5K/月；南安工厂配本科标双公寓及**南安—泉州—厦门周末免费班车** |\n\n---\n\n## 二、全库 12 家企业最新聚合洞察（60% 进度里程碑）\n\n1. **8 周暑期真实适配分布（12 企格局进一步清晰）**：\n   - 当前 **12 / 20** 企中：**明确支持暑期 8 周（`fit-8w`）5 家**、**4 周短项目（`short-4w`）1 家**（联芯）、**需 3 个月+（`need-3m`）1 家**（施耐德）、**须协商（`negotiable`）1 家**（南方路机）、**长期/顶岗及春秋招为主（`long-or-senior`）4 家**（法拉、三安、士兰、九牧）。\n   - **关键提醒**：半导体制造（三安、士兰）与本地大制造基地（法拉、九牧）往往**不办大规模大三 2 个月研发夏令营**；士兰明镓在本地高校发布的真实实习简章属于 **12 小时两班倒产线「生产实习生」**，大三同学若瞄准工程师级发展，应优先把精力放在 **8 周/4 周可转正窗口**（科华、海辰、ABB、宏发、天马、联芯），同时为大四秋招（士兰 9.5K–10.5K 本科设备岗 / 九牧电气设计百川生）提前补齐成绩单、四六级与 PLC/CAD 技能树。\n2. **「PLC 调试」补齐泉州第二样本，「拿实习 Offer 底线」技能榜（12 企 36 条岗位）最新变化**：\n   - **三大 100% 必考底线继续领跑**：`电气原理图识读`（12/12，100%，岗位提及 28 次）、`低压配电与元器件选型`（12/12，100%）、`技术文档与测试报告编写`（12/12，100%）。\n   - **第二梯队 92% 覆盖（11/12 企）**：`电路与模数电基础`（必备 11 企）、`现场故障诊断与排故思维`（必备 11 企）与 `AutoCAD / EPLAN 电气制图`（必备 4 企 / 加分 7 企）。\n   - **PLC 权重跃升至 83%（10/12 企）**：随着**九牧集团**补齐泉州智能工厂样本，`PLC 控制与自动化调试实习生` 形成 **南方路机 × 九牧集团** 双样本，`主流 PLC 编程（西门子/三菱等）` 与 `变频器与电机调试`、`HMI 触摸屏与组态软件` 在该岗位均达 **2/2（100%）**；九牧 NCSS 真实校招 JD 也明确把 **「掌握 CAD、PLC 基础者优先」** 写入电气设计岗要求。\n3. **明日队列预告**：**#13 铁拓机械（泉州洛江·北交所上市筑养路装备厂，对比南方路机与九牧看厂内联调与电控要求）** × **#14 盈趣科技（厦门海沧·智能制造与电子产品测试大户，补充海沧测试与自动化样本）**。"
+    },
+    {
       "batchId": "day-5",
       "day": 5,
       "date": "2026-11-24",
@@ -3588,8 +4171,8 @@ window.__RADAR_DATA__ = {
     "电气制图与选型",
     "工程与软实力",
     "基础理论",
-    "仪器测试",
     "PLC与自动化",
+    "仪器测试",
     "产线设备运维",
     "软件与脚本",
     "通信协议"
@@ -3598,9 +4181,9 @@ window.__RADAR_DATA__ = {
     {
       "name": "电气原理图识读",
       "category": "电气制图与选型",
-      "companyCount": 10,
+      "companyCount": 12,
       "companyPct": 100,
-      "mustCompanyCount": 10,
+      "mustCompanyCount": 12,
       "plusCompanyCount": 0,
       "roleCount": 5,
       "roleIds": [
@@ -3610,9 +4193,9 @@ window.__RADAR_DATA__ = {
         "plc-debug",
         "fab-equip"
       ],
-      "mustRoleCount": 23,
+      "mustRoleCount": 28,
       "plusRoleCount": 0,
-      "totalRoleMentions": 23,
+      "totalRoleMentions": 28,
       "evidences": [
         {
           "companyId": "kehua-data",
@@ -3797,25 +4380,66 @@ window.__RADAR_DATA__ = {
           "level": "must",
           "jdSourceType": "campus-ref",
           "detail": "【校招折算底线】能读懂厂务高低压一次/二次配电系统图"
+        },
+        {
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "fab-equip",
+          "level": "must",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【校招折算底线】能看懂半导体精密机台控制柜图纸与传感器接线逻辑"
+        },
+        {
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "equip-elec",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招折算底线】能读懂工业厂房高低压配电系统图与二次控制回路"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "plc-debug",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招折算底线】能读懂非标自动化设备电柜图纸与传感器/执行器接线图"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "equip-elec",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招 JD 底线】能读懂并整理工厂自动化设备及配电控制回路原理图"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "fab-equip",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招折算底线】能看懂产线设备强弱电供电与安全互锁回路"
         }
       ]
     },
     {
       "name": "低压配电与元器件选型",
       "category": "电气制图与选型",
-      "companyCount": 10,
+      "companyCount": 12,
       "companyPct": 100,
-      "mustCompanyCount": 10,
+      "mustCompanyCount": 12,
       "plusCompanyCount": 0,
-      "roleCount": 3,
+      "roleCount": 4,
       "roleIds": [
         "equip-elec",
         "plc-debug",
-        "tech-support"
+        "tech-support",
+        "fab-equip"
       ],
-      "mustRoleCount": 10,
-      "plusRoleCount": 2,
-      "totalRoleMentions": 12,
+      "mustRoleCount": 12,
+      "plusRoleCount": 3,
+      "totalRoleMentions": 15,
       "evidences": [
         {
           "companyId": "kehua-data",
@@ -3912,25 +4536,50 @@ window.__RADAR_DATA__ = {
           "level": "must",
           "jdSourceType": "campus-ref",
           "detail": "【校招折算底线】熟悉高低压开关柜、断路器、UPS 与基础继保常识"
+        },
+        {
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "equip-elec",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招折算底线】掌握断路器、接触器、配电柜器件常识与强电安全规程"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "equip-elec",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招 JD 底线】熟悉传感器、变频器、断路器、接触器等常见低压电器规格"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "fab-equip",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】熟悉厂区车间配电箱开关、保护器与安全接地规范"
         }
       ]
     },
     {
       "name": "技术文档与测试报告编写",
       "category": "工程与软实力",
-      "companyCount": 10,
+      "companyCount": 12,
       "companyPct": 100,
-      "mustCompanyCount": 8,
-      "plusCompanyCount": 2,
-      "roleCount": 3,
+      "mustCompanyCount": 9,
+      "plusCompanyCount": 3,
+      "roleCount": 4,
       "roleIds": [
         "ee-test",
         "equip-elec",
-        "fab-equip"
+        "fab-equip",
+        "plc-debug"
       ],
-      "mustRoleCount": 9,
-      "plusRoleCount": 8,
-      "totalRoleMentions": 17,
+      "mustRoleCount": 10,
+      "plusRoleCount": 11,
+      "totalRoleMentions": 21,
       "evidences": [
         {
           "companyId": "kehua-data",
@@ -4067,15 +4716,47 @@ window.__RADAR_DATA__ = {
           "level": "plus",
           "jdSourceType": "campus-ref",
           "detail": "【实习加分】能条理清晰完成暑期项目总结 PPT 与结业答辩"
+        },
+        {
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "ee-test",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招折算底线】细致严谨，能规范整理测试良率报表与硬件故障记录"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "plc-debug",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】规范整理程序备份、调试台账与技改验收文档"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "equip-elec",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招 JD 要求】协助完成电气台账、程序备份与技术文档编制"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "fab-equip",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】规范编写设备点检 SOP 与故障复盘记录"
         }
       ]
     },
     {
       "name": "电路与模数电基础",
       "category": "基础理论",
-      "companyCount": 9,
-      "companyPct": 90,
-      "mustCompanyCount": 9,
+      "companyCount": 11,
+      "companyPct": 92,
+      "mustCompanyCount": 11,
       "plusCompanyCount": 0,
       "roleCount": 3,
       "roleIds": [
@@ -4083,9 +4764,9 @@ window.__RADAR_DATA__ = {
         "equip-elec",
         "fab-equip"
       ],
-      "mustRoleCount": 21,
+      "mustRoleCount": 25,
       "plusRoleCount": 0,
-      "totalRoleMentions": 21,
+      "totalRoleMentions": 25,
       "evidences": [
         {
           "companyId": "kehua-data",
@@ -4254,15 +4935,47 @@ window.__RADAR_DATA__ = {
           "level": "must",
           "jdSourceType": "campus-ref",
           "detail": "【校招折算底线】电气工程及其自动化核心对口：扎实的电路与电力系统基础"
+        },
+        {
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "fab-equip",
+          "level": "must",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习/校招底线】具备扎实的电路分析、电子技术与自动控制工科基础"
+        },
+        {
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "ee-test",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招折算底线】熟悉模拟/数字电路及功率器件（MOSFET/IGBT/SiC）基本电性"
+        },
+        {
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "equip-elec",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招折算底线】电气工程及其自动化核心对口：扎实的电路与电力系统基础"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "equip-elec",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招 JD 底线】本科电气工程/自动化专业对口，对电气参数与电路原理敏感"
         }
       ]
     },
     {
       "name": "现场故障诊断与排故思维",
       "category": "工程与软实力",
-      "companyCount": 9,
-      "companyPct": 90,
-      "mustCompanyCount": 9,
+      "companyCount": 11,
+      "companyPct": 92,
+      "mustCompanyCount": 11,
       "plusCompanyCount": 0,
       "roleCount": 4,
       "roleIds": [
@@ -4271,9 +4984,9 @@ window.__RADAR_DATA__ = {
         "fab-equip",
         "equip-elec"
       ],
-      "mustRoleCount": 11,
-      "plusRoleCount": 1,
-      "totalRoleMentions": 12,
+      "mustRoleCount": 14,
+      "plusRoleCount": 2,
+      "totalRoleMentions": 16,
       "evidences": [
         {
           "companyId": "kehua-data",
@@ -4370,23 +5083,55 @@ window.__RADAR_DATA__ = {
           "level": "must",
           "jdSourceType": "campus-ref",
           "detail": "【校招折算底线】安全红线意识拉满，具备水电气突发异常冷静排查逻辑"
+        },
+        {
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "fab-equip",
+          "level": "must",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习底线】抗压踏实，明确适应穿无尘服、两班倒（12 小时制）或产线值班节奏"
+        },
+        {
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "equip-elec",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】具备高压安全红线意识与冷静的故障隔离思路"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "plc-debug",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招折算底线】具备现场设备电气异常排查能力，能适应智造车间现场节奏"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "fab-equip",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招折算底线】具备快速排查现场传感器、继电器及执行器异常的条理性"
         }
       ]
     },
     {
       "name": "AutoCAD / EPLAN 电气制图",
       "category": "电气制图与选型",
-      "companyCount": 9,
-      "companyPct": 90,
-      "mustCompanyCount": 3,
-      "plusCompanyCount": 6,
+      "companyCount": 11,
+      "companyPct": 92,
+      "mustCompanyCount": 4,
+      "plusCompanyCount": 7,
       "roleCount": 1,
       "roleIds": [
         "equip-elec"
       ],
-      "mustRoleCount": 3,
-      "plusRoleCount": 6,
-      "totalRoleMentions": 9,
+      "mustRoleCount": 4,
+      "plusRoleCount": 7,
+      "totalRoleMentions": 11,
       "evidences": [
         {
           "companyId": "kehua-data",
@@ -4459,97 +5204,32 @@ window.__RADAR_DATA__ = {
           "level": "plus",
           "jdSourceType": "campus-ref",
           "detail": "【实习加分】会用 AutoCAD 查阅或修订厂务配电施工图纸"
-        }
-      ]
-    },
-    {
-      "name": "示波器与万用表实操",
-      "category": "仪器测试",
-      "companyCount": 8,
-      "companyPct": 80,
-      "mustCompanyCount": 8,
-      "plusCompanyCount": 0,
-      "roleCount": 1,
-      "roleIds": [
-        "ee-test"
-      ],
-      "mustRoleCount": 8,
-      "plusRoleCount": 0,
-      "totalRoleMentions": 8,
-      "evidences": [
-        {
-          "companyId": "kehua-data",
-          "companyName": "科华数据",
-          "roleId": "ee-test",
-          "level": "must",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习底线】会用示波器测电源纹波/触发抓波形、用万用表测通断压降"
         },
         {
-          "companyId": "abb-xiamen",
-          "companyName": "ABB（厦门工业中心）",
-          "roleId": "ee-test",
-          "level": "must",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习底线】熟悉万用表、示波器等实验室常规仪器基本操作"
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "equip-elec",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】会用 AutoCAD 查阅或修订厂务配电施工图纸"
         },
         {
-          "companyId": "hithium",
-          "companyName": "海辰储能",
-          "roleId": "ee-test",
-          "level": "must",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习底线】熟悉万用表、示波器等实验室基础仪器操作"
-        },
-        {
-          "companyId": "hongfa",
-          "companyName": "宏发股份",
-          "roleId": "ee-test",
-          "level": "must",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习底线】会用示波器抓继电器吸合/释放波形与弹跳时间，会用万用表测接触电阻"
-        },
-        {
-          "companyId": "schneider-xiamen",
-          "companyName": "施耐德电气（厦门）",
-          "roleId": "ee-test",
-          "level": "must",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习底线】掌握万用表等常规电气测试仪表使用，动手能力强"
-        },
-        {
-          "companyId": "fara-electronics",
-          "companyName": "法拉电子",
-          "roleId": "ee-test",
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "equip-elec",
           "level": "must",
           "jdSourceType": "campus-ref",
-          "detail": "【校招折算底线】熟练使用万用表、LCR/示波器等常规电测仪器"
-        },
-        {
-          "companyId": "tianma-xiamen",
-          "companyName": "天马微电子（厦门）",
-          "roleId": "ee-test",
-          "level": "must",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习底线】熟练操作万用表、示波器排查测试治具与信号异常"
-        },
-        {
-          "companyId": "sanan-opto",
-          "companyName": "三安光电（厦门/泉州）",
-          "roleId": "ee-test",
-          "level": "must",
-          "jdSourceType": "campus-ref",
-          "detail": "【校招折算底线】熟练操作万用表、示波器等电测仪器辅助定位测试治具异常"
+          "detail": "【校招明确优先项】熟练使用 AutoCAD（或 EPLAN）绘制与修订电气图纸"
         }
       ]
     },
     {
       "name": "主流 PLC 编程（西门子/三菱等）",
       "category": "PLC与自动化",
-      "companyCount": 8,
-      "companyPct": 80,
-      "mustCompanyCount": 1,
-      "plusCompanyCount": 7,
+      "companyCount": 10,
+      "companyPct": 83,
+      "mustCompanyCount": 2,
+      "plusCompanyCount": 8,
       "roleCount": 4,
       "roleIds": [
         "equip-elec",
@@ -4557,9 +5237,9 @@ window.__RADAR_DATA__ = {
         "tech-support",
         "fab-equip"
       ],
-      "mustRoleCount": 1,
-      "plusRoleCount": 11,
-      "totalRoleMentions": 12,
+      "mustRoleCount": 2,
+      "plusRoleCount": 13,
+      "totalRoleMentions": 15,
       "evidences": [
         {
           "companyId": "nflg",
@@ -4656,23 +5336,136 @@ window.__RADAR_DATA__ = {
           "level": "plus",
           "jdSourceType": "campus-ref",
           "detail": "【实习加分】在校有 PLC 编程或电气控制实战项目经历在 EE 面试很加分"
+        },
+        {
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "fab-equip",
+          "level": "plus",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习加分】熟悉 PLC 控制逻辑或工业自动化机电控制项目在设备岗面试加分"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "plc-debug",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招折算底线】官方岗位明确优先与核心要求：掌握西门子/三菱 PLC 基础与程序逻辑"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "equip-elec",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招明确优先项】JD 明确写出「掌握 CAD、PLC 基础者优先」"
+        }
+      ]
+    },
+    {
+      "name": "示波器与万用表实操",
+      "category": "仪器测试",
+      "companyCount": 9,
+      "companyPct": 75,
+      "mustCompanyCount": 9,
+      "plusCompanyCount": 0,
+      "roleCount": 1,
+      "roleIds": [
+        "ee-test"
+      ],
+      "mustRoleCount": 9,
+      "plusRoleCount": 0,
+      "totalRoleMentions": 9,
+      "evidences": [
+        {
+          "companyId": "kehua-data",
+          "companyName": "科华数据",
+          "roleId": "ee-test",
+          "level": "must",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习底线】会用示波器测电源纹波/触发抓波形、用万用表测通断压降"
+        },
+        {
+          "companyId": "abb-xiamen",
+          "companyName": "ABB（厦门工业中心）",
+          "roleId": "ee-test",
+          "level": "must",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习底线】熟悉万用表、示波器等实验室常规仪器基本操作"
+        },
+        {
+          "companyId": "hithium",
+          "companyName": "海辰储能",
+          "roleId": "ee-test",
+          "level": "must",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习底线】熟悉万用表、示波器等实验室基础仪器操作"
+        },
+        {
+          "companyId": "hongfa",
+          "companyName": "宏发股份",
+          "roleId": "ee-test",
+          "level": "must",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习底线】会用示波器抓继电器吸合/释放波形与弹跳时间，会用万用表测接触电阻"
+        },
+        {
+          "companyId": "schneider-xiamen",
+          "companyName": "施耐德电气（厦门）",
+          "roleId": "ee-test",
+          "level": "must",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习底线】掌握万用表等常规电气测试仪表使用，动手能力强"
+        },
+        {
+          "companyId": "fara-electronics",
+          "companyName": "法拉电子",
+          "roleId": "ee-test",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招折算底线】熟练使用万用表、LCR/示波器等常规电测仪器"
+        },
+        {
+          "companyId": "tianma-xiamen",
+          "companyName": "天马微电子（厦门）",
+          "roleId": "ee-test",
+          "level": "must",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习底线】熟练操作万用表、示波器排查测试治具与信号异常"
+        },
+        {
+          "companyId": "sanan-opto",
+          "companyName": "三安光电（厦门/泉州）",
+          "roleId": "ee-test",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招折算底线】熟练操作万用表、示波器等电测仪器辅助定位测试治具异常"
+        },
+        {
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "ee-test",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招折算底线】熟练使用示波器、万用表等电测仪器调试测试硬件与治具信号"
         }
       ]
     },
     {
       "name": "设备点检保养（PM）与 OEE 改善",
       "category": "产线设备运维",
-      "companyCount": 7,
-      "companyPct": 70,
-      "mustCompanyCount": 6,
+      "companyCount": 9,
+      "companyPct": 75,
+      "mustCompanyCount": 8,
       "plusCompanyCount": 1,
       "roleCount": 1,
       "roleIds": [
         "fab-equip"
       ],
-      "mustRoleCount": 6,
+      "mustRoleCount": 8,
       "plusRoleCount": 1,
-      "totalRoleMentions": 7,
+      "totalRoleMentions": 9,
       "evidences": [
         {
           "companyId": "abb-xiamen",
@@ -4729,16 +5522,121 @@ window.__RADAR_DATA__ = {
           "level": "must",
           "jdSourceType": "campus-ref",
           "detail": "【实习底线】理解设备点检 PM、标准作业程序（SOP）及晶圆厂安全红线"
+        },
+        {
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "fab-equip",
+          "level": "must",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习底线】理解设备点检保养（PM）、异常处理流程与洁净室 SOP 红线"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "fab-equip",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【校招折算底线】理解设备点检保养制度、设备台账及故障停机数据分析"
+        }
+      ]
+    },
+    {
+      "name": "机械识图与气动液压基础",
+      "category": "产线设备运维",
+      "companyCount": 9,
+      "companyPct": 75,
+      "mustCompanyCount": 0,
+      "plusCompanyCount": 9,
+      "roleCount": 1,
+      "roleIds": [
+        "fab-equip"
+      ],
+      "mustRoleCount": 0,
+      "plusRoleCount": 9,
+      "totalRoleMentions": 9,
+      "evidences": [
+        {
+          "companyId": "abb-xiamen",
+          "companyName": "ABB（厦门工业中心）",
+          "roleId": "fab-equip",
+          "level": "plus",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习加分】能看懂基础机械图或了解气动元件更优"
+        },
+        {
+          "companyId": "hithium",
+          "companyName": "海辰储能",
+          "roleId": "fab-equip",
+          "level": "plus",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习加分】能看懂简单机械装配图与气动回路"
+        },
+        {
+          "companyId": "hongfa",
+          "companyName": "宏发股份",
+          "roleId": "fab-equip",
+          "level": "plus",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习加分】熟悉气缸、电磁阀等自动化装配常用气动元件"
+        },
+        {
+          "companyId": "fara-electronics",
+          "companyName": "法拉电子",
+          "roleId": "fab-equip",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】能看懂基本工装机械图、了解气缸与张力控制基础更优"
+        },
+        {
+          "companyId": "tianma-xiamen",
+          "companyName": "天马微电子（厦门）",
+          "roleId": "fab-equip",
+          "level": "plus",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习加分】懂基础机械传动、气动/真空阀门元件更易上手"
+        },
+        {
+          "companyId": "sanan-opto",
+          "companyName": "三安光电（厦门/泉州）",
+          "roleId": "fab-equip",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】懂基础机械传动、真空与气动阀门元件更易上手机台维护"
+        },
+        {
+          "companyId": "uscxm",
+          "companyName": "联芯集成电路",
+          "roleId": "fab-equip",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】懂机械拆装、真空泵或气动控制原理上手更快"
+        },
+        {
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "fab-equip",
+          "level": "plus",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习加分】了解机械传动、真空系统与气动阀门控制上手更快"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "fab-equip",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】熟悉气动电磁阀、气缸及机械传动结构维护更易上手黑灯工厂机台"
         }
       ]
     },
     {
       "name": "英语读写与技术交流",
       "category": "工程与软实力",
-      "companyCount": 7,
-      "companyPct": 70,
+      "companyCount": 8,
+      "companyPct": 67,
       "mustCompanyCount": 3,
-      "plusCompanyCount": 4,
+      "plusCompanyCount": 5,
       "roleCount": 4,
       "roleIds": [
         "tech-support",
@@ -4747,8 +5645,8 @@ window.__RADAR_DATA__ = {
         "fab-equip"
       ],
       "mustRoleCount": 6,
-      "plusRoleCount": 5,
-      "totalRoleMentions": 11,
+      "plusRoleCount": 7,
+      "totalRoleMentions": 13,
       "evidences": [
         {
           "companyId": "kehua-data",
@@ -4837,96 +5735,39 @@ window.__RADAR_DATA__ = {
           "level": "plus",
           "jdSourceType": "campus-ref",
           "detail": "【实习加分】能阅读进口高低压设备英文技术说明书与监控界面"
-        }
-      ]
-    },
-    {
-      "name": "机械识图与气动液压基础",
-      "category": "产线设备运维",
-      "companyCount": 7,
-      "companyPct": 70,
-      "mustCompanyCount": 0,
-      "plusCompanyCount": 7,
-      "roleCount": 1,
-      "roleIds": [
-        "fab-equip"
-      ],
-      "mustRoleCount": 0,
-      "plusRoleCount": 7,
-      "totalRoleMentions": 7,
-      "evidences": [
+        },
         {
-          "companyId": "abb-xiamen",
-          "companyName": "ABB（厦门工业中心）",
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
           "roleId": "fab-equip",
           "level": "plus",
           "jdSourceType": "real-intern-jd",
-          "detail": "【实习加分】能看懂基础机械图或了解气动元件更优"
+          "detail": "【校招明确项】简章要求投递附四六级，能读懂进口机台英文界面与手册"
         },
         {
-          "companyId": "hithium",
-          "companyName": "海辰储能",
-          "roleId": "fab-equip",
-          "level": "plus",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习加分】能看懂简单机械装配图与气动回路"
-        },
-        {
-          "companyId": "hongfa",
-          "companyName": "宏发股份",
-          "roleId": "fab-equip",
-          "level": "plus",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习加分】熟悉气缸、电磁阀等自动化装配常用气动元件"
-        },
-        {
-          "companyId": "fara-electronics",
-          "companyName": "法拉电子",
-          "roleId": "fab-equip",
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "ee-test",
           "level": "plus",
           "jdSourceType": "campus-ref",
-          "detail": "【实习加分】能看懂基本工装机械图、了解气缸与张力控制基础更优"
-        },
-        {
-          "companyId": "tianma-xiamen",
-          "companyName": "天马微电子（厦门）",
-          "roleId": "fab-equip",
-          "level": "plus",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习加分】懂基础机械传动、气动/真空阀门元件更易上手"
-        },
-        {
-          "companyId": "sanan-opto",
-          "companyName": "三安光电（厦门/泉州）",
-          "roleId": "fab-equip",
-          "level": "plus",
-          "jdSourceType": "campus-ref",
-          "detail": "【实习加分】懂基础机械传动、真空与气动阀门元件更易上手机台维护"
-        },
-        {
-          "companyId": "uscxm",
-          "companyName": "联芯集成电路",
-          "roleId": "fab-equip",
-          "level": "plus",
-          "jdSourceType": "campus-ref",
-          "detail": "【实习加分】懂机械拆装、真空泵或气动控制原理上手更快"
+          "detail": "【实习加分】能看懂英文芯片 Datasheet 与进口测试机台技术手册"
         }
       ]
     },
     {
       "name": "C 语言与自动化脚本基础",
       "category": "软件与脚本",
-      "companyCount": 6,
-      "companyPct": 60,
+      "companyCount": 7,
+      "companyPct": 58,
       "mustCompanyCount": 0,
-      "plusCompanyCount": 6,
+      "plusCompanyCount": 7,
       "roleCount": 1,
       "roleIds": [
         "ee-test"
       ],
       "mustRoleCount": 0,
-      "plusRoleCount": 6,
-      "totalRoleMentions": 6,
+      "plusRoleCount": 7,
+      "totalRoleMentions": 7,
       "evidences": [
         {
           "companyId": "kehua-data",
@@ -4975,130 +5816,24 @@ window.__RADAR_DATA__ = {
           "level": "plus",
           "jdSourceType": "campus-ref",
           "detail": "【实习加分】会用 Python/Excel 或脚本批量清洗芯片测试数据更优"
-        }
-      ]
-    },
-    {
-      "name": "客户沟通与现场抗压",
-      "category": "工程与软实力",
-      "companyCount": 5,
-      "companyPct": 50,
-      "mustCompanyCount": 5,
-      "plusCompanyCount": 0,
-      "roleCount": 1,
-      "roleIds": [
-        "tech-support"
-      ],
-      "mustRoleCount": 5,
-      "plusRoleCount": 0,
-      "totalRoleMentions": 5,
-      "evidences": [
-        {
-          "companyId": "kehua-data",
-          "companyName": "科华数据",
-          "roleId": "tech-support",
-          "level": "must",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习底线】表达清晰、有服务意识、跨部门协作积极"
         },
         {
-          "companyId": "nflg",
-          "companyName": "南方路机",
-          "roleId": "tech-support",
-          "level": "must",
-          "jdSourceType": "campus-ref",
-          "detail": "【实习底线】沟通踏实、抗压、能接受未来转正后高频全国/海外出差"
-        },
-        {
-          "companyId": "abb-xiamen",
-          "companyName": "ABB（厦门工业中心）",
-          "roleId": "tech-support",
-          "level": "must",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习底线】逻辑清晰、细心、具备良好跨部门协作与服务意识"
-        },
-        {
-          "companyId": "hithium",
-          "companyName": "海辰储能",
-          "roleId": "tech-support",
-          "level": "must",
-          "jdSourceType": "campus-ref",
-          "detail": "【实习底线】表达条理清楚、抗压、有方案呈现能力"
-        },
-        {
-          "companyId": "schneider-xiamen",
-          "companyName": "施耐德电气（厦门）",
-          "roleId": "tech-support",
-          "level": "must",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习底线】逻辑清晰、善于协作沟通、注重响应闭环"
-        }
-      ]
-    },
-    {
-      "name": "安规与 EMC 测试基础",
-      "category": "仪器测试",
-      "companyCount": 5,
-      "companyPct": 50,
-      "mustCompanyCount": 0,
-      "plusCompanyCount": 5,
-      "roleCount": 1,
-      "roleIds": [
-        "ee-test"
-      ],
-      "mustRoleCount": 0,
-      "plusRoleCount": 5,
-      "totalRoleMentions": 5,
-      "evidences": [
-        {
-          "companyId": "kehua-data",
-          "companyName": "科华数据",
-          "roleId": "ee-test",
-          "level": "plus",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习加分】了解安规爬电距离、浪涌/传导辐射 EMC 基本概念更受青睐"
-        },
-        {
-          "companyId": "abb-xiamen",
-          "companyName": "ABB（厦门工业中心）",
-          "roleId": "ee-test",
-          "level": "plus",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习加分】了解电气绝缘、耐压等基本安规测试概念"
-        },
-        {
-          "companyId": "hithium",
-          "companyName": "海辰储能",
-          "roleId": "ee-test",
-          "level": "plus",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习加分】了解 CNAS/TUV 实验室测试规范与电气安规概念"
-        },
-        {
-          "companyId": "hongfa",
-          "companyName": "宏发股份",
-          "roleId": "ee-test",
-          "level": "plus",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习加分】了解绝缘耐压、温升与安规试验标准概念更优"
-        },
-        {
-          "companyId": "fara-electronics",
-          "companyName": "法拉电子",
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
           "roleId": "ee-test",
           "level": "plus",
           "jdSourceType": "campus-ref",
-          "detail": "【实习加分】了解高压绝缘耐压、击穿测试与元件可靠性标准"
+          "detail": "【实习加分】会用 C/C++ 或脚本工具处理 ATE 测试数据或编写简易测试程序极加分"
         }
       ]
     },
     {
       "name": "中低压开关柜一次/二次回路与继保",
       "category": "基础理论",
-      "companyCount": 5,
+      "companyCount": 6,
       "companyPct": 50,
       "mustCompanyCount": 0,
-      "plusCompanyCount": 5,
+      "plusCompanyCount": 6,
       "roleCount": 3,
       "roleIds": [
         "equip-elec",
@@ -5106,8 +5841,8 @@ window.__RADAR_DATA__ = {
         "ee-test"
       ],
       "mustRoleCount": 0,
-      "plusRoleCount": 7,
-      "totalRoleMentions": 7,
+      "plusRoleCount": 8,
+      "totalRoleMentions": 8,
       "evidences": [
         {
           "companyId": "abb-xiamen",
@@ -5164,6 +5899,170 @@ window.__RADAR_DATA__ = {
           "level": "plus",
           "jdSourceType": "campus-ref",
           "detail": "【实习加分】掌握晶圆厂双电源切换、UPS 备电与继电保护整定基础极加分"
+        },
+        {
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "equip-elec",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】熟悉双电源自动切换（ATS）、UPS 与继电保护基础极加分"
+        }
+      ]
+    },
+    {
+      "name": "客户沟通与现场抗压",
+      "category": "工程与软实力",
+      "companyCount": 5,
+      "companyPct": 42,
+      "mustCompanyCount": 5,
+      "plusCompanyCount": 0,
+      "roleCount": 1,
+      "roleIds": [
+        "tech-support"
+      ],
+      "mustRoleCount": 5,
+      "plusRoleCount": 0,
+      "totalRoleMentions": 5,
+      "evidences": [
+        {
+          "companyId": "kehua-data",
+          "companyName": "科华数据",
+          "roleId": "tech-support",
+          "level": "must",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习底线】表达清晰、有服务意识、跨部门协作积极"
+        },
+        {
+          "companyId": "nflg",
+          "companyName": "南方路机",
+          "roleId": "tech-support",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习底线】沟通踏实、抗压、能接受未来转正后高频全国/海外出差"
+        },
+        {
+          "companyId": "abb-xiamen",
+          "companyName": "ABB（厦门工业中心）",
+          "roleId": "tech-support",
+          "level": "must",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习底线】逻辑清晰、细心、具备良好跨部门协作与服务意识"
+        },
+        {
+          "companyId": "hithium",
+          "companyName": "海辰储能",
+          "roleId": "tech-support",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习底线】表达条理清楚、抗压、有方案呈现能力"
+        },
+        {
+          "companyId": "schneider-xiamen",
+          "companyName": "施耐德电气（厦门）",
+          "roleId": "tech-support",
+          "level": "must",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习底线】逻辑清晰、善于协作沟通、注重响应闭环"
+        }
+      ]
+    },
+    {
+      "name": "安规与 EMC 测试基础",
+      "category": "仪器测试",
+      "companyCount": 5,
+      "companyPct": 42,
+      "mustCompanyCount": 0,
+      "plusCompanyCount": 5,
+      "roleCount": 1,
+      "roleIds": [
+        "ee-test"
+      ],
+      "mustRoleCount": 0,
+      "plusRoleCount": 5,
+      "totalRoleMentions": 5,
+      "evidences": [
+        {
+          "companyId": "kehua-data",
+          "companyName": "科华数据",
+          "roleId": "ee-test",
+          "level": "plus",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习加分】了解安规爬电距离、浪涌/传导辐射 EMC 基本概念更受青睐"
+        },
+        {
+          "companyId": "abb-xiamen",
+          "companyName": "ABB（厦门工业中心）",
+          "roleId": "ee-test",
+          "level": "plus",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习加分】了解电气绝缘、耐压等基本安规测试概念"
+        },
+        {
+          "companyId": "hithium",
+          "companyName": "海辰储能",
+          "roleId": "ee-test",
+          "level": "plus",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习加分】了解 CNAS/TUV 实验室测试规范与电气安规概念"
+        },
+        {
+          "companyId": "hongfa",
+          "companyName": "宏发股份",
+          "roleId": "ee-test",
+          "level": "plus",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习加分】了解绝缘耐压、温升与安规试验标准概念更优"
+        },
+        {
+          "companyId": "fara-electronics",
+          "companyName": "法拉电子",
+          "roleId": "ee-test",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】了解高压绝缘耐压、击穿测试与元件可靠性标准"
+        }
+      ]
+    },
+    {
+      "name": "Modbus / CAN / RS485 通信",
+      "category": "通信协议",
+      "companyCount": 3,
+      "companyPct": 25,
+      "mustCompanyCount": 0,
+      "plusCompanyCount": 3,
+      "roleCount": 2,
+      "roleIds": [
+        "tech-support",
+        "plc-debug"
+      ],
+      "mustRoleCount": 0,
+      "plusRoleCount": 3,
+      "totalRoleMentions": 3,
+      "evidences": [
+        {
+          "companyId": "kehua-data",
+          "companyName": "科华数据",
+          "roleId": "tech-support",
+          "level": "plus",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习加分】懂 RS485/Modbus/CAN 基本概念，上手后台监控调试更快"
+        },
+        {
+          "companyId": "abb-xiamen",
+          "companyName": "ABB（厦门工业中心）",
+          "roleId": "tech-support",
+          "level": "plus",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习加分】数字化运营方向了解 Modbus/Profinet/IEC 61850 概念大加分"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "plc-debug",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】了解 Modbus/Profinet 等工业现场总线与仪表通信调试"
         }
       ]
     },
@@ -5171,7 +6070,7 @@ window.__RADAR_DATA__ = {
       "name": "SolidWorks 机械识图基础",
       "category": "电气制图与选型",
       "companyCount": 3,
-      "companyPct": 30,
+      "companyPct": 25,
       "mustCompanyCount": 0,
       "plusCompanyCount": 3,
       "roleCount": 1,
@@ -5212,7 +6111,7 @@ window.__RADAR_DATA__ = {
       "name": "电力电子拓扑（整流/斩波/逆变）",
       "category": "基础理论",
       "companyCount": 2,
-      "companyPct": 20,
+      "companyPct": 17,
       "mustCompanyCount": 1,
       "plusCompanyCount": 1,
       "roleCount": 3,
@@ -5260,70 +6159,12 @@ window.__RADAR_DATA__ = {
       ]
     },
     {
-      "name": "Modbus / CAN / RS485 通信",
-      "category": "通信协议",
-      "companyCount": 2,
-      "companyPct": 20,
-      "mustCompanyCount": 0,
-      "plusCompanyCount": 2,
-      "roleCount": 1,
-      "roleIds": [
-        "tech-support"
-      ],
-      "mustRoleCount": 0,
-      "plusRoleCount": 2,
-      "totalRoleMentions": 2,
-      "evidences": [
-        {
-          "companyId": "kehua-data",
-          "companyName": "科华数据",
-          "roleId": "tech-support",
-          "level": "plus",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习加分】懂 RS485/Modbus/CAN 基本概念，上手后台监控调试更快"
-        },
-        {
-          "companyId": "abb-xiamen",
-          "companyName": "ABB（厦门工业中心）",
-          "roleId": "tech-support",
-          "level": "plus",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习加分】数字化运营方向了解 Modbus/Profinet/IEC 61850 概念大加分"
-        }
-      ]
-    },
-    {
-      "name": "储能系统架构（BMS / PCS / EMS）",
-      "category": "基础理论",
-      "companyCount": 1,
-      "companyPct": 10,
-      "mustCompanyCount": 1,
-      "plusCompanyCount": 0,
-      "roleCount": 1,
-      "roleIds": [
-        "tech-support"
-      ],
-      "mustRoleCount": 1,
-      "plusRoleCount": 0,
-      "totalRoleMentions": 1,
-      "evidences": [
-        {
-          "companyId": "hithium",
-          "companyName": "海辰储能",
-          "roleId": "tech-support",
-          "level": "must",
-          "jdSourceType": "campus-ref",
-          "detail": "【实习底线】理解储能系统里电池簇、BMS、PCS、EMS 各自干什么"
-        }
-      ]
-    },
-    {
       "name": "变频器与电机调试",
       "category": "PLC与自动化",
-      "companyCount": 1,
-      "companyPct": 10,
+      "companyCount": 2,
+      "companyPct": 17,
       "mustCompanyCount": 0,
-      "plusCompanyCount": 1,
+      "plusCompanyCount": 2,
       "roleCount": 3,
       "roleIds": [
         "equip-elec",
@@ -5331,8 +6172,8 @@ window.__RADAR_DATA__ = {
         "tech-support"
       ],
       "mustRoleCount": 0,
-      "plusRoleCount": 3,
-      "totalRoleMentions": 3,
+      "plusRoleCount": 4,
+      "totalRoleMentions": 4,
       "evidences": [
         {
           "companyId": "nflg",
@@ -5357,6 +6198,105 @@ window.__RADAR_DATA__ = {
           "level": "plus",
           "jdSourceType": "campus-ref",
           "detail": "【实习加分】了解电机过载与变频器常见故障码含义"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "plc-debug",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】熟悉伺服驱动、变频器参数整定及电机控制原理在灯塔工厂产线很实用"
+        }
+      ]
+    },
+    {
+      "name": "功率分析仪与电子负载",
+      "category": "仪器测试",
+      "companyCount": 2,
+      "companyPct": 17,
+      "mustCompanyCount": 0,
+      "plusCompanyCount": 2,
+      "roleCount": 1,
+      "roleIds": [
+        "ee-test"
+      ],
+      "mustRoleCount": 0,
+      "plusRoleCount": 2,
+      "totalRoleMentions": 2,
+      "evidences": [
+        {
+          "companyId": "kehua-data",
+          "companyName": "科华数据",
+          "roleId": "ee-test",
+          "level": "plus",
+          "jdSourceType": "real-intern-jd",
+          "detail": "【实习加分】了解可编程交直流电源、电子负载与功率分析仪原理（入职可带教）"
+        },
+        {
+          "companyId": "silan-xiamen",
+          "companyName": "士兰集科 / 士兰明镓",
+          "roleId": "ee-test",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】了解大功率器件测试中的电参数测量与开尔文四线制接线常识"
+        }
+      ]
+    },
+    {
+      "name": "HMI 触摸屏与组态软件",
+      "category": "PLC与自动化",
+      "companyCount": 2,
+      "companyPct": 17,
+      "mustCompanyCount": 0,
+      "plusCompanyCount": 2,
+      "roleCount": 1,
+      "roleIds": [
+        "plc-debug"
+      ],
+      "mustRoleCount": 0,
+      "plusRoleCount": 2,
+      "totalRoleMentions": 2,
+      "evidences": [
+        {
+          "companyId": "nflg",
+          "companyName": "南方路机",
+          "roleId": "plc-debug",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】了解触摸屏或组态画面与 PLC 变量绑定的基本方式"
+        },
+        {
+          "companyId": "jomoo",
+          "companyName": "九牧集团（智能工厂）",
+          "roleId": "plc-debug",
+          "level": "plus",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习加分】会做基础 HMI 人机界面组态与报警页面方便参与产线调试"
+        }
+      ]
+    },
+    {
+      "name": "储能系统架构（BMS / PCS / EMS）",
+      "category": "基础理论",
+      "companyCount": 1,
+      "companyPct": 8,
+      "mustCompanyCount": 1,
+      "plusCompanyCount": 0,
+      "roleCount": 1,
+      "roleIds": [
+        "tech-support"
+      ],
+      "mustRoleCount": 1,
+      "plusRoleCount": 0,
+      "totalRoleMentions": 1,
+      "evidences": [
+        {
+          "companyId": "hithium",
+          "companyName": "海辰储能",
+          "roleId": "tech-support",
+          "level": "must",
+          "jdSourceType": "campus-ref",
+          "detail": "【实习底线】理解储能系统里电池簇、BMS、PCS、EMS 各自干什么"
         }
       ]
     },
@@ -5364,7 +6304,7 @@ window.__RADAR_DATA__ = {
       "name": "测试上位机基础（LabVIEW / C#）",
       "category": "软件与脚本",
       "companyCount": 1,
-      "companyPct": 10,
+      "companyPct": 8,
       "mustCompanyCount": 0,
       "plusCompanyCount": 1,
       "roleCount": 2,
@@ -5398,7 +6338,7 @@ window.__RADAR_DATA__ = {
       "name": "电池充放电与环境可靠性测试设备",
       "category": "仪器测试",
       "companyCount": 1,
-      "companyPct": 10,
+      "companyPct": 8,
       "mustCompanyCount": 0,
       "plusCompanyCount": 1,
       "roleCount": 1,
@@ -5420,35 +6360,10 @@ window.__RADAR_DATA__ = {
       ]
     },
     {
-      "name": "功率分析仪与电子负载",
-      "category": "仪器测试",
-      "companyCount": 1,
-      "companyPct": 10,
-      "mustCompanyCount": 0,
-      "plusCompanyCount": 1,
-      "roleCount": 1,
-      "roleIds": [
-        "ee-test"
-      ],
-      "mustRoleCount": 0,
-      "plusRoleCount": 1,
-      "totalRoleMentions": 1,
-      "evidences": [
-        {
-          "companyId": "kehua-data",
-          "companyName": "科华数据",
-          "roleId": "ee-test",
-          "level": "plus",
-          "jdSourceType": "real-intern-jd",
-          "detail": "【实习加分】了解可编程交直流电源、电子负载与功率分析仪原理（入职可带教）"
-        }
-      ]
-    },
-    {
       "name": "竞赛或电源实测项目经历",
       "category": "工程与软实力",
       "companyCount": 1,
-      "companyPct": 10,
+      "companyPct": 8,
       "mustCompanyCount": 0,
       "plusCompanyCount": 1,
       "roleCount": 1,
@@ -5473,7 +6388,7 @@ window.__RADAR_DATA__ = {
       "name": "质量工具与 8D/RCA 分析",
       "category": "工程与软实力",
       "companyCount": 1,
-      "companyPct": 10,
+      "companyPct": 8,
       "mustCompanyCount": 0,
       "plusCompanyCount": 1,
       "roleCount": 1,
@@ -5498,7 +6413,7 @@ window.__RADAR_DATA__ = {
       "name": "Altium Designer 硬件/PCB 基础",
       "category": "电气制图与选型",
       "companyCount": 1,
-      "companyPct": 10,
+      "companyPct": 8,
       "mustCompanyCount": 0,
       "plusCompanyCount": 1,
       "roleCount": 1,
@@ -5523,7 +6438,7 @@ window.__RADAR_DATA__ = {
       "name": "EPLAN 电气设计软件",
       "category": "电气制图与选型",
       "companyCount": 1,
-      "companyPct": 10,
+      "companyPct": 8,
       "mustCompanyCount": 0,
       "plusCompanyCount": 1,
       "roleCount": 1,
@@ -5543,31 +6458,6 @@ window.__RADAR_DATA__ = {
           "detail": "【实习加分】会使用 EPLAN Electric P8 绘制二次原理图、导出端子表与物料 BOM 清单更有竞争优势"
         }
       ]
-    },
-    {
-      "name": "HMI 触摸屏与组态软件",
-      "category": "PLC与自动化",
-      "companyCount": 1,
-      "companyPct": 10,
-      "mustCompanyCount": 0,
-      "plusCompanyCount": 1,
-      "roleCount": 1,
-      "roleIds": [
-        "plc-debug"
-      ],
-      "mustRoleCount": 0,
-      "plusRoleCount": 1,
-      "totalRoleMentions": 1,
-      "evidences": [
-        {
-          "companyId": "nflg",
-          "companyName": "南方路机",
-          "roleId": "plc-debug",
-          "level": "plus",
-          "jdSourceType": "campus-ref",
-          "detail": "【实习加分】了解触摸屏或组态画面与 PLC 变量绑定的基本方式"
-        }
-      ]
     }
   ],
   "roleStats": [
@@ -5576,7 +6466,7 @@ window.__RADAR_DATA__ = {
       "roleName": "设备电气 / 电气设计实习生",
       "shortName": "电气设计实习",
       "category": "设计与集成",
-      "companyCount": 9,
+      "companyCount": 11,
       "companies": [
         {
           "id": "kehua-data",
@@ -5675,15 +6565,37 @@ window.__RADAR_DATA__ = {
           ],
           "shiftWork": "部分厂务系统偏行政班，但动力供电保障存在白夜班轮流值守或节假日值班（面试需确认）",
           "travelLevel": "极少出差"
+        },
+        {
+          "id": "silan-xiamen",
+          "name": "士兰集科 / 士兰明镓",
+          "city": "厦门",
+          "officialTitles": [
+            "厂务电气 / 动力系统维护工程师（参照校招及社招同类岗折算）",
+            "洁净室供配电及自控设施运维岗"
+          ],
+          "shiftWork": "工程技术偏白班，动力供电运行保障涉及轮流值班",
+          "travelLevel": "极少出差"
+        },
+        {
+          "id": "jomoo",
+          "name": "九牧集团（智能工厂）",
+          "city": "泉州",
+          "officialTitles": [
+            "电气设计百川生（NCSS 真实校招 JD，6.5–7.5K/月，南安）",
+            "生产技术（电气工程方向 · 参照校招折算）"
+          ],
+          "shiftWork": "以白班现场及工程办公为主，技改上线期间配合车间排期",
+          "travelLevel": "极少出差"
         }
       ],
       "skills": [
         {
           "name": "电气原理图识读",
           "category": "电气制图与选型",
-          "count": 9,
+          "count": 11,
           "pct": 100,
-          "mustCount": 9,
+          "mustCount": 11,
           "plusCount": 0,
           "companyEntries": [
             {
@@ -5748,15 +6660,29 @@ window.__RADAR_DATA__ = {
               "level": "must",
               "jdSourceType": "campus-ref",
               "detail": "【校招折算底线】能读懂厂务高低压一次/二次配电系统图"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招折算底线】能读懂工业厂房高低压配电系统图与二次控制回路"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招 JD 底线】能读懂并整理工厂自动化设备及配电控制回路原理图"
             }
           ]
         },
         {
           "name": "低压配电与元器件选型",
           "category": "电气制图与选型",
-          "count": 9,
+          "count": 11,
           "pct": 100,
-          "mustCount": 8,
+          "mustCount": 10,
           "plusCount": 1,
           "companyEntries": [
             {
@@ -5821,16 +6747,30 @@ window.__RADAR_DATA__ = {
               "level": "must",
               "jdSourceType": "campus-ref",
               "detail": "【校招折算底线】熟悉高低压开关柜、断路器、UPS 与基础继保常识"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招折算底线】掌握断路器、接触器、配电柜器件常识与强电安全规程"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招 JD 底线】熟悉传感器、变频器、断路器、接触器等常见低压电器规格"
             }
           ]
         },
         {
           "name": "AutoCAD / EPLAN 电气制图",
           "category": "电气制图与选型",
-          "count": 9,
+          "count": 11,
           "pct": 100,
-          "mustCount": 3,
-          "plusCount": 6,
+          "mustCount": 4,
+          "plusCount": 7,
           "companyEntries": [
             {
               "companyId": "kehua-data",
@@ -5894,15 +6834,29 @@ window.__RADAR_DATA__ = {
               "level": "plus",
               "jdSourceType": "campus-ref",
               "detail": "【实习加分】会用 AutoCAD 查阅或修订厂务配电施工图纸"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【实习加分】会用 AutoCAD 查阅或修订厂务配电施工图纸"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招明确优先项】熟练使用 AutoCAD（或 EPLAN）绘制与修订电气图纸"
             }
           ]
         },
         {
           "name": "电路与模数电基础",
           "category": "基础理论",
-          "count": 8,
-          "pct": 89,
-          "mustCount": 8,
+          "count": 10,
+          "pct": 91,
+          "mustCount": 10,
           "plusCount": 0,
           "companyEntries": [
             {
@@ -5960,16 +6914,30 @@ window.__RADAR_DATA__ = {
               "level": "must",
               "jdSourceType": "campus-ref",
               "detail": "【校招折算底线】电气工程及其自动化核心对口：扎实的电路与电力系统基础"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招折算底线】电气工程及其自动化核心对口：扎实的电路与电力系统基础"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招 JD 底线】本科电气工程/自动化专业对口，对电气参数与电路原理敏感"
             }
           ]
         },
         {
           "name": "技术文档与测试报告编写",
           "category": "工程与软实力",
-          "count": 5,
-          "pct": 56,
+          "count": 6,
+          "pct": 55,
           "mustCount": 0,
-          "plusCount": 5,
+          "plusCount": 6,
           "companyEntries": [
             {
               "companyId": "nflg",
@@ -6005,16 +6973,23 @@ window.__RADAR_DATA__ = {
               "level": "plus",
               "jdSourceType": "campus-ref",
               "detail": "【实习加分】严谨细心，能规范整理配电巡检台账与安全记录"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招 JD 要求】协助完成电气台账、程序备份与技术文档编制"
             }
           ]
         },
         {
           "name": "中低压开关柜一次/二次回路与继保",
           "category": "基础理论",
-          "count": 4,
-          "pct": 44,
+          "count": 5,
+          "pct": 45,
           "mustCount": 0,
-          "plusCount": 4,
+          "plusCount": 5,
           "companyEntries": [
             {
               "companyId": "abb-xiamen",
@@ -6043,16 +7018,23 @@ window.__RADAR_DATA__ = {
               "level": "plus",
               "jdSourceType": "campus-ref",
               "detail": "【实习加分】掌握晶圆厂双电源切换、UPS 备电与继电保护整定基础极加分"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【实习加分】熟悉双电源自动切换（ATS）、UPS 与继电保护基础极加分"
             }
           ]
         },
         {
           "name": "主流 PLC 编程（西门子/三菱等）",
           "category": "PLC与自动化",
-          "count": 3,
-          "pct": 33,
+          "count": 4,
+          "pct": 36,
           "mustCount": 0,
-          "plusCount": 3,
+          "plusCount": 4,
           "companyEntries": [
             {
               "companyId": "nflg",
@@ -6074,6 +7056,13 @@ window.__RADAR_DATA__ = {
               "level": "plus",
               "jdSourceType": "campus-ref",
               "detail": "【实习加分】掌握 PLC 基础控制逻辑在技改方向非常吃香"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招明确优先项】JD 明确写出「掌握 CAD、PLC 基础者优先」"
             }
           ]
         },
@@ -6081,7 +7070,7 @@ window.__RADAR_DATA__ = {
           "name": "SolidWorks 机械识图基础",
           "category": "电气制图与选型",
           "count": 3,
-          "pct": 33,
+          "pct": 27,
           "mustCount": 0,
           "plusCount": 3,
           "companyEntries": [
@@ -6112,7 +7101,7 @@ window.__RADAR_DATA__ = {
           "name": "电力电子拓扑（整流/斩波/逆变）",
           "category": "基础理论",
           "count": 2,
-          "pct": 22,
+          "pct": 18,
           "mustCount": 1,
           "plusCount": 1,
           "companyEntries": [
@@ -6133,10 +7122,34 @@ window.__RADAR_DATA__ = {
           ]
         },
         {
+          "name": "现场故障诊断与排故思维",
+          "category": "工程与软实力",
+          "count": 2,
+          "pct": 18,
+          "mustCount": 1,
+          "plusCount": 1,
+          "companyEntries": [
+            {
+              "companyId": "uscxm",
+              "companyName": "联芯集成电路",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招折算底线】安全红线意识拉满，具备水电气突发异常冷静排查逻辑"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【实习加分】具备高压安全红线意识与冷静的故障隔离思路"
+            }
+          ]
+        },
+        {
           "name": "英语读写与技术交流",
           "category": "工程与软实力",
           "count": 2,
-          "pct": 22,
+          "pct": 18,
           "mustCount": 1,
           "plusCount": 1,
           "companyEntries": [
@@ -6157,27 +7170,10 @@ window.__RADAR_DATA__ = {
           ]
         },
         {
-          "name": "现场故障诊断与排故思维",
-          "category": "工程与软实力",
-          "count": 1,
-          "pct": 11,
-          "mustCount": 1,
-          "plusCount": 0,
-          "companyEntries": [
-            {
-              "companyId": "uscxm",
-              "companyName": "联芯集成电路",
-              "level": "must",
-              "jdSourceType": "campus-ref",
-              "detail": "【校招折算底线】安全红线意识拉满，具备水电气突发异常冷静排查逻辑"
-            }
-          ]
-        },
-        {
           "name": "变频器与电机调试",
           "category": "PLC与自动化",
           "count": 1,
-          "pct": 11,
+          "pct": 9,
           "mustCount": 0,
           "plusCount": 1,
           "companyEntries": [
@@ -6194,7 +7190,7 @@ window.__RADAR_DATA__ = {
           "name": "Altium Designer 硬件/PCB 基础",
           "category": "电气制图与选型",
           "count": 1,
-          "pct": 11,
+          "pct": 9,
           "mustCount": 0,
           "plusCount": 1,
           "companyEntries": [
@@ -6211,7 +7207,7 @@ window.__RADAR_DATA__ = {
           "name": "EPLAN 电气设计软件",
           "category": "电气制图与选型",
           "count": 1,
-          "pct": 11,
+          "pct": 9,
           "mustCount": 0,
           "plusCount": 1,
           "companyEntries": [
@@ -6226,7 +7222,7 @@ window.__RADAR_DATA__ = {
         }
       ],
       "travelCounts": {
-        "极少出差": 8,
+        "极少出差": 10,
         "实习期厂内为主（转正偶尔出差）": 1
       },
       "shiftCounts": {
@@ -6235,7 +7231,9 @@ window.__RADAR_DATA__ = {
         "以白班研发/工程作息为主": 1,
         "工程规划岗以白班为主；厂务运行值班岗需保障 24h 供电而涉及轮班（面试需确认）": 1,
         "工程规划偏白班；运行保障需配合 24h 值班或轮流值守": 1,
-        "部分厂务系统偏行政班，但动力供电保障存在白夜班轮流值守或节假日值班（面试需确认）": 1
+        "部分厂务系统偏行政班，但动力供电保障存在白夜班轮流值守或节假日值班（面试需确认）": 1,
+        "工程技术偏白班，动力供电运行保障涉及轮流值班": 1,
+        "以白班现场及工程办公为主，技改上线期间配合车间排期": 1
       }
     },
     {
@@ -6243,7 +7241,7 @@ window.__RADAR_DATA__ = {
       "roleName": "PLC 控制与自动化调试实习生",
       "shortName": "PLC 调试实习",
       "category": "控制与调试",
-      "companyCount": 1,
+      "companyCount": 2,
       "companies": [
         {
           "id": "nflg",
@@ -6255,15 +7253,26 @@ window.__RADAR_DATA__ = {
           ],
           "shiftWork": "无倒班",
           "travelLevel": "实习期厂内联调为主，转正后中～高频出差"
+        },
+        {
+          "id": "jomoo",
+          "name": "九牧集团（智能工厂）",
+          "city": "泉州",
+          "officialTitles": [
+            "生产技术（电气 / 自动化方向 · 参照校招折算）",
+            "PLC 编程与非标自动化设备调试工程师（南安灯塔工厂）"
+          ],
+          "shiftWork": "自动化与技改岗偏白班为主，产线大修或设备联调阶段需配合现场加班",
+          "travelLevel": "极少出差（集中在南安各园区）"
         }
       ],
       "skills": [
         {
           "name": "电气原理图识读",
           "category": "电气制图与选型",
-          "count": 1,
+          "count": 2,
           "pct": 100,
-          "mustCount": 1,
+          "mustCount": 2,
           "plusCount": 0,
           "companyEntries": [
             {
@@ -6272,15 +7281,22 @@ window.__RADAR_DATA__ = {
               "level": "must",
               "jdSourceType": "campus-ref",
               "detail": "【实习底线】能按原理图对照查控制柜端子和 I/O 信号"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招折算底线】能读懂非标自动化设备电柜图纸与传感器/执行器接线图"
             }
           ]
         },
         {
           "name": "现场故障诊断与排故思维",
           "category": "工程与软实力",
-          "count": 1,
+          "count": 2,
           "pct": 100,
-          "mustCount": 1,
+          "mustCount": 2,
           "plusCount": 0,
           "companyEntries": [
             {
@@ -6289,15 +7305,22 @@ window.__RADAR_DATA__ = {
               "level": "must",
               "jdSourceType": "campus-ref",
               "detail": "【实习底线】具备按信号链排查传感器/继电器/输出异常的逻辑思维"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招折算底线】具备现场设备电气异常排查能力，能适应智造车间现场节奏"
             }
           ]
         },
         {
           "name": "主流 PLC 编程（西门子/三菱等）",
           "category": "PLC与自动化",
-          "count": 1,
+          "count": 2,
           "pct": 100,
-          "mustCount": 1,
+          "mustCount": 2,
           "plusCount": 0,
           "companyEntries": [
             {
@@ -6306,16 +7329,23 @@ window.__RADAR_DATA__ = {
               "level": "must",
               "jdSourceType": "campus-ref",
               "detail": "【实习底线】掌握至少一种主流 PLC（西门子/三菱）基础编程思维与 I/O 概念"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招折算底线】官方岗位明确优先与核心要求：掌握西门子/三菱 PLC 基础与程序逻辑"
             }
           ]
         },
         {
           "name": "变频器与电机调试",
           "category": "PLC与自动化",
-          "count": 1,
+          "count": 2,
           "pct": 100,
           "mustCount": 0,
-          "plusCount": 1,
+          "plusCount": 2,
           "companyEntries": [
             {
               "companyId": "nflg",
@@ -6323,6 +7353,37 @@ window.__RADAR_DATA__ = {
               "level": "plus",
               "jdSourceType": "campus-ref",
               "detail": "【实习加分】了解变频器启停控制与模拟量/通信调速基础"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【实习加分】熟悉伺服驱动、变频器参数整定及电机控制原理在灯塔工厂产线很实用"
+            }
+          ]
+        },
+        {
+          "name": "HMI 触摸屏与组态软件",
+          "category": "PLC与自动化",
+          "count": 2,
+          "pct": 100,
+          "mustCount": 0,
+          "plusCount": 2,
+          "companyEntries": [
+            {
+              "companyId": "nflg",
+              "companyName": "南方路机",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【实习加分】了解触摸屏或组态画面与 PLC 变量绑定的基本方式"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【实习加分】会做基础 HMI 人机界面组态与报警页面方便参与产线调试"
             }
           ]
         },
@@ -6330,7 +7391,7 @@ window.__RADAR_DATA__ = {
           "name": "低压配电与元器件选型",
           "category": "电气制图与选型",
           "count": 1,
-          "pct": 100,
+          "pct": 50,
           "mustCount": 0,
           "plusCount": 1,
           "companyEntries": [
@@ -6344,28 +7405,47 @@ window.__RADAR_DATA__ = {
           ]
         },
         {
-          "name": "HMI 触摸屏与组态软件",
-          "category": "PLC与自动化",
+          "name": "技术文档与测试报告编写",
+          "category": "工程与软实力",
           "count": 1,
-          "pct": 100,
+          "pct": 50,
           "mustCount": 0,
           "plusCount": 1,
           "companyEntries": [
             {
-              "companyId": "nflg",
-              "companyName": "南方路机",
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
               "level": "plus",
               "jdSourceType": "campus-ref",
-              "detail": "【实习加分】了解触摸屏或组态画面与 PLC 变量绑定的基本方式"
+              "detail": "【实习加分】规范整理程序备份、调试台账与技改验收文档"
+            }
+          ]
+        },
+        {
+          "name": "Modbus / CAN / RS485 通信",
+          "category": "通信协议",
+          "count": 1,
+          "pct": 50,
+          "mustCount": 0,
+          "plusCount": 1,
+          "companyEntries": [
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【实习加分】了解 Modbus/Profinet 等工业现场总线与仪表通信调试"
             }
           ]
         }
       ],
       "travelCounts": {
-        "实习期厂内联调为主，转正后中～高频出差": 1
+        "实习期厂内联调为主，转正后中～高频出差": 1,
+        "极少出差（集中在南安各园区）": 1
       },
       "shiftCounts": {
-        "无倒班": 1
+        "无倒班": 1,
+        "自动化与技改岗偏白班为主，产线大修或设备联调阶段需配合现场加班": 1
       }
     },
     {
@@ -6373,7 +7453,7 @@ window.__RADAR_DATA__ = {
       "roleName": "产线设备 / 维护工程实习生",
       "shortName": "设备工程实习",
       "category": "产线运维与改善",
-      "companyCount": 7,
+      "companyCount": 9,
       "companies": [
         {
           "id": "abb-xiamen",
@@ -6451,15 +7531,37 @@ window.__RADAR_DATA__ = {
           ],
           "shiftWork": "暑期实习以跟白班导师为主；转正后一线 EE 前期大概率涉及倒班（做二休二/四班两运转）或轮流 On-call",
           "travelLevel": "极少出差"
+        },
+        {
+          "id": "silan-xiamen",
+          "name": "士兰集科 / 士兰明镓",
+          "city": "厦门",
+          "officialTitles": [
+            "生产实习生（士兰明镓 · 芯片制程与高精设备操作真实实习 JD）",
+            "设备工程师（士兰集科 · 参照校招本科 80 人需求折算）"
+          ],
+          "shiftWork": "生产实习生明确两班倒（8:00–20:00 / 20:00–8:00，月休 4–6 天）；正式设备工程师通常涉及轮班或 On-call",
+          "travelLevel": "极少出差"
+        },
+        {
+          "id": "jomoo",
+          "name": "九牧集团（智能工厂）",
+          "city": "泉州",
+          "officialTitles": [
+            "自动化产线设备运维工程师（南安灯塔工厂 · 参照校/社招折算）",
+            "生产设备管理与点检技术岗"
+          ],
+          "shiftWork": "工程管理偏白班，部分连续生产工段或黑灯产线值守需配合排班/值班",
+          "travelLevel": "极少出差"
         }
       ],
       "skills": [
         {
           "name": "电气原理图识读",
           "category": "电气制图与选型",
-          "count": 7,
+          "count": 9,
           "pct": 100,
-          "mustCount": 7,
+          "mustCount": 9,
           "plusCount": 0,
           "companyEntries": [
             {
@@ -6510,15 +7612,29 @@ window.__RADAR_DATA__ = {
               "level": "must",
               "jdSourceType": "campus-ref",
               "detail": "【实习底线】能看懂精密机电设备的电气控制与传感器信号回路"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "must",
+              "jdSourceType": "real-intern-jd",
+              "detail": "【校招折算底线】能看懂半导体精密机台控制柜图纸与传感器接线逻辑"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招折算底线】能看懂产线设备强弱电供电与安全互锁回路"
             }
           ]
         },
         {
           "name": "现场故障诊断与排故思维",
           "category": "工程与软实力",
-          "count": 7,
+          "count": 9,
           "pct": 100,
-          "mustCount": 7,
+          "mustCount": 9,
           "plusCount": 0,
           "companyEntries": [
             {
@@ -6569,15 +7685,29 @@ window.__RADAR_DATA__ = {
               "level": "must",
               "jdSourceType": "campus-ref",
               "detail": "【实习底线】动手意愿强、极度抗压，明确接受无尘服环境与未来产线倒班节奏"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "must",
+              "jdSourceType": "real-intern-jd",
+              "detail": "【实习底线】抗压踏实，明确适应穿无尘服、两班倒（12 小时制）或产线值班节奏"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招折算底线】具备快速排查现场传感器、继电器及执行器异常的条理性"
             }
           ]
         },
         {
           "name": "设备点检保养（PM）与 OEE 改善",
           "category": "产线设备运维",
-          "count": 7,
+          "count": 9,
           "pct": 100,
-          "mustCount": 6,
+          "mustCount": 8,
           "plusCount": 1,
           "companyEntries": [
             {
@@ -6628,16 +7758,30 @@ window.__RADAR_DATA__ = {
               "level": "must",
               "jdSourceType": "campus-ref",
               "detail": "【实习底线】理解设备点检 PM、标准作业程序（SOP）及晶圆厂安全红线"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "must",
+              "jdSourceType": "real-intern-jd",
+              "detail": "【实习底线】理解设备点检保养（PM）、异常处理流程与洁净室 SOP 红线"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招折算底线】理解设备点检保养制度、设备台账及故障停机数据分析"
             }
           ]
         },
         {
           "name": "机械识图与气动液压基础",
           "category": "产线设备运维",
-          "count": 7,
+          "count": 9,
           "pct": 100,
           "mustCount": 0,
-          "plusCount": 7,
+          "plusCount": 9,
           "companyEntries": [
             {
               "companyId": "abb-xiamen",
@@ -6687,16 +7831,30 @@ window.__RADAR_DATA__ = {
               "level": "plus",
               "jdSourceType": "campus-ref",
               "detail": "【实习加分】懂机械拆装、真空泵或气动控制原理上手更快"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "plus",
+              "jdSourceType": "real-intern-jd",
+              "detail": "【实习加分】了解机械传动、真空系统与气动阀门控制上手更快"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【实习加分】熟悉气动电磁阀、气缸及机械传动结构维护更易上手黑灯工厂机台"
             }
           ]
         },
         {
           "name": "主流 PLC 编程（西门子/三菱等）",
           "category": "PLC与自动化",
-          "count": 7,
-          "pct": 100,
+          "count": 8,
+          "pct": 89,
           "mustCount": 0,
-          "plusCount": 7,
+          "plusCount": 8,
           "companyEntries": [
             {
               "companyId": "abb-xiamen",
@@ -6746,15 +7904,22 @@ window.__RADAR_DATA__ = {
               "level": "plus",
               "jdSourceType": "campus-ref",
               "detail": "【实习加分】在校有 PLC 编程或电气控制实战项目经历在 EE 面试很加分"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "plus",
+              "jdSourceType": "real-intern-jd",
+              "detail": "【实习加分】熟悉 PLC 控制逻辑或工业自动化机电控制项目在设备岗面试加分"
             }
           ]
         },
         {
           "name": "电路与模数电基础",
           "category": "基础理论",
-          "count": 5,
-          "pct": 71,
-          "mustCount": 5,
+          "count": 6,
+          "pct": 67,
+          "mustCount": 6,
           "plusCount": 0,
           "companyEntries": [
             {
@@ -6791,16 +7956,23 @@ window.__RADAR_DATA__ = {
               "level": "must",
               "jdSourceType": "campus-ref",
               "detail": "【实习底线】扎实的电路、电子技术与自动控制工科基础"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "must",
+              "jdSourceType": "real-intern-jd",
+              "detail": "【实习/校招底线】具备扎实的电路分析、电子技术与自动控制工科基础"
             }
           ]
         },
         {
           "name": "技术文档与测试报告编写",
           "category": "工程与软实力",
-          "count": 4,
-          "pct": 57,
+          "count": 5,
+          "pct": 56,
           "mustCount": 1,
-          "plusCount": 3,
+          "plusCount": 4,
           "companyEntries": [
             {
               "companyId": "abb-xiamen",
@@ -6829,16 +8001,23 @@ window.__RADAR_DATA__ = {
               "level": "plus",
               "jdSourceType": "campus-ref",
               "detail": "【实习加分】能条理清晰完成暑期项目总结 PPT 与结业答辩"
+            },
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【实习加分】规范编写设备点检 SOP 与故障复盘记录"
             }
           ]
         },
         {
           "name": "英语读写与技术交流",
           "category": "工程与软实力",
-          "count": 1,
-          "pct": 14,
+          "count": 2,
+          "pct": 22,
           "mustCount": 1,
-          "plusCount": 0,
+          "plusCount": 1,
           "companyEntries": [
             {
               "companyId": "uscxm",
@@ -6846,6 +8025,13 @@ window.__RADAR_DATA__ = {
               "level": "must",
               "jdSourceType": "campus-ref",
               "detail": "【实习底线】台资背景晶圆厂，能读懂英文设备界面、英文 SOP 与部分英文测评"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "plus",
+              "jdSourceType": "real-intern-jd",
+              "detail": "【校招明确项】简章要求投递附四六级，能读懂进口机台英文界面与手册"
             }
           ]
         },
@@ -6853,7 +8039,7 @@ window.__RADAR_DATA__ = {
           "name": "测试上位机基础（LabVIEW / C#）",
           "category": "软件与脚本",
           "count": 1,
-          "pct": 14,
+          "pct": 11,
           "mustCount": 0,
           "plusCount": 1,
           "companyEntries": [
@@ -6865,10 +8051,27 @@ window.__RADAR_DATA__ = {
               "detail": "【官网明确优先项】了解上位机编程软件（如 C# 或 LabVIEW）者优先"
             }
           ]
+        },
+        {
+          "name": "低压配电与元器件选型",
+          "category": "电气制图与选型",
+          "count": 1,
+          "pct": 11,
+          "mustCount": 0,
+          "plusCount": 1,
+          "companyEntries": [
+            {
+              "companyId": "jomoo",
+              "companyName": "九牧集团（智能工厂）",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【实习加分】熟悉厂区车间配电箱开关、保护器与安全接地规范"
+            }
+          ]
         }
       ],
       "travelCounts": {
-        "极少出差": 7
+        "极少出差": 9
       },
       "shiftCounts": {
         "实习生一般跟随白班导师（具体排班以部门为准，待核实）": 1,
@@ -6877,7 +8080,9 @@ window.__RADAR_DATA__ = {
         "部分产线设备岗涉及倒班或跟班（以分厂为准，待核实）": 1,
         "产线 7×24 运转，多涉及白夜班两班倒或轮班值守（实习期跟班制视科室而定）": 1,
         "技术员多涉及两班倒；工程师长白班为主但需轮流值班或 On-call": 1,
-        "暑期实习以跟白班导师为主；转正后一线 EE 前期大概率涉及倒班（做二休二/四班两运转）或轮流 On-call": 1
+        "暑期实习以跟白班导师为主；转正后一线 EE 前期大概率涉及倒班（做二休二/四班两运转）或轮流 On-call": 1,
+        "生产实习生明确两班倒（8:00–20:00 / 20:00–8:00，月休 4–6 天）；正式设备工程师通常涉及轮班或 On-call": 1,
+        "工程管理偏白班，部分连续生产工段或黑灯产线值守需配合排班/值班": 1
       }
     },
     {
@@ -6885,7 +8090,7 @@ window.__RADAR_DATA__ = {
       "roleName": "电气 / 硬件产品测试实习生",
       "shortName": "产品测试实习",
       "category": "研发验证与质量",
-      "companyCount": 8,
+      "companyCount": 9,
       "companies": [
         {
           "id": "kehua-data",
@@ -6974,15 +8179,26 @@ window.__RADAR_DATA__ = {
           ],
           "shiftWork": "实验室研发测试偏白班；产线品质/芯片测试技术员多涉及两班倒",
           "travelLevel": "极少出差"
+        },
+        {
+          "id": "silan-xiamen",
+          "name": "士兰集科 / 士兰明镓",
+          "city": "厦门",
+          "officialTitles": [
+            "测试设备工程师（参照校招本科岗折算）",
+            "测试工艺工程师 / ATE 芯片测试工程师（参照校招折算）"
+          ],
+          "shiftWork": "测试工艺/开发偏白班跟产；测试设备维护视产线需求可能涉及轮班或值班",
+          "travelLevel": "极少出差"
         }
       ],
       "skills": [
         {
           "name": "电路与模数电基础",
           "category": "基础理论",
-          "count": 8,
+          "count": 9,
           "pct": 100,
-          "mustCount": 8,
+          "mustCount": 9,
           "plusCount": 0,
           "companyEntries": [
             {
@@ -7040,15 +8256,22 @@ window.__RADAR_DATA__ = {
               "level": "must",
               "jdSourceType": "campus-ref",
               "detail": "【校招折算底线】理解半导体器件伏安特性、功率器件基本参数与模电基础"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招折算底线】熟悉模拟/数字电路及功率器件（MOSFET/IGBT/SiC）基本电性"
             }
           ]
         },
         {
           "name": "技术文档与测试报告编写",
           "category": "工程与软实力",
-          "count": 8,
+          "count": 9,
           "pct": 100,
-          "mustCount": 8,
+          "mustCount": 9,
           "plusCount": 0,
           "companyEntries": [
             {
@@ -7106,15 +8329,22 @@ window.__RADAR_DATA__ = {
               "level": "must",
               "jdSourceType": "campus-ref",
               "detail": "【校招折算底线】细致耐心，能规范记录海量测试数据与撰写试验记录"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招折算底线】细致严谨，能规范整理测试良率报表与硬件故障记录"
             }
           ]
         },
         {
           "name": "示波器与万用表实操",
           "category": "仪器测试",
-          "count": 8,
+          "count": 9,
           "pct": 100,
-          "mustCount": 8,
+          "mustCount": 9,
           "plusCount": 0,
           "companyEntries": [
             {
@@ -7172,16 +8402,23 @@ window.__RADAR_DATA__ = {
               "level": "must",
               "jdSourceType": "campus-ref",
               "detail": "【校招折算底线】熟练操作万用表、示波器等电测仪器辅助定位测试治具异常"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "must",
+              "jdSourceType": "campus-ref",
+              "detail": "【校招折算底线】熟练使用示波器、万用表等电测仪器调试测试硬件与治具信号"
             }
           ]
         },
         {
           "name": "C 语言与自动化脚本基础",
           "category": "软件与脚本",
-          "count": 6,
-          "pct": 75,
+          "count": 7,
+          "pct": 78,
           "mustCount": 0,
-          "plusCount": 6,
+          "plusCount": 7,
           "companyEntries": [
             {
               "companyId": "kehua-data",
@@ -7224,6 +8461,58 @@ window.__RADAR_DATA__ = {
               "level": "plus",
               "jdSourceType": "campus-ref",
               "detail": "【实习加分】会用 Python/Excel 或脚本批量清洗芯片测试数据更优"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【实习加分】会用 C/C++ 或脚本工具处理 ATE 测试数据或编写简易测试程序极加分"
+            }
+          ]
+        },
+        {
+          "name": "英语读写与技术交流",
+          "category": "工程与软实力",
+          "count": 5,
+          "pct": 56,
+          "mustCount": 2,
+          "plusCount": 3,
+          "companyEntries": [
+            {
+              "companyId": "abb-xiamen",
+              "companyName": "ABB（厦门工业中心）",
+              "level": "must",
+              "jdSourceType": "real-intern-jd",
+              "detail": "【实习底线】能读懂英文测试规范与系统界面"
+            },
+            {
+              "companyId": "schneider-xiamen",
+              "companyName": "施耐德电气（厦门）",
+              "level": "must",
+              "jdSourceType": "real-intern-jd",
+              "detail": "【实习底线】能看懂英文 SOP、图纸标注与测试系统界面（HR 面可能简短切英文）"
+            },
+            {
+              "companyId": "tianma-xiamen",
+              "companyName": "天马微电子（厦门）",
+              "level": "plus",
+              "jdSourceType": "real-intern-jd",
+              "detail": "【实习加分】部分机台界面为英文且 AI 面试可能含英文简介环节"
+            },
+            {
+              "companyId": "sanan-opto",
+              "companyName": "三安光电（厦门/泉州）",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【实习加分】能看懂英文测试机台界面与半导体器件 Datasheet"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【实习加分】能看懂英文芯片 Datasheet 与进口测试机台技术手册"
             }
           ]
         },
@@ -7231,7 +8520,7 @@ window.__RADAR_DATA__ = {
           "name": "安规与 EMC 测试基础",
           "category": "仪器测试",
           "count": 5,
-          "pct": 63,
+          "pct": 56,
           "mustCount": 0,
           "plusCount": 5,
           "companyEntries": [
@@ -7273,48 +8562,10 @@ window.__RADAR_DATA__ = {
           ]
         },
         {
-          "name": "英语读写与技术交流",
-          "category": "工程与软实力",
-          "count": 4,
-          "pct": 50,
-          "mustCount": 2,
-          "plusCount": 2,
-          "companyEntries": [
-            {
-              "companyId": "abb-xiamen",
-              "companyName": "ABB（厦门工业中心）",
-              "level": "must",
-              "jdSourceType": "real-intern-jd",
-              "detail": "【实习底线】能读懂英文测试规范与系统界面"
-            },
-            {
-              "companyId": "schneider-xiamen",
-              "companyName": "施耐德电气（厦门）",
-              "level": "must",
-              "jdSourceType": "real-intern-jd",
-              "detail": "【实习底线】能看懂英文 SOP、图纸标注与测试系统界面（HR 面可能简短切英文）"
-            },
-            {
-              "companyId": "tianma-xiamen",
-              "companyName": "天马微电子（厦门）",
-              "level": "plus",
-              "jdSourceType": "real-intern-jd",
-              "detail": "【实习加分】部分机台界面为英文且 AI 面试可能含英文简介环节"
-            },
-            {
-              "companyId": "sanan-opto",
-              "companyName": "三安光电（厦门/泉州）",
-              "level": "plus",
-              "jdSourceType": "campus-ref",
-              "detail": "【实习加分】能看懂英文测试机台界面与半导体器件 Datasheet"
-            }
-          ]
-        },
-        {
           "name": "电气原理图识读",
           "category": "电气制图与选型",
           "count": 2,
-          "pct": 25,
+          "pct": 22,
           "mustCount": 2,
           "plusCount": 0,
           "companyEntries": [
@@ -7335,10 +8586,34 @@ window.__RADAR_DATA__ = {
           ]
         },
         {
+          "name": "功率分析仪与电子负载",
+          "category": "仪器测试",
+          "count": 2,
+          "pct": 22,
+          "mustCount": 0,
+          "plusCount": 2,
+          "companyEntries": [
+            {
+              "companyId": "kehua-data",
+              "companyName": "科华数据",
+              "level": "plus",
+              "jdSourceType": "real-intern-jd",
+              "detail": "【实习加分】了解可编程交直流电源、电子负载与功率分析仪原理（入职可带教）"
+            },
+            {
+              "companyId": "silan-xiamen",
+              "companyName": "士兰集科 / 士兰明镓",
+              "level": "plus",
+              "jdSourceType": "campus-ref",
+              "detail": "【实习加分】了解大功率器件测试中的电参数测量与开尔文四线制接线常识"
+            }
+          ]
+        },
+        {
           "name": "电力电子拓扑（整流/斩波/逆变）",
           "category": "基础理论",
           "count": 1,
-          "pct": 13,
+          "pct": 11,
           "mustCount": 1,
           "plusCount": 0,
           "companyEntries": [
@@ -7355,7 +8630,7 @@ window.__RADAR_DATA__ = {
           "name": "测试上位机基础（LabVIEW / C#）",
           "category": "软件与脚本",
           "count": 1,
-          "pct": 13,
+          "pct": 11,
           "mustCount": 0,
           "plusCount": 1,
           "companyEntries": [
@@ -7372,7 +8647,7 @@ window.__RADAR_DATA__ = {
           "name": "电池充放电与环境可靠性测试设备",
           "category": "仪器测试",
           "count": 1,
-          "pct": 13,
+          "pct": 11,
           "mustCount": 0,
           "plusCount": 1,
           "companyEntries": [
@@ -7386,27 +8661,10 @@ window.__RADAR_DATA__ = {
           ]
         },
         {
-          "name": "功率分析仪与电子负载",
-          "category": "仪器测试",
-          "count": 1,
-          "pct": 13,
-          "mustCount": 0,
-          "plusCount": 1,
-          "companyEntries": [
-            {
-              "companyId": "kehua-data",
-              "companyName": "科华数据",
-              "level": "plus",
-              "jdSourceType": "real-intern-jd",
-              "detail": "【实习加分】了解可编程交直流电源、电子负载与功率分析仪原理（入职可带教）"
-            }
-          ]
-        },
-        {
           "name": "竞赛或电源实测项目经历",
           "category": "工程与软实力",
           "count": 1,
-          "pct": 13,
+          "pct": 11,
           "mustCount": 0,
           "plusCount": 1,
           "companyEntries": [
@@ -7423,7 +8681,7 @@ window.__RADAR_DATA__ = {
           "name": "质量工具与 8D/RCA 分析",
           "category": "工程与软实力",
           "count": 1,
-          "pct": 13,
+          "pct": 11,
           "mustCount": 0,
           "plusCount": 1,
           "companyEntries": [
@@ -7440,7 +8698,7 @@ window.__RADAR_DATA__ = {
           "name": "中低压开关柜一次/二次回路与继保",
           "category": "基础理论",
           "count": 1,
-          "pct": 13,
+          "pct": 11,
           "mustCount": 0,
           "plusCount": 1,
           "companyEntries": [
@@ -7455,14 +8713,15 @@ window.__RADAR_DATA__ = {
         }
       ],
       "travelCounts": {
-        "极少出差": 8
+        "极少出差": 9
       },
       "shiftCounts": {
         "无倒班": 4,
         "无固定倒班（视测试排期可能加班）": 1,
         "研发/质量实验室常白班为主（产线质量支援视情况）": 1,
         "产线电测多需穿无尘服并可能涉及两班倒；研发实验室测试相对偏白班": 1,
-        "实验室研发测试偏白班；产线品质/芯片测试技术员多涉及两班倒": 1
+        "实验室研发测试偏白班；产线品质/芯片测试技术员多涉及两班倒": 1,
+        "测试工艺/开发偏白班跟产；测试设备维护视产线需求可能涉及轮班或值班": 1
       }
     },
     {
