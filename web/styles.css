@@ -889,18 +889,13 @@ code {
   }
 
   .radar-table tbody td::before {
+    content: attr(data-col-label) "：";
     display: block;
     font-size: 0.78rem;
     font-weight: 700;
     color: var(--accent);
     margin-block-end: 3px;
   }
-
-  .radar-table tbody td:nth-child(2)::before { content: var(--col-2) "："; }
-  .radar-table tbody td:nth-child(3)::before { content: var(--col-3) "："; }
-  .radar-table tbody td:nth-child(4)::before { content: var(--col-4) "："; }
-  .radar-table tbody td:nth-child(5)::before { content: var(--col-5) "："; }
-  .radar-table tbody td:nth-child(6)::before { content: var(--col-6) "："; }
 }
 
 /* ---------- 五大岗位卡片 ---------- */
@@ -1051,10 +1046,19 @@ code {
 
 .dialog-footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
   padding: 12px 20px;
   border-block-start: 1px solid var(--border);
   background: var(--surface-elevated);
+}
+
+.dialog-footer-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .empty-state {
@@ -1063,6 +1067,10 @@ code {
   border: 1px dashed var(--border-strong);
   border-radius: var(--radius-md);
   color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
 .site-footer {
@@ -1072,4 +1080,210 @@ code {
   text-align: center;
   font-size: 0.82rem;
   color: var(--text-muted);
+}
+
+/* ---------- v2 新增组件样式 ---------- */
+.toast-banner {
+  padding: 10px 14px;
+  margin-block-end: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--accent);
+  background: var(--accent-soft);
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.btn-sm {
+  min-height: 32px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+}
+
+.filter-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-block-end: 14px;
+}
+
+.inline-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-meta-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-badge-btn {
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: inherit;
+  min-height: 28px;
+}
+
+.skill-badge-btn:hover {
+  border-color: currentColor;
+}
+
+.micro-task-box {
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--accent);
+  background: var(--accent-soft);
+}
+
+.micro-task-box h4 {
+  font-size: 0.92rem;
+  margin-block-end: 6px;
+}
+
+.timeline-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.timeline-group {
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface-elevated);
+}
+
+.timeline-group-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-block-end: 12px;
+}
+
+.timeline-group-head h3 {
+  font-size: 1.02rem;
+  margin: 0;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.timeline-card {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timeline-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tracker-select {
+  min-height: 34px;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: var(--surface-elevated);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.84rem;
+}
+
+.reports-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.report-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.report-tab-btn {
+  min-height: 36px;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: var(--surface-elevated);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.report-tab-btn[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.report-viewer {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface-elevated);
+  font-size: 0.9rem;
+  overflow-x: auto;
+}
+
+.report-viewer h1,
+.report-viewer h2,
+.report-viewer h3 {
+  margin-block: 12px 6px;
+  font-size: 1rem;
+}
+
+.report-viewer blockquote {
+  margin: 8px 0;
+  padding: 6px 12px;
+  border-inline-start: 3px solid var(--accent);
+  background: var(--surface);
+  color: var(--text-muted);
+}
+
+.report-viewer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-block: 10px;
+  font-size: 0.84rem;
+}
+
+.report-viewer th,
+.report-viewer td {
+  border: 1px solid var(--border);
+  padding: 6px 8px;
+  text-align: start;
+}
+
+.report-viewer th {
+  background: var(--surface-alt);
+}
+
+.source-link {
+  color: var(--accent);
+  text-decoration: underline;
+  word-break: break-all;
 }

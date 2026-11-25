@@ -20,7 +20,7 @@
   <header class="hero">
     <div class="hero-inner">
       <div class="hero-top">
-        <div class="brand-badge">XIAMEN &amp; QUANZHOU · 2027 暑期实习情报雷达</div>
+        <div class="brand-badge">XIAMEN &amp; QUANZHOU · 2027 暑期实习情报雷达 v2</div>
         <button type="button" id="themeToggle" class="theme-toggle" aria-label="切换浅色或深色主题">
           <span class="theme-opt theme-opt--to-dark">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -40,7 +40,7 @@
 
       <h1 class="hero-title">厦泉电气 2027 暑期 / 日常实习情报统计台</h1>
       <p class="hero-subtitle">
-        聚焦本科实习生视角，参考 2025–2026 年公开实习生招聘 JD，每天深挖 1～2 家厦门/泉州企业，明确区分「真实实习 JD」与「校招折算」，精准统计拿实习 Offer 的底线技能与暑期可行性。
+        面向电气工程及其自动化本科生（2028 届），基于 2025–2026 公开招聘信息与往年项目参考聚合。严格区分「明确支持 8 周暑期」「4 周短项目」「3 月+ 长期」「校招折算」与「待核实线索」，2027 当期公告开放后持续校核更新。
       </p>
 
       <div id="kpiGrid" class="kpi-grid" aria-label="核心统计指标"></div>
@@ -48,6 +48,8 @@
   </header>
 
   <main class="app-shell">
+    <div id="liveNotice" class="toast-banner" role="status" aria-live="polite" hidden></div>
+
     <div class="tabs-shell">
       <div class="tablist-wrap">
         <div id="mainTablist" class="tablist scroller" role="tablist" aria-label="情报雷达功能模块">
@@ -58,7 +60,10 @@
             企业雷达库
           </button>
           <button type="button" role="tab" id="tab-compare" class="tab-btn" aria-selected="false" tabindex="-1" data-panel="panel-compare">
-            多企横向对比 <span id="compareCountPill" class="tab-pill">2</span>
+            多企横向对比 <span id="compareCountPill" class="tab-pill">3</span>
+          </button>
+          <button type="button" role="tab" id="tab-timeline" class="tab-btn" aria-selected="false" tabindex="-1" data-panel="panel-timeline">
+            投递日历与日报
           </button>
           <button type="button" role="tab" id="tab-roles" class="tab-btn" aria-selected="false" tabindex="-1" data-panel="panel-roles">
             五大岗位透视
@@ -70,13 +75,13 @@
       </div>
 
       <div class="panels-stage">
-        <!-- Panel 1: 技能热力榜 & 个人技能缺口 -->
+        <!-- Panel 1: 技能热力榜 & 个人技能缺口 + 课程小练习 -->
         <section id="panel-skills" role="tabpanel" aria-labelledby="tab-skills" class="tab-panel" tabindex="0">
           <div class="panel-inner">
             <div class="section-head">
               <div>
-                <h2>跨企业实习技能热力榜（拿 Offer 底线 vs 加分进阶）</h2>
-                <p class="muted">基于 2025–2026 实习生公开要求自动聚合；红标为「拿实习 Offer 底线」，蓝标为「实习加分/入职带教进阶」，点击技能名可看逐企出处。</p>
+                <h2>跨企业实习技能热力榜（企业覆盖 × 课程练习）</h2>
+                <p class="muted">同时显示「涉及企业数」与「必备企业 / 加分进阶」；点击技能名可查看逐企 JD 出处与适合零硬件条件的课程小练习。</p>
               </div>
               <div class="progress-summary-box" id="selfCheckSummary"></div>
             </div>
@@ -117,14 +122,14 @@
             <div class="section-head">
               <div>
                 <h2>已深挖企业雷达库</h2>
-                <p class="muted">每家档案均带公开信息出处，未披露项明确标注“待核实”。勾选「加入对比」后可在横向对比页并排细看。</p>
+                <p class="muted">支持按厦门/泉州双基地、暑期 8 周真实适配度、实习方向与真实 JD 筛选，并直接计算你的个人底线准备度。</p>
               </div>
               <button type="button" id="jumpToCompareBtn" class="btn btn-primary">进入横向对比</button>
             </div>
 
             <div class="filter-bar" aria-label="企业筛选条件">
               <div class="filter-group">
-                <label for="companyCityFilter">城市</label>
+                <label for="companyCityFilter">城市（含双基地）</label>
                 <select id="companyCityFilter">
                   <option value="all">全部城市</option>
                 </select>
@@ -142,16 +147,30 @@
                 </select>
               </div>
               <div class="filter-group">
-                <label for="companySummerFilter">暑期 2 个月可行性</label>
+                <label for="companySummerFilter">暑假 8 周真实适配</label>
                 <select id="companySummerFilter">
-                  <option value="all">全部实习类型</option>
-                  <option value="summer-ok">支持暑期 2～3 个月</option>
-                  <option value="other">需长期 / 待核实</option>
+                  <option value="all">全部项目类型</option>
+                  <option value="fit-8w">明确支持约 8 周（2 月）</option>
+                  <option value="short-4w">4 周短项目（满 8 周需协商）</option>
+                  <option value="need-3m">倾向 3 个月及以上（6–9 月）</option>
+                  <option value="negotiable">无统招网申 · 可直联协商</option>
+                  <option value="long-or-senior">偏大四顶岗 / 长期实习</option>
                 </select>
               </div>
               <div class="filter-group">
-                <label for="companySearchInput">关键词</label>
-                <input id="companySearchInput" type="search" placeholder="搜索企业、转正、PLC、示波器...">
+                <label for="companySearchInput">关键词（企业/岗位/技能）</label>
+                <input id="companySearchInput" type="search" placeholder="如：PLC、科华、示波器、泉州...">
+              </div>
+            </div>
+
+            <div class="filter-meta-row">
+              <label class="inline-check">
+                <input type="checkbox" id="companyJdOnlyCheckbox">
+                <span>仅看含可对照往年实习 JD 的企业</span>
+              </label>
+              <div class="filter-meta-actions">
+                <span id="companyResultCount" class="muted"></span>
+                <button type="button" id="companyResetFiltersBtn" class="btn btn-secondary btn-sm">重置筛选</button>
               </div>
             </div>
 
@@ -165,7 +184,7 @@
             <div class="section-head">
               <div>
                 <h2>多企业并排横向对比</h2>
-                <p class="muted">选择 2～4 家已深挖企业，一屏看清它们在赛道、工具栈、出差倒班、笔面试考点与厦门理工匹配度上的真实差异。</p>
+                <p class="muted">最多选择 4 家已深挖企业；窄屏自动转卡片并清晰标注每行对应企业，随时可点选或移除。</p>
               </div>
             </div>
 
@@ -175,39 +194,57 @@
           </div>
         </section>
 
-        <!-- Panel 4: 五大岗位透视 -->
+        <!-- Panel 4: 2027 投递日历、个人跟踪与站内日报 -->
+        <section id="panel-timeline" role="tabpanel" aria-labelledby="tab-timeline" class="tab-panel" hidden="until-found">
+          <div class="panel-inner">
+            <div class="section-head">
+              <div>
+                <h2>2027 投递观察窗口 &amp; 个人投递状态跟踪</h2>
+                <p class="muted">窗口基于 2025/2026 公开资料标定为「2027 留意区间」，2027 当期简章发布后再行锁定精确截止日。个人跟踪状态保存在本地，支持导出备份。</p>
+              </div>
+            </div>
+
+            <div id="timelineContainer" class="timeline-groups"></div>
+
+            <h3 class="sub-heading">每日深挖战报阅读器</h3>
+            <div id="dailyReportsHost" class="reports-panel"></div>
+
+            <h3 class="sub-heading">二期增补候选企业池（待一期完成后按需启用）</h3>
+            <div id="phase2CandidatesHost" class="company-grid"></div>
+          </div>
+        </section>
+
+        <!-- Panel 5: 五大岗位透视 -->
         <section id="panel-roles" role="tabpanel" aria-labelledby="tab-roles" class="tab-panel" hidden="until-found">
           <div class="panel-inner">
             <div class="section-head">
               <div>
                 <h2>五大探索岗位全景透视</h2>
-                <p class="muted">逐个拆解真实工作内容、与你大三已学课程的对应关系、当前已统计出的核心技能，以及适合你的零硬件简历项目方向。</p>
+                <p class="muted">逐个拆解工作内容、对应课程、统计出的高频技能（企业去重口径）与零硬件简历项目方向。</p>
               </div>
             </div>
             <div id="rolesGrid" class="roles-grid"></div>
           </div>
         </section>
 
-        <!-- Panel 5: 每日深挖队列 & 进度导入导出 -->
+        <!-- Panel 6: 每日深挖队列 & 进度导入导出 -->
         <section id="panel-queue" role="tabpanel" aria-labelledby="tab-queue" class="tab-panel" hidden="until-found">
           <div class="panel-inner">
             <div class="section-head">
               <div>
-                <h2>每日 1～2 企深挖队列与日志</h2>
-                <p class="muted">每次深挖新企业并运行构建脚本后，上方所有统计与技能热力榜自动增量重算，越往后越精准。</p>
+                <h2 id="queueSectionTitle">每日深挖队列与日志</h2>
+                <p class="muted">本地学习进度与投递跟踪状态默认存在当前浏览器（离线 `file://` 模式下建议定期导出 JSON 备份防清缓存）。</p>
               </div>
               <div class="backup-actions">
-                <button type="button" id="exportProgressBtn" class="btn btn-secondary">导出自检进度 JSON</button>
-                <label class="btn btn-secondary file-btn">
-                  导入进度
-                  <input type="file" id="importProgressInput" accept="application/json" hidden>
-                </label>
+                <button type="button" id="exportProgressBtn" class="btn btn-secondary">导出个人进度 JSON</button>
+                <button type="button" id="importProgressBtn" class="btn btn-secondary">导入进度 JSON</button>
+                <input type="file" id="importProgressInput" accept="application/json" hidden>
               </div>
             </div>
 
             <div id="changelogTimeline" class="changelog-list"></div>
 
-            <h3 class="sub-heading">20 家厦泉目标企业滚动清单</h3>
+            <h3 class="sub-heading" id="queueTableHeading">目标企业滚动清单</h3>
             <div id="queueTableHost"></div>
           </div>
         </section>
@@ -216,7 +253,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>数据目录：<code>D:\Antigravity\XiaQuan_EE_Job_Radar</code> ｜ 离线可用，所有企业数据均附公开核验来源，未公开项如实标注“待核实”。</p>
+    <p>厦泉电气自动化 2027 暑期实习情报雷达 v2 ｜ 离线/公网双可用，所有档案均区分公开直链与待核实线索。</p>
   </footer>
 
   <!-- 企业完整深度档案弹窗 -->
@@ -233,6 +270,10 @@
       </div>
       <div id="companyDialogBody" class="dialog-body"></div>
       <div class="dialog-footer">
+        <div class="dialog-footer-actions">
+          <button type="button" id="copyCompanyLinkBtn" class="btn btn-secondary">复制直达链接</button>
+          <button type="button" id="exportCompanyMdBtn" class="btn btn-secondary">导出 Markdown 备战卡</button>
+        </div>
         <form method="dialog">
           <button type="submit" class="btn btn-primary">关闭</button>
         </form>
@@ -240,13 +281,13 @@
     </div>
   </dialog>
 
-  <!-- 技能出处证据弹窗 -->
+  <!-- 技能出处证据与零硬件练习弹窗 -->
   <dialog id="skillDialog" class="radar-dialog radar-dialog--narrow" closedby="any" aria-labelledby="skillDialogTitle">
     <div class="dialog-shell">
       <div class="dialog-header">
         <div>
           <span id="skillDialogMeta" class="dialog-meta"></span>
-          <h2 id="skillDialogTitle" class="dialog-title">技能 JD 依据</h2>
+          <h2 id="skillDialogTitle" class="dialog-title">技能 JD 依据与备战练习</h2>
         </div>
         <form method="dialog">
           <button type="submit" class="icon-close-btn" aria-label="关闭技能详情弹窗">✕</button>

@@ -3,10 +3,17 @@
   "name": "天马微电子（厦门）",
   "fullName": "厦门天马微电子有限公司 / 厦门天马显示科技有限公司",
   "city": "厦门",
-  "districts": ["厦门市翔安区（火炬高新区翔安产业区 TM16/TM18/TM19 基地）"],
+  "districts": [
+    "厦门市翔安区（火炬高新区翔安产业区 TM16/TM18/TM19 基地）"
+  ],
   "track": "半导体/光电与精密制造",
   "companyType": "央企控股上市公司（中航工业旗下深天马 A · SZ 000050）",
-  "coreProducts": ["LTPS-LCD 中小尺寸显示面板", "第 6 代柔性 AMOLED 面板", "车载与工控专业显示模组", "Micro-LED 新型显示产线"],
+  "coreProducts": [
+    "LTPS-LCD 中小尺寸显示面板",
+    "第 6 代柔性 AMOLED 面板",
+    "车载与工控专业显示模组",
+    "Micro-LED 新型显示产线"
+  ],
   "researchedAt": "2026-11-23",
   "internshipProfile": {
     "internType": "T-MAN 专项暑期实习（春季开放）+ 常年日常/顶岗实习",
@@ -15,17 +22,29 @@
     "weeklyDays": "每周出勤 4–5 天（暑期全职到岗，产线设备岗需配合产线排班）",
     "openWindowRef": "参考 2025/2026：3–5 月开放春招及暑期实习专项（4–6 月集中面试），7–9 月启动 T-MAN 秋季校招",
     "conversionPolicy": "「T-Plan」导师一对一带教，暑期实习表现优异并通过考核答辩者可获秋招「Offer 直通车」提前转正资格",
-    "stipendNote": "提供本科实习津贴（公开求职平台参考约 100–200 元/天或税前 4,000–6,000 元/月含补助与加班/倒班津贴，具体以厦门当期 Offer 为准，待核实）；配宿舍、食堂餐补、班车与夜班补贴"
+    "stipendNote": "提供本科实习津贴（公开求职平台参考约 100–200 元/天或税前 4,000–6,000 元/月含补助与加班/倒班津贴，具体以厦门当期 Offer 为准，待核实）；配宿舍、食堂餐补、班车与夜班补贴",
+    "summerFit": "fit-8w",
+    "windowGroup": "may-early",
+    "evidenceStatus": "historical-verified"
   },
   "fitForXmut": {
     "level": "高匹配（厦门翔安大型央企背景制造基地，对双非工科本科友好、留用通道宽）",
     "reason": "电气工程及其自动化、自动化、测控本科生可精准投递「厂务电气」「产线设备工程」「显示电测」三大实习方向；但需提前评估是否能接受洁净室无尘服与面板厂倒班节奏。"
   },
   "internshipAndRecruit": {
-    "channels": ["天马微电子校招官网（Moka 系统）", "“天马微电子招聘” / “天马招聘”官方微信公众号", "厦门本地高校就业网及前程无忧/猎聘/Boss 直聘厦门基地直招"],
+    "channels": [
+      "天马微电子校招官网（Moka 系统）",
+      "“天马微电子招聘” / “天马招聘”官方微信公众号",
+      "厦门本地高校就业网及前程无忧/猎聘/Boss 直聘厦门基地直招"
+    ],
     "program": "T-MAN 校园招聘体系 + T-Plan 老带新导师制 + 暑期实习答辩 Offer 直通车",
     "timelineNote": "2027 暑期实习预计 2027 年 3–5 月开放网申（4–6 月面试，7–8 月入职 2 个月）；不想倒班的电气本科生优先选「厂务电气」白班或先确认具体科室排班。",
-    "benefits": ["集体宿舍（4–6 人间，空调热水）或住房补贴", "园区食堂/餐补与厦门岛内外班车", "夜班津贴与高温补贴（按排班政策）", "转正后享央企规范六险一金（含补充医疗）与定期体检"]
+    "benefits": [
+      "集体宿舍（4–6 人间，空调热水）或住房补贴",
+      "园区食堂/餐补与厦门岛内外班车",
+      "夜班津贴与高温补贴（按排班政策）",
+      "转正后享央企规范六险一金（含补充医疗）与定期体检"
+    ]
   },
   "workConditionSummary": {
     "shiftWork": "分岗位：产线「设备工程」「测试」因 7×24 运转多涉及白夜班两班倒（或工程师轮流值班）；「厂务电气」分白班运维与 24h 值班运行（面试务必确认）",
@@ -37,7 +56,10 @@
       "roleId": "fab-equip",
       "jdSourceType": "real-intern-jd",
       "jdSourceLabel": "参考 2025/2026 实习生公开 JD（厦门天马设备工程师/产线设备实习生）",
-      "officialTitles": ["设备工程师实习生（Array / Cell / Module 段）", "产线设备技术员实习生（厦门翔安基地）"],
+      "officialTitles": [
+        "设备工程师实习生（Array / Cell / Module 段）",
+        "产线设备技术员实习生（厦门翔安基地）"
+      ],
       "internTasks": "穿戴全套无尘服进入翔安面板洁净室（Cleanroom），跟岗学习高精度镀膜/光刻/贴合机台的日常点检、预防性保养（PM）、报警记录整理、SOP 修订与设备稼动率（Uptime）数据统计。",
       "responsibilities": [
         "协助开展 Array/CF/Cell/Module 段生产设备的日常巡检、点检与预防性保养（PM）",
@@ -45,13 +67,48 @@
         "协助更新设备标准作业程序（SOP）、备品备件统计与新机台验收跟学"
       ],
       "skills": [
-        { "name": "电气原理图识读", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】能看懂自动化机台基础电气与控制信号图纸" },
-        { "name": "电路与模数电基础", "category": "基础理论", "level": "must", "detail": "【实习底线】具备电工学、电路及基础自动控制知识" },
-        { "name": "现场故障诊断与排故思维", "category": "工程与软实力", "level": "must", "detail": "【实习底线】抗压能力强、动手意愿足，接受穿无尘服与产线快节奏" },
-        { "name": "设备点检保养（PM）与 OEE 改善", "category": "产线设备运维", "level": "must", "detail": "【实习底线】理解设备点检、PM 保养、Uptime/OEE 与安全生产（LOTO）意识" },
-        { "name": "技术文档与测试报告编写", "category": "工程与软实力", "level": "plus", "detail": "【实习加分】能规范协助编写 SOP 与机台故障复盘记录" },
-        { "name": "主流 PLC 编程（西门子/三菱等）", "category": "PLC与自动化", "level": "plus", "detail": "【实习加分】熟悉 PLC 逻辑或传感器信号诊断在设备科非常加分" },
-        { "name": "机械识图与气动液压基础", "category": "产线设备运维", "level": "plus", "detail": "【实习加分】懂基础机械传动、气动/真空阀门元件更易上手" }
+        {
+          "name": "电气原理图识读",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】能看懂自动化机台基础电气与控制信号图纸"
+        },
+        {
+          "name": "电路与模数电基础",
+          "category": "基础理论",
+          "level": "must",
+          "detail": "【实习底线】具备电工学、电路及基础自动控制知识"
+        },
+        {
+          "name": "现场故障诊断与排故思维",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】抗压能力强、动手意愿足，接受穿无尘服与产线快节奏"
+        },
+        {
+          "name": "设备点检保养（PM）与 OEE 改善",
+          "category": "产线设备运维",
+          "level": "must",
+          "detail": "【实习底线】理解设备点检、PM 保养、Uptime/OEE 与安全生产（LOTO）意识"
+        },
+        {
+          "name": "技术文档与测试报告编写",
+          "category": "工程与软实力",
+          "level": "plus",
+          "detail": "【实习加分】能规范协助编写 SOP 与机台故障复盘记录"
+        },
+        {
+          "name": "主流 PLC 编程（西门子/三菱等）",
+          "category": "PLC与自动化",
+          "level": "plus",
+          "detail": "【实习加分】熟悉 PLC 逻辑或传感器信号诊断在设备科非常加分"
+        },
+        {
+          "name": "机械识图与气动液压基础",
+          "category": "产线设备运维",
+          "level": "plus",
+          "detail": "【实习加分】懂基础机械传动、气动/真空阀门元件更易上手"
+        }
       ],
       "interviewFocus": [
         "几乎必问：对进无尘室穿无尘服、白夜班倒班及产线快节奏的心理准备",
@@ -65,7 +122,10 @@
       "roleId": "equip-elec",
       "jdSourceType": "real-intern-jd",
       "jdSourceLabel": "参考 2025/2026 实习生公开 JD（厦门天马厂务电气/动力系统实习生）",
-      "officialTitles": ["厂务电气工程师实习生（Facility）", "厂务动力系统工程实习生"],
+      "officialTitles": [
+        "厂务电气工程师实习生（Facility）",
+        "厂务动力系统工程实习生"
+      ],
       "internTasks": "在翔安基地厂务部协助监控厂区高低压供配电、变配电设备、UPS 应急电源及洁净室动力系统的运行参数，参与日常巡检记录、EHS 安全隐患排查与节能统计。",
       "responsibilities": [
         "协助监控厂务高低压供配电系统、变压器、UPS 及动力照明设备的稳定运行",
@@ -73,12 +133,42 @@
         "严格落实 EHS 电气安全规范，协助整理厂务节能降耗与改造项目资料"
       ],
       "skills": [
-        { "name": "电路与模数电基础", "category": "基础理论", "level": "must", "detail": "【实习底线】电气工程及其自动化核心对口：扎实的电路与供配电基础" },
-        { "name": "电气原理图识读", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】能读懂厂区高低压一次/二次配电系统图" },
-        { "name": "低压配电与元器件选型", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】熟悉断路器、变压器、继电保护及配电安全常识" },
-        { "name": "中低压开关柜一次/二次回路与继保", "category": "基础理论", "level": "plus", "detail": "【实习加分】懂高压供配电倒闸、UPS 备电与继电保护原理极大加分" },
-        { "name": "AutoCAD / EPLAN 电气制图", "category": "电气制图与选型", "level": "plus", "detail": "【实习加分】会用 AutoCAD 查阅或修改厂务配电改造图纸" },
-        { "name": "技术文档与测试报告编写", "category": "工程与软实力", "level": "plus", "detail": "【实习加分】严谨细心，能规范记录电力巡检与 EHS 安全台账" }
+        {
+          "name": "电路与模数电基础",
+          "category": "基础理论",
+          "level": "must",
+          "detail": "【实习底线】电气工程及其自动化核心对口：扎实的电路与供配电基础"
+        },
+        {
+          "name": "电气原理图识读",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】能读懂厂区高低压一次/二次配电系统图"
+        },
+        {
+          "name": "低压配电与元器件选型",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】熟悉断路器、变压器、继电保护及配电安全常识"
+        },
+        {
+          "name": "中低压开关柜一次/二次回路与继保",
+          "category": "基础理论",
+          "level": "plus",
+          "detail": "【实习加分】懂高压供配电倒闸、UPS 备电与继电保护原理极大加分"
+        },
+        {
+          "name": "AutoCAD / EPLAN 电气制图",
+          "category": "电气制图与选型",
+          "level": "plus",
+          "detail": "【实习加分】会用 AutoCAD 查阅或修改厂务配电改造图纸"
+        },
+        {
+          "name": "技术文档与测试报告编写",
+          "category": "工程与软实力",
+          "level": "plus",
+          "detail": "【实习加分】严谨细心，能规范记录电力巡检与 EHS 安全台账"
+        }
       ],
       "interviewFocus": [
         "电气专业对口题：高低压配电系统常识、变压器/配电柜安全操作规程、PLC/自控基础",
@@ -91,7 +181,10 @@
       "roleId": "ee-test",
       "jdSourceType": "real-intern-jd",
       "jdSourceLabel": "参考 2025/2026 实习生公开 JD（厦门天马显示电测/产品测试实习生）",
-      "officialTitles": ["产品测试实习生（Array / Module 电测方向）", "显示光学与电性能测试实习生"],
+      "officialTitles": [
+        "产品测试实习生（Array / Module 电测方向）",
+        "显示光学与电性能测试实习生"
+      ],
       "internTasks": "协助执行手机/车载显示面板的点灯测试、电性能检测与 ATE/AOI 测试机台辅助操作，统计良率（Yield）与不良 Issue 数据并及时隔离上报。",
       "responsibilities": [
         "协助开展显示面板在生产过程中的电性能测试、点灯检验及不良品拦截记录",
@@ -99,11 +192,36 @@
         "配合维护 ATE/AOI 测试机台日常点检与测试规范归档"
       ],
       "skills": [
-        { "name": "电路与模数电基础", "category": "基础理论", "level": "must", "detail": "【实习底线】掌握基础模拟/数字电路与常用电子元器件特性" },
-        { "name": "示波器与万用表实操", "category": "仪器测试", "level": "must", "detail": "【实习底线】熟练操作万用表、示波器排查测试治具与信号异常" },
-        { "name": "技术文档与测试报告编写", "category": "工程与软实力", "level": "must", "detail": "【实习底线】数据敏感度高，细心规范整理良率统计表" },
-        { "name": "C 语言与自动化脚本基础", "category": "软件与脚本", "level": "plus", "detail": "【实习加分】了解测试程序脚本或数据处理工具可提升效率" },
-        { "name": "英语读写与技术交流", "category": "工程与软实力", "level": "plus", "detail": "【实习加分】部分机台界面为英文且 AI 面试可能含英文简介环节" }
+        {
+          "name": "电路与模数电基础",
+          "category": "基础理论",
+          "level": "must",
+          "detail": "【实习底线】掌握基础模拟/数字电路与常用电子元器件特性"
+        },
+        {
+          "name": "示波器与万用表实操",
+          "category": "仪器测试",
+          "level": "must",
+          "detail": "【实习底线】熟练操作万用表、示波器排查测试治具与信号异常"
+        },
+        {
+          "name": "技术文档与测试报告编写",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】数据敏感度高，细心规范整理良率统计表"
+        },
+        {
+          "name": "C 语言与自动化脚本基础",
+          "category": "软件与脚本",
+          "level": "plus",
+          "detail": "【实习加分】了解测试程序脚本或数据处理工具可提升效率"
+        },
+        {
+          "name": "英语读写与技术交流",
+          "category": "工程与软实力",
+          "level": "plus",
+          "detail": "【实习加分】部分机台界面为英文且 AI 面试可能含英文简介环节"
+        }
       ],
       "interviewFocus": [
         "体检红线：面板电测与点灯岗严格要求无色盲、色弱",
@@ -125,7 +243,19 @@
     ]
   },
   "sources": [
-    { "label": "天马微电子 T-MAN 校园招聘与 2025/2026 春招/暑期实习简章（xmu.edu.cn / fzu.edu.cn / ustc.edu.cn / 91wllm.cn）", "date": "2026-11-23" },
-    { "label": "公开招聘平台厦门天马设备/厂务电气/电测实习岗位与面经倒班说明（zhipin / liepin / nowcoder / fit.edu.cn / xmist.edu.cn）", "date": "2026-11-23" }
+    {
+      "label": "厦门大学就业网天马光电子招聘与 T-MAN 培养说明（smcareer.xmu.edu.cn）",
+      "date": "2026-11-25",
+      "sourceKind": "campus-notice",
+      "url": "https://smcareer.xmu.edu.cn/info/1008/30945.htm",
+      "lead": null
+    },
+    {
+      "label": "高校就业网与平台厦门天马设备/厂务电气/电测暑期实习与倒班面经线索（fzu.edu.cn / ustc.edu.cn / zhipin / nowcoder）",
+      "date": "2026-11-23",
+      "sourceKind": "unverified-lead",
+      "url": null,
+      "lead": "fzu.edu.cn / ustc.edu.cn / zhipin 翔安专项暑期 2 个月、补贴及色觉体检细则线索（待补直链）"
+    }
   ]
 }

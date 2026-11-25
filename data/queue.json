@@ -1,4 +1,5 @@
 {
+  "schemaVersion": 2,
   "updatedAt": "2026-11-24",
   "dailyTargetCount": 2,
   "items": [
@@ -110,7 +111,7 @@
       "priority": "A",
       "status": "done",
       "researchedAt": "2026-11-24",
-      "focusHint": "翔安晶圆厂，扒设备工程师/厂务电力系统要求与双非匹配度"
+      "focusHint": "翔安晶圆厂，扒设备工程师/厂务电力系统要求与暑期项目详情"
     },
     {
       "order": 11,
@@ -125,6 +126,28 @@
     },
     {
       "order": 12,
+      "id": "jomoo",
+      "name": "九牧集团（智能工厂）",
+      "city": "泉州",
+      "track": "高端装备与智能制造",
+      "priority": "A",
+      "status": "pending",
+      "researchedAt": null,
+      "focusHint": "（已前置优先补齐泉州与 PLC 样本）南安 5G 智能工厂标杆，重点核实设施运维/产线电气与 PLC 编程岗"
+    },
+    {
+      "order": 13,
+      "id": "ttm-quanzhou",
+      "name": "铁拓机械",
+      "city": "泉州",
+      "track": "高端装备与智能制造",
+      "priority": "A",
+      "status": "pending",
+      "researchedAt": null,
+      "focusHint": "（已前置优先补齐泉州装备与 PLC 样本）泉州洛江北交所上市装备厂，对比南方路机看厂内联调与电控要求"
+    },
+    {
+      "order": 14,
       "id": "intretech",
       "name": "盈趣科技",
       "city": "厦门",
@@ -135,7 +158,7 @@
       "focusHint": "海沧智能制造与电子产品测试大户，扒自动化电气与测试工程岗"
     },
     {
-      "order": 13,
+      "order": 15,
       "id": "xiamen-ampace",
       "name": "厦门新能安（Ampace）",
       "city": "厦门",
@@ -144,28 +167,6 @@
       "status": "pending",
       "researchedAt": null,
       "focusHint": "宁德时代与ATL合资储能/小动力电池企业，扒测试/设备/自动化岗"
-    },
-    {
-      "order": 14,
-      "id": "jomoo",
-      "name": "九牧集团（智能工厂）",
-      "city": "泉州",
-      "track": "高端装备与智能制造",
-      "priority": "A",
-      "status": "pending",
-      "researchedAt": null,
-      "focusHint": "南安5G智能工厂标杆，扒PLC自动化控制与产线设备电气岗"
-    },
-    {
-      "order": 15,
-      "id": "ttm-quanzhou",
-      "name": "铁拓机械",
-      "city": "泉州",
-      "track": "高端装备与智能制造",
-      "priority": "B",
-      "status": "pending",
-      "researchedAt": null,
-      "focusHint": "泉州洛江北交所上市装备厂，与南方路机横向对比电控与PLC栈"
     },
     {
       "order": 16,
@@ -209,7 +210,7 @@
       "priority": "B",
       "status": "pending",
       "researchedAt": null,
-      "focusHint": "泉州惠安大型流程工业，扒电气运行维护/继电保护与仪表自动化"
+      "focusHint": "泉州惠安大型流程工业，扒电气运行维护/继电保护与仪表自动化（区分正式用工与基地）"
     },
     {
       "order": 20,
@@ -220,7 +221,63 @@
       "priority": "B",
       "status": "pending",
       "researchedAt": null,
-      "focusHint": "厦门新能源电池正极材料龙头，扒工厂设备电气与自动化控制岗"
+      "focusHint": "厦门新能源电池正极材料龙头，扒工厂设备电气与自动化控制岗（区分不同实体基地）"
+    }
+  ],
+  "phase2Candidates": [
+    {
+      "id": "quangong-qz",
+      "name": "福建泉工股份",
+      "city": "泉州",
+      "track": "高端装备与智能制造",
+      "roles": ["equip-elec", "plc-debug", "tech-support"],
+      "reason": "泉州本土成套智能装备制造企业，可有效补充泉州基地电气设计、PLC 厂内联调与现场服务样本。",
+      "clueUrl": "https://www.qzmachine.com/about.html"
+    },
+    {
+      "id": "haiwell-xm",
+      "name": "厦门海为科技（Haiwell）",
+      "city": "厦门",
+      "track": "高端装备与智能制造",
+      "roles": ["plc-debug", "tech-support"],
+      "reason": "本地工控 PLC/HMI/SCADA 研发制造厂商（集美总部/翔安制造），对口工控应用与技术支持。",
+      "clueUrl": "https://haiwell.com/about/"
+    },
+    {
+      "id": "hengan-qz",
+      "name": "恒安集团（晋江/泉州基地）",
+      "city": "泉州",
+      "track": "高端装备与智能制造",
+      "roles": ["fab-equip", "plc-debug"],
+      "reason": "连续高速自动化产线规模大，已披露与泉州高校开展实习实训合作，适合查设备维护与产线电气。",
+      "clueUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0325/2025032500170_c.pdf"
+    },
+    {
+      "id": "huadian-xm",
+      "name": "厦门华电开关",
+      "city": "厦门",
+      "track": "电力电子/储能与配电",
+      "roles": ["ee-test", "tech-support", "equip-elec"],
+      "reason": "本地中高压配电设备核心企业，官网校招含技术储备/质量测试/服务支持，适合与 ABB/施耐德横向对比。",
+      "clueUrl": "https://www.huadianswg.com/cn/news/923.html"
+    },
+    {
+      "id": "hprt-xm",
+      "name": "厦门汉印实业",
+      "city": "厦门",
+      "track": "高端装备与智能制造",
+      "roles": ["ee-test", "tech-support"],
+      "reason": "在厦门理工电气与智能制造专场出现过的硬件/电子制造企业，具备实习及维修测试岗位接触入口。",
+      "clueUrl": "https://job.xmut.edu.cn/info/1008/11997.htm"
+    },
+    {
+      "id": "dejishen-xm",
+      "name": "德基申（厦门）电气",
+      "city": "厦门",
+      "track": "电力电子/储能与配电",
+      "roles": ["equip-elec", "ee-test"],
+      "reason": "在厦门理工电气专场招募面向电气本科生的配网技术储干，涉及图纸与样品测试，适合作为中小型配电对比样本。",
+      "clueUrl": "https://job.xmut.edu.cn/info/1008/11475.htm"
     }
   ]
 }

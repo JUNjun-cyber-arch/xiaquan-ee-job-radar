@@ -3,10 +3,19 @@
   "name": "科华数据",
   "fullName": "科华数据股份有限公司",
   "city": "厦门",
-  "districts": ["湖里区火炬高新区（马垄路总部/研发）", "翔安区（智造产业园）"],
+  "districts": [
+    "湖里区火炬高新区（马垄路总部/研发）",
+    "翔安区（智造产业园）"
+  ],
   "track": "电力电子/储能与配电",
   "companyType": "A股上市民企（SZ 002335）",
-  "coreProducts": ["高端电源（UPS）", "数据中心（IDC）", "光伏逆变器（PV）", "储能变流器（PCS）", "充电桩"],
+  "coreProducts": [
+    "高端电源（UPS）",
+    "数据中心（IDC）",
+    "光伏逆变器（PV）",
+    "储能变流器（PCS）",
+    "充电桩"
+  ],
   "researchedAt": "2026-11-22",
   "internshipProfile": {
     "internType": "专项暑期实习 + 日常实习",
@@ -15,17 +24,28 @@
     "weeklyDays": "每周至少到岗 4–5 天（暑期建议全职）",
     "openWindowRef": "参考 2025/2026：春季（3–5 月）启动暑期实习及“科班计划”前置选拔，全年滚动日常实习",
     "conversionPolicy": "配备导师一对一带教，实习表现优秀者在秋招拥有直通 Offer 或优先转正机会",
-    "stipendNote": "未查到官方公开统一定额实习日薪（随学历与岗位动态核定，待 2027 春季实测/面试核实）"
+    "stipendNote": "未查到官方公开统一定额实习日薪（随学历与岗位动态核定，待 2027 春季实测/面试核实）",
+    "summerFit": "fit-8w",
+    "windowGroup": "spring-main",
+    "evidenceStatus": "historical-verified"
   },
   "fitForXmut": {
     "level": "高匹配（厦门本地最贴合电力电子的实习首选之一）",
     "reason": "本科在校生（大三暑期/大四）可投硬件测试、电气研发辅助与技术支持实习；总部就在湖里火炬园，且硬件测试实习高度契合已学的《电力电子》《电路》《电机学》。"
   },
   "internshipAndRecruit": {
-    "channels": ["科华数据官方招聘网 / Moka 校招实习平台", "“科华招聘”微信公众号", "福建高校春季宣讲与实习内推"],
+    "channels": [
+      "科华数据官方招聘网 / Moka 校招实习平台",
+      "“科华招聘”微信公众号",
+      "福建高校春季宣讲与实习内推"
+    ],
     "program": "“科班计划”导师带教 + 实验室/基地实践 + 实习答辩优先转正",
     "timelineNote": "2027 暑期实习（面向 2028 届）预计 2027 年 3–5 月开放，当前档案基于 2025/2026 实习生公开要求整理。",
-    "benefits": ["导师一对一带教", "园区食堂/免费班车（实习生享园区基础配套，住宿补贴细则以当期 Offer 为准，待核实）", "实习转正可衔接六险一金与厦门人才公寓/宿舍"]
+    "benefits": [
+      "导师一对一带教",
+      "园区食堂/免费班车（实习生享园区基础配套，住宿补贴细则以当期 Offer 为准，待核实）",
+      "实习转正可衔接六险一金与厦门人才公寓/宿舍"
+    ]
   },
   "workConditionSummary": {
     "shiftWork": "实习生无产线倒班（实验室与研发坐班为主）",
@@ -37,7 +57,10 @@
       "roleId": "ee-test",
       "jdSourceType": "real-intern-jd",
       "jdSourceLabel": "参考 2025/2026 实习生公开 JD（硬件测试/自动化测试实习生）",
-      "officialTitles": ["硬件测试实习生（电力电子/电源方向）", "测试工程师实习生"],
+      "officialTitles": [
+        "硬件测试实习生（电力电子/电源方向）",
+        "测试工程师实习生"
+      ],
       "internTasks": "协助搭建 UPS/储能 PCS/充电桩测试环境；在导师指导下操作示波器、万用表、功率分析仪执行样机功能与可靠性测试；记录实测数据、编写测试报告并跟进缺陷复现。",
       "responsibilities": [
         "配合拟定并执行 UPS、储能变流器（PCS）、光伏逆变器等样机的基础测试用例",
@@ -45,15 +68,60 @@
         "整理实验记录、输出规范测试报告，并将异常波形和缺陷反馈给研发闭环"
       ],
       "skills": [
-        { "name": "电路与模数电基础", "category": "基础理论", "level": "must", "detail": "【实习底线】扎实掌握电路分析、二极管/MOS 管开关特性与基本运放电路" },
-        { "name": "电力电子拓扑（整流/斩波/逆变）", "category": "基础理论", "level": "must", "detail": "【实习底线】懂 Buck/Boost/单相三相整流与逆变基本工作模态及 PWM 原理" },
-        { "name": "示波器与万用表实操", "category": "仪器测试", "level": "must", "detail": "【实习底线】会用示波器测电源纹波/触发抓波形、用万用表测通断压降" },
-        { "name": "电气原理图识读", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】能看懂基本控制板/功率板原理图，定位测试点" },
-        { "name": "技术文档与测试报告编写", "category": "工程与软实力", "level": "must", "detail": "【实习底线】能用 Excel/Word 清晰整理测试数据曲线与异常现象记录" },
-        { "name": "功率分析仪与电子负载", "category": "仪器测试", "level": "plus", "detail": "【实习加分】了解可编程交直流电源、电子负载与功率分析仪原理（入职可带教）" },
-        { "name": "安规与 EMC 测试基础", "category": "仪器测试", "level": "plus", "detail": "【实习加分】了解安规爬电距离、浪涌/传导辐射 EMC 基本概念更受青睐" },
-        { "name": "C 语言与自动化脚本基础", "category": "软件与脚本", "level": "plus", "detail": "【实习加分】会用 Python/C 处理测试数据或辅助自动化测试脚本" },
-        { "name": "竞赛或电源实测项目经历", "category": "工程与软实力", "level": "plus", "detail": "【实习加分】有电赛、Multisim 仿真复现或实验室电源调试闭环经历极加分" }
+        {
+          "name": "电路与模数电基础",
+          "category": "基础理论",
+          "level": "must",
+          "detail": "【实习底线】扎实掌握电路分析、二极管/MOS 管开关特性与基本运放电路"
+        },
+        {
+          "name": "电力电子拓扑（整流/斩波/逆变）",
+          "category": "基础理论",
+          "level": "must",
+          "detail": "【实习底线】懂 Buck/Boost/单相三相整流与逆变基本工作模态及 PWM 原理"
+        },
+        {
+          "name": "示波器与万用表实操",
+          "category": "仪器测试",
+          "level": "must",
+          "detail": "【实习底线】会用示波器测电源纹波/触发抓波形、用万用表测通断压降"
+        },
+        {
+          "name": "电气原理图识读",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】能看懂基本控制板/功率板原理图，定位测试点"
+        },
+        {
+          "name": "技术文档与测试报告编写",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】能用 Excel/Word 清晰整理测试数据曲线与异常现象记录"
+        },
+        {
+          "name": "功率分析仪与电子负载",
+          "category": "仪器测试",
+          "level": "plus",
+          "detail": "【实习加分】了解可编程交直流电源、电子负载与功率分析仪原理（入职可带教）"
+        },
+        {
+          "name": "安规与 EMC 测试基础",
+          "category": "仪器测试",
+          "level": "plus",
+          "detail": "【实习加分】了解安规爬电距离、浪涌/传导辐射 EMC 基本概念更受青睐"
+        },
+        {
+          "name": "C 语言与自动化脚本基础",
+          "category": "软件与脚本",
+          "level": "plus",
+          "detail": "【实习加分】会用 Python/C 处理测试数据或辅助自动化测试脚本"
+        },
+        {
+          "name": "竞赛或电源实测项目经历",
+          "category": "工程与软实力",
+          "level": "plus",
+          "detail": "【实习加分】有电赛、Multisim 仿真复现或实验室电源调试闭环经历极加分"
+        }
       ],
       "interviewFocus": [
         "实习笔/面试重点问基础：Buck/Boost 拓扑原理、MOS 管导通条件、二极管续流作用",
@@ -67,7 +135,10 @@
       "roleId": "equip-elec",
       "jdSourceType": "real-intern-jd",
       "jdSourceLabel": "参考 2025/2026 实习生公开 JD（电气/硬件研发实习生）",
-      "officialTitles": ["电气工程师实习生", "硬件研发实习生（数字能源/UPS）"],
+      "officialTitles": [
+        "电气工程师实习生",
+        "硬件研发实习生（数字能源/UPS）"
+      ],
       "internTasks": "协助研发团队参与 UPS、储能 PCS、数据中心微模块等电气原理图绘制、元器件选型核对、样机焊接装配与基础电气性能试验。",
       "responsibilities": [
         "协助开展电源、储能或数据中心配电系统的局部电气原理图绘制与器件参数核对",
@@ -75,12 +146,42 @@
         "跟进试验中发现的基础电气或器件异常并整理记录"
       ],
       "skills": [
-        { "name": "电路与模数电基础", "category": "基础理论", "level": "must", "detail": "【实习底线】具备扎实电路与模数电理论基础" },
-        { "name": "电力电子拓扑（整流/斩波/逆变）", "category": "基础理论", "level": "must", "detail": "【实习底线】理解 AC/DC、DC/DC、DC/AC 基本变换电路" },
-        { "name": "电气原理图识读", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】能读懂中低压控制与电源原理图" },
-        { "name": "低压配电与元器件选型", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】了解常见开关、电容、电感、接触器基本参数含义" },
-        { "name": "AutoCAD / EPLAN 电气制图", "category": "电气制图与选型", "level": "plus", "detail": "【实习加分】熟悉 AutoCAD 或 EPLAN 基础绘图的本科生更容易脱颖而出" },
-        { "name": "Altium Designer 硬件/PCB 基础", "category": "电气制图与选型", "level": "plus", "detail": "【实习加分】若偏功率/控制单板方向，会 Altium Designer 或 Multisim/PSIM 仿真大加分" }
+        {
+          "name": "电路与模数电基础",
+          "category": "基础理论",
+          "level": "must",
+          "detail": "【实习底线】具备扎实电路与模数电理论基础"
+        },
+        {
+          "name": "电力电子拓扑（整流/斩波/逆变）",
+          "category": "基础理论",
+          "level": "must",
+          "detail": "【实习底线】理解 AC/DC、DC/DC、DC/AC 基本变换电路"
+        },
+        {
+          "name": "电气原理图识读",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】能读懂中低压控制与电源原理图"
+        },
+        {
+          "name": "低压配电与元器件选型",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】了解常见开关、电容、电感、接触器基本参数含义"
+        },
+        {
+          "name": "AutoCAD / EPLAN 电气制图",
+          "category": "电气制图与选型",
+          "level": "plus",
+          "detail": "【实习加分】熟悉 AutoCAD 或 EPLAN 基础绘图的本科生更容易脱颖而出"
+        },
+        {
+          "name": "Altium Designer 硬件/PCB 基础",
+          "category": "电气制图与选型",
+          "level": "plus",
+          "detail": "【实习加分】若偏功率/控制单板方向，会 Altium Designer 或 Multisim/PSIM 仿真大加分"
+        }
       ],
       "interviewFocus": [
         "问电源/电路基础、常见器件（电容/电感/MOS 管）选型考量",
@@ -93,7 +194,10 @@
       "roleId": "tech-support",
       "jdSourceType": "real-intern-jd",
       "jdSourceLabel": "参考 2025/2026 实习生公开 JD（售前/售后技术支持实习生）",
-      "officialTitles": ["技术支持实习生（售前/售后方向）", "数字能源技术服务实习生"],
+      "officialTitles": [
+        "技术支持实习生（售前/售后方向）",
+        "数字能源技术服务实习生"
+      ],
       "internTasks": "协助资深技术支持工程师编写项目技术方案、核对技术协议、整理客户常见问答与故障案例，并在指导下辅助线上技术咨询或跟做现场调试。",
       "responsibilities": [
         "协助开展高端电源、数据中心或光储充产品的售前方案整理与技术资料编制",
@@ -101,12 +205,42 @@
         "在导师带领下熟悉设备开机调试流程与客户技术培训材料准备"
       ],
       "skills": [
-        { "name": "电气原理图识读", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】能看懂整机强弱电基本接线与配电图" },
-        { "name": "电力电子拓扑（整流/斩波/逆变）", "category": "基础理论", "level": "must", "detail": "【实习底线】能用通俗语言讲清 UPS、逆变器、储能变流器是怎么工作的" },
-        { "name": "现场故障诊断与排故思维", "category": "工程与软实力", "level": "must", "detail": "【实习底线】具备分步骤排查思维（电源输入→保护报警→负载侧隔离）" },
-        { "name": "客户沟通与现场抗压", "category": "工程与软实力", "level": "must", "detail": "【实习底线】表达清晰、有服务意识、跨部门协作积极" },
-        { "name": "Modbus / CAN / RS485 通信", "category": "通信协议", "level": "plus", "detail": "【实习加分】懂 RS485/Modbus/CAN 基本概念，上手后台监控调试更快" },
-        { "name": "英语读写与技术交流", "category": "工程与软实力", "level": "plus", "detail": "【实习加分】海外技术支持实习方向看重英语读写与口语" }
+        {
+          "name": "电气原理图识读",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】能看懂整机强弱电基本接线与配电图"
+        },
+        {
+          "name": "电力电子拓扑（整流/斩波/逆变）",
+          "category": "基础理论",
+          "level": "must",
+          "detail": "【实习底线】能用通俗语言讲清 UPS、逆变器、储能变流器是怎么工作的"
+        },
+        {
+          "name": "现场故障诊断与排故思维",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】具备分步骤排查思维（电源输入→保护报警→负载侧隔离）"
+        },
+        {
+          "name": "客户沟通与现场抗压",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】表达清晰、有服务意识、跨部门协作积极"
+        },
+        {
+          "name": "Modbus / CAN / RS485 通信",
+          "category": "通信协议",
+          "level": "plus",
+          "detail": "【实习加分】懂 RS485/Modbus/CAN 基本概念，上手后台监控调试更快"
+        },
+        {
+          "name": "英语读写与技术交流",
+          "category": "工程与软实力",
+          "level": "plus",
+          "detail": "【实习加分】海外技术支持实习方向看重英语读写与口语"
+        }
       ],
       "interviewFocus": [
         "情景题：如果一台 UPS 开机报错跳闸，你的分步排查思路是什么？",
@@ -128,8 +262,26 @@
     ]
   },
   "sources": [
-    { "label": "科华数据官方校招与实习项目介绍（kehua.com.cn / dhu.edu.cn / hdu.edu.cn）", "date": "2026-11-22" },
-    { "label": "高校就业网科华数据 2025/2026 暑期与日常实习生简章（lzu.edu.cn / wondercv）", "date": "2026-11-22" },
-    { "label": "公开招聘平台科华厦门硬件测试与技术支持实习/初级岗 JD 汇总（liepin / nowcoder）", "date": "2026-11-22" }
+    {
+      "label": "科华数据官方招聘与校招页面（kehua.com.cn/join）",
+      "date": "2026-11-22",
+      "sourceKind": "official-portal",
+      "url": "https://www.kehua.com.cn/join",
+      "lead": null
+    },
+    {
+      "label": "高校就业网科华数据 2025/2026 暑期与日常实习生简章线索（lzu.edu.cn / wondercv）",
+      "date": "2026-11-22",
+      "sourceKind": "unverified-lead",
+      "url": null,
+      "lead": "lzu.edu.cn / wondercv 历史简章线索（待补具体岗位直达链接与本科硬件测试条款）"
+    },
+    {
+      "label": "公开招聘平台科华厦门硬件测试与技术支持实习/初级岗线索（liepin / nowcoder）",
+      "date": "2026-11-22",
+      "sourceKind": "unverified-lead",
+      "url": null,
+      "lead": "liepin / nowcoder 厦门硬件测试与技术支持汇总线索（待核实 2027 当期原文）"
+    }
   ]
 }

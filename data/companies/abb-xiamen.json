@@ -3,10 +3,17 @@
   "name": "ABB（厦门工业中心）",
   "fullName": "ABB 厦门工业中心（含厦门ABB开关/低压电器/电力设备等）",
   "city": "厦门",
-  "districts": ["厦门火炬高新区（翔安）产业区 ABB 工业园"],
+  "districts": [
+    "厦门火炬高新区（翔安）产业区 ABB 工业园"
+  ],
   "track": "电力电子/储能与配电",
   "companyType": "跨国电气巨头（外企）",
-  "coreProducts": ["中压/低压成套开关柜（如 MNS / UniGear）", "断路器与低压元器件", "互感器与绝缘件", "数字化智慧配电解决方案"],
+  "coreProducts": [
+    "中压/低压成套开关柜（如 MNS / UniGear）",
+    "断路器与低压元器件",
+    "互感器与绝缘件",
+    "数字化智慧配电解决方案"
+  ],
   "researchedAt": "2026-11-22",
   "internshipProfile": {
     "internType": "专项暑期实习 + 常年滚动日常 Intern（外企成熟实习通道）",
@@ -15,17 +22,28 @@
     "weeklyDays": "每周至少出勤 3–4 天（研发/测试岗偏向 4–5 天或全职）",
     "openWindowRef": "参考 2025/2026：全年在官网/51job/猎聘滚动招日常 Intern，3–5 月集中放暑期实习名额",
     "conversionPolicy": "实习表现优异者在秋招 Power U / E Next / 正式岗享有转正绿色通道或直通面试机会",
-    "stipendNote": "按外企标准发放实习津贴（具体日薪依厦门对应实体与本科/硕士层级而定，未查到统一公开数额，待核实）"
+    "stipendNote": "按外企标准发放实习津贴（具体日薪依厦门对应实体与本科/硕士层级而定，未查到统一公开数额，待核实）",
+    "summerFit": "fit-8w",
+    "windowGroup": "spring-main",
+    "evidenceStatus": "historical-verified"
   },
   "fitForXmut": {
     "level": "中高匹配（简历含金量天花板级，但英语与制图软件是硬分水岭）",
     "reason": "面向全日制统招本科及以上在校生（大三/大四）常年招收电气设计、测试质量、设备维护与数字化/技术支持 Intern；园区就在厦门翔安，极看重英语读写、EPLAN/AutoCAD 基础和规范意识。"
   },
   "internshipAndRecruit": {
-    "channels": ["ABB 中国官网 Career 实习生专区（careers.abb）", "“ABB中国招聘”微信公众号", "前程无忧（51job）/ 猎聘搜索“ABB 厦门 实习生”"],
+    "channels": [
+      "ABB 中国官网 Career 实习生专区（careers.abb）",
+      "“ABB中国招聘”微信公众号",
+      "前程无忧（51job）/ 猎聘搜索“ABB 厦门 实习生”"
+    ],
     "program": "日常 Intern / 暑期实习生项目，优秀者可衔接 Power U / E Next 培训生或直接转正",
     "timelineNote": "建议大三下（2027 年 3–4 月）起每周刷一次“ABB中国招聘”与 51job 厦门实习生列表，外企日常实习滚招快、先到先面。",
-    "benefits": ["规范外企工作环境与 EHS 安全体系", "国际标准电气规范（IEC/EPLAN）实战熏陶", "具体实习日薪、班车与餐补标准以当期厦门实体 Offer 为准（待核实）"]
+    "benefits": [
+      "规范外企工作环境与 EHS 安全体系",
+      "国际标准电气规范（IEC/EPLAN）实战熏陶",
+      "具体实习日薪、班车与餐补标准以当期厦门实体 Offer 为准（待核实）"
+    ]
   },
   "workConditionSummary": {
     "shiftWork": "研发/工程/测试/技术支持实习生均无倒班（标准外企作息）",
@@ -37,7 +55,10 @@
       "roleId": "equip-elec",
       "jdSourceType": "real-intern-jd",
       "jdSourceLabel": "参考 2025/2026 真实实习生 JD（ABB 厦门电气设计/助理工程实习生）",
-      "officialTitles": ["电气设计实习生", "助理研发工程师实习生（中低压开关柜方向）"],
+      "officialTitles": [
+        "电气设计实习生",
+        "助理研发工程师实习生（中低压开关柜方向）"
+      ],
       "internTasks": "协助工程部/研发中心绘制或修改开关柜局部电气原理图（AutoCAD/EPLAN）、整理元器件技术资料与 BOM 清单、协助跟进样品试制与文档归档。",
       "responsibilities": [
         "协助开展中低压开关柜或低压电器产品的局部电气原理图绘制与图纸核对",
@@ -45,13 +66,54 @@
         "协助工程师处理部分英文技术手册查阅与跨部门数据整理"
       ],
       "skills": [
-        { "name": "电路与模数电基础", "category": "基础理论", "level": "must", "detail": "【实习底线】扎实的电路与模数电理论基础" },
-        { "name": "电气原理图识读", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】能看懂基本强弱电控制与配电原理图" },
-        { "name": "AutoCAD / EPLAN 电气制图", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】熟悉 AutoCAD 基础绘图；提前了解 EPLAN 宏/端子排/BOM 概念极大加分" },
-        { "name": "英语读写与技术交流", "category": "工程与软实力", "level": "must", "detail": "【实习底线】具备良好英语读写能力，能看懂英文产品手册与处理英文邮件" },
-        { "name": "中低压开关柜一次/二次回路与继保", "category": "基础理论", "level": "plus", "detail": "【实习加分】了解一次/二次回路、断路器、互感器与 IEC/GB 基础概念" },
-        { "name": "低压配电与元器件选型", "category": "电气制图与选型", "level": "plus", "detail": "【实习加分】了解常见低压断路器/继电器选型规范" },
-        { "name": "SolidWorks 机械识图基础", "category": "电气制图与选型", "level": "plus", "detail": "【实习加分】了解 Creo / SolidWorks 三维看图方便与结构配合" }
+        {
+          "name": "电路与模数电基础",
+          "category": "基础理论",
+          "level": "must",
+          "detail": "【实习底线】扎实的电路与模数电理论基础"
+        },
+        {
+          "name": "电气原理图识读",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】能看懂基本强弱电控制与配电原理图"
+        },
+        {
+          "name": "AutoCAD / EPLAN 电气制图",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】能用 AutoCAD 进行基础电气制图与图纸修改（规范图层、线号与元器件符号）"
+        },
+        {
+          "name": "英语读写与技术交流",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】具备良好英语读写能力，能看懂英文产品手册与处理英文邮件"
+        },
+        {
+          "name": "中低压开关柜一次/二次回路与继保",
+          "category": "基础理论",
+          "level": "plus",
+          "detail": "【实习加分】了解一次/二次回路、断路器、互感器与 IEC/GB 基础概念"
+        },
+        {
+          "name": "低压配电与元器件选型",
+          "category": "电气制图与选型",
+          "level": "plus",
+          "detail": "【实习加分】了解常见低压断路器/继电器选型规范"
+        },
+        {
+          "name": "SolidWorks 机械识图基础",
+          "category": "电气制图与选型",
+          "level": "plus",
+          "detail": "【实习加分】了解 Creo / SolidWorks 三维看图方便与结构配合"
+        },
+        {
+          "name": "EPLAN 电气设计软件",
+          "category": "电气制图与选型",
+          "level": "plus",
+          "detail": "【实习加分】会使用 EPLAN Electric P8 绘制二次原理图、导出端子表与物料 BOM 清单更有竞争优势"
+        }
       ],
       "interviewFocus": [
         "外企常见 2 分钟英文自我介绍 + 英文技术阅读/简单项目问答",
@@ -65,7 +127,10 @@
       "roleId": "ee-test",
       "jdSourceType": "real-intern-jd",
       "jdSourceLabel": "参考 2025/2026 真实实习生 JD（ABB 厦门测试开发/过程质量实习生）",
-      "officialTitles": ["测试开发实习生", "过程质量实习生（电气/开关设备方向）"],
+      "officialTitles": [
+        "测试开发实习生",
+        "过程质量实习生（电气/开关设备方向）"
+      ],
       "internTasks": "协助实验室/质量部执行低压电器或开关柜零部件的基础性能测试、整理质量检验数据、协助维护简单测试工装或自动化测试脚本。",
       "responsibilities": [
         "协助开展产品过程质量检验、电气测试数据记录与异常统计分析",
@@ -73,12 +138,42 @@
         "参与简单测试脚本或数据表格自动化整理，提升测试记录效率"
       ],
       "skills": [
-        { "name": "电路与模数电基础", "category": "基础理论", "level": "must", "detail": "【实习底线】具备扎实电路与测控基础" },
-        { "name": "示波器与万用表实操", "category": "仪器测试", "level": "must", "detail": "【实习底线】熟悉万用表、示波器等实验室常规仪器基本操作" },
-        { "name": "技术文档与测试报告编写", "category": "工程与软实力", "level": "must", "detail": "【实习底线】数据严谨、能规范整理测试报告与质量统计表" },
-        { "name": "英语读写与技术交流", "category": "工程与软实力", "level": "must", "detail": "【实习底线】能读懂英文测试规范与系统界面" },
-        { "name": "C 语言与自动化脚本基础", "category": "软件与脚本", "level": "plus", "detail": "【实习加分】测试开发实习生会 Python/C/VBA 做测试数据处理极加分" },
-        { "name": "安规与 EMC 测试基础", "category": "仪器测试", "level": "plus", "detail": "【实习加分】了解电气绝缘、耐压等基本安规测试概念" }
+        {
+          "name": "电路与模数电基础",
+          "category": "基础理论",
+          "level": "must",
+          "detail": "【实习底线】具备扎实电路与测控基础"
+        },
+        {
+          "name": "示波器与万用表实操",
+          "category": "仪器测试",
+          "level": "must",
+          "detail": "【实习底线】熟悉万用表、示波器等实验室常规仪器基本操作"
+        },
+        {
+          "name": "技术文档与测试报告编写",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】数据严谨、能规范整理测试报告与质量统计表"
+        },
+        {
+          "name": "英语读写与技术交流",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】能读懂英文测试规范与系统界面"
+        },
+        {
+          "name": "C 语言与自动化脚本基础",
+          "category": "软件与脚本",
+          "level": "plus",
+          "detail": "【实习加分】测试开发实习生会 Python/C/VBA 做测试数据处理极加分"
+        },
+        {
+          "name": "安规与 EMC 测试基础",
+          "category": "仪器测试",
+          "level": "plus",
+          "detail": "【实习加分】了解电气绝缘、耐压等基本安规测试概念"
+        }
       ],
       "interviewFocus": [
         "考察实验数据严谨度、基础仪表使用常识以及英文读写能力",
@@ -91,7 +186,10 @@
       "roleId": "fab-equip",
       "jdSourceType": "real-intern-jd",
       "jdSourceLabel": "参考 2025/2026 实习生/培训生 JD（设备维护与生产工程实习生）",
-      "officialTitles": ["设备维护实习生", "生产工程 / 精益改善实习生"],
+      "officialTitles": [
+        "设备维护实习生",
+        "生产工程 / 精益改善实习生"
+      ],
       "internTasks": "在翔安工厂协助工程师执行自动化产线与测试设备的日常点检、更新设备作业指导书（SOP）、整理停机故障与 OEE 统计看板。",
       "responsibilities": [
         "协助落实工厂生产设备与测试设备的日常点检保养（PM）记录",
@@ -99,12 +197,42 @@
         "配合生产工程团队整理产线效率（OEE）与精益改善数据"
       ],
       "skills": [
-        { "name": "电气原理图识读", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】能看懂基础产线电气原理图" },
-        { "name": "设备点检保养（PM）与 OEE 改善", "category": "产线设备运维", "level": "must", "detail": "【实习底线】理解设备点检、预防性保养与精益效率改善基本概念" },
-        { "name": "现场故障诊断与排故思维", "category": "工程与软实力", "level": "must", "detail": "【实习底线】动手能力强，有条理排查产线设备小故障的潜质" },
-        { "name": "技术文档与测试报告编写", "category": "工程与软实力", "level": "must", "detail": "【实习底线】协助更新标准作业指导书（SOP）" },
-        { "name": "主流 PLC 编程（西门子/三菱等）", "category": "PLC与自动化", "level": "plus", "detail": "【实习加分】懂西门子/ABB AC500 等 PLC 基础逻辑大加分" },
-        { "name": "机械识图与气动液压基础", "category": "产线设备运维", "level": "plus", "detail": "【实习加分】能看懂基础机械图或了解气动元件更优" }
+        {
+          "name": "电气原理图识读",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】能看懂基础产线电气原理图"
+        },
+        {
+          "name": "设备点检保养（PM）与 OEE 改善",
+          "category": "产线设备运维",
+          "level": "must",
+          "detail": "【实习底线】理解设备点检、预防性保养与精益效率改善基本概念"
+        },
+        {
+          "name": "现场故障诊断与排故思维",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】动手能力强，有条理排查产线设备小故障的潜质"
+        },
+        {
+          "name": "技术文档与测试报告编写",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】协助更新标准作业指导书（SOP）"
+        },
+        {
+          "name": "主流 PLC 编程（西门子/三菱等）",
+          "category": "PLC与自动化",
+          "level": "plus",
+          "detail": "【实习加分】懂西门子/ABB AC500 等 PLC 基础逻辑大加分"
+        },
+        {
+          "name": "机械识图与气动液压基础",
+          "category": "产线设备运维",
+          "level": "plus",
+          "detail": "【实习加分】能看懂基础机械图或了解气动元件更优"
+        }
       ],
       "interviewFocus": [
         "考察工厂环境适应度、动手能力与 EHS 安全意识",
@@ -117,7 +245,10 @@
       "roleId": "tech-support",
       "jdSourceType": "real-intern-jd",
       "jdSourceLabel": "参考 2025/2026 真实实习生 JD（ABB 厦门数字化运营/技术支持配置报价实习生）",
-      "officialTitles": ["技术支持 / 配置报价实习生", "数字化运营实习生（电气方向）"],
+      "officialTitles": [
+        "技术支持 / 配置报价实习生",
+        "数字化运营实习生（电气方向）"
+      ],
       "internTasks": "协助销售支持/工程团队整理客户配电需求、在内部系统做开关柜基础配置报价辅助、整理英文技术邮件与订单交付跟踪表格。",
       "responsibilities": [
         "协助为海内外客户及内部团队整理配电产品选型资料与基础配置报价表",
@@ -125,11 +256,36 @@
         "支持数字化配电运营数据的整理与简单可视化汇报"
       ],
       "skills": [
-        { "name": "英语读写与技术交流", "category": "工程与软实力", "level": "must", "detail": "【实习底线】外企核心门槛：能顺畅阅读英文技术文档并撰写英文邮件" },
-        { "name": "客户沟通与现场抗压", "category": "工程与软实力", "level": "must", "detail": "【实习底线】逻辑清晰、细心、具备良好跨部门协作与服务意识" },
-        { "name": "低压配电与元器件选型", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】具备基础电气配电与开关元件认知" },
-        { "name": "中低压开关柜一次/二次回路与继保", "category": "基础理论", "level": "plus", "detail": "【实习加分】理解开关柜一次/二次方案概念上手报价更快" },
-        { "name": "Modbus / CAN / RS485 通信", "category": "通信协议", "level": "plus", "detail": "【实习加分】数字化运营方向了解 Modbus/Profinet/IEC 61850 概念大加分" }
+        {
+          "name": "英语读写与技术交流",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】外企核心门槛：能顺畅阅读英文技术文档并撰写英文邮件"
+        },
+        {
+          "name": "客户沟通与现场抗压",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】逻辑清晰、细心、具备良好跨部门协作与服务意识"
+        },
+        {
+          "name": "低压配电与元器件选型",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】具备基础电气配电与开关元件认知"
+        },
+        {
+          "name": "中低压开关柜一次/二次回路与继保",
+          "category": "基础理论",
+          "level": "plus",
+          "detail": "【实习加分】理解开关柜一次/二次方案概念上手报价更快"
+        },
+        {
+          "name": "Modbus / CAN / RS485 通信",
+          "category": "通信协议",
+          "level": "plus",
+          "detail": "【实习加分】数字化运营方向了解 Modbus/Profinet/IEC 61850 概念大加分"
+        }
       ],
       "interviewFocus": [
         "重点考察英文口语与书面表达、细致程度与多任务条理性",
@@ -151,7 +307,19 @@
     ]
   },
   "sources": [
-    { "label": "ABB 官网 Career 实习生与厦门园区说明（careers.abb / abb.com）", "date": "2026-11-22" },
-    { "label": "高校就业网与招聘平台 ABB 厦门 2025/2026 Intern 岗位要求（gdut.edu.cn / sjtu.edu.cn / yingjiesheng / liepin）", "date": "2026-11-22" }
+    {
+      "label": "ABB 中国官方招聘申请指南（careers.abb/china/zh/how-to-apply）",
+      "date": "2026-11-22",
+      "sourceKind": "official-portal",
+      "url": "https://careers.abb/china/zh/how-to-apply",
+      "lead": null
+    },
+    {
+      "label": "高校就业网与招聘平台 ABB 厦门 2025/2026 Intern 岗位线索（gdut.edu.cn / sjtu.edu.cn / yingjiesheng / liepin）",
+      "date": "2026-11-22",
+      "sourceKind": "unverified-lead",
+      "url": null,
+      "lead": "gdut.edu.cn / sjtu.edu.cn / yingjiesheng / liepin 厦门 Intern 线索（待按实体与岗别补直链）"
+    }
   ]
 }

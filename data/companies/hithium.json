@@ -3,10 +3,16 @@
   "name": "海辰储能",
   "fullName": "厦门海辰储能科技股份有限公司",
   "city": "厦门",
-  "districts": ["厦门市同安区（全球总部、CNAS/TUV 测试中心及智能制造灯塔基地）"],
+  "districts": [
+    "厦门市同安区（全球总部、CNAS/TUV 测试中心及智能制造灯塔基地）"
+  ],
   "track": "电力电子/储能与配电",
   "companyType": "新能源储能头部独角兽（民企）",
-  "coreProducts": ["储能专用锂离子电芯", "储能模组与电池簇", "液冷储能集装箱系统（BMS/PCS/EMS）"],
+  "coreProducts": [
+    "储能专用锂离子电芯",
+    "储能模组与电池簇",
+    "液冷储能集装箱系统（BMS/PCS/EMS）"
+  ],
   "researchedAt": "2026-11-22",
   "internshipProfile": {
     "internType": "专项暑期实习 + 长期转正实习（“未来星”提前蓄水池）",
@@ -15,17 +21,29 @@
     "weeklyDays": "每周至少出勤 4–5 天（暑期全职到岗）",
     "openWindowRef": "参考 2025/2026：春季（3–5 月）启动暑期实习招聘，秋冬季同步招可长期实习的应届/大三大四生",
     "conversionPolicy": "转正通道极强：暑期实习结束可通过答辩直拿秋招正式 Offer；长期实习表现优异者实习期可直接抵扣试用期",
-    "stipendNote": "未查到官方公开统一定额实习日薪（同安园区配套免费宿舍/食堂/班车，具体补贴以当期 Offer 为准，待核实）"
+    "stipendNote": "未查到官方公开统一定额实习日薪（同安园区配套免费宿舍/食堂/班车，具体补贴以当期 Offer 为准，待核实）",
+    "summerFit": "fit-8w",
+    "windowGroup": "spring-main",
+    "evidenceStatus": "historical-verified"
   },
   "fitForXmut": {
     "level": "高匹配（厦门同安本地招聘大户，转正通道清晰）",
     "reason": "统招本科及以上电气工程及其自动化专业可投设备、电气件/系统测试、自动化与技术支持实习；同安基地距厦门高校近，非常鼓励提前实习并通过答辩转正。"
   },
   "internshipAndRecruit": {
-    "channels": ["海辰储能官方招聘平台 / 小程序（Moka）", "“海辰储能招聘”微信公众号", "厦门本地高校春季宣讲会与实习专场"],
+    "channels": [
+      "海辰储能官方招聘平台 / 小程序（Moka）",
+      "“海辰储能招聘”微信公众号",
+      "厦门本地高校春季宣讲会与实习专场"
+    ],
     "program": "暑期实习生项目 + 双导师制（业务导师 + HR 导师）+ 实习结业答辩直通秋招正式 Offer",
     "timelineNote": "2027 暑期实习预计 2027 年 3–5 月开放；部分核心研发测试实验室偏硕士，本科生建议优先瞄准电气件测试、制造设备/自动化与技术支持实习。",
-    "benefits": ["实习结业答辩直通转正", "同安园区免费宿舍（空调/独立卫浴）或住宿配套", "员工食堂/餐补与往返通勤班车", "转正留厦可叠加厦门“留厦六条”与人才补贴"]
+    "benefits": [
+      "实习结业答辩直通转正",
+      "同安园区免费宿舍（空调/独立卫浴）或住宿配套",
+      "员工食堂/餐补与往返通勤班车",
+      "转正留厦可叠加厦门“留厦六条”与人才补贴"
+    ]
   },
   "workConditionSummary": {
     "shiftWork": "分岗位：制造产线「设备实习生」需评估车间节奏（正式设备岗涉及 24 小时产线两班倒/白夜班）；研发/测试实验室无固定倒班但节奏较快",
@@ -37,7 +55,10 @@
       "roleId": "ee-test",
       "jdSourceType": "real-intern-jd",
       "jdSourceLabel": "参考 2025/2026 实习生公开 JD（海辰厦门测试验证中心实习生）",
-      "officialTitles": ["电气件/系统测试实习生", "实验室测试验证实习生（CNAS/TUV 中心）"],
+      "officialTitles": [
+        "电气件/系统测试实习生",
+        "实验室测试验证实习生（CNAS/TUV 中心）"
+      ],
       "internTasks": "在厦门同安 CNAS/TUV 认证测试中心协助执行电芯、模组、电池簇、BMS 或电气件的性能/安全测试；记录充放电与温湿度试验数据并输出规范报告。",
       "responsibilities": [
         "协助开展电池模组、储能系统电气件及 BMS 的基础性能、安全与可靠性测试",
@@ -45,12 +66,42 @@
         "协助发现并追踪测试异常，参与简单测试数据处理脚本或效率改进"
       ],
       "skills": [
-        { "name": "电路与模数电基础", "category": "基础理论", "level": "must", "detail": "【实习底线】扎实的电工学与基础电路理论" },
-        { "name": "技术文档与测试报告编写", "category": "工程与软实力", "level": "must", "detail": "【实习底线】数据敏感度高、细致严谨，能规范整理实验报告" },
-        { "name": "示波器与万用表实操", "category": "仪器测试", "level": "must", "detail": "【实习底线】熟悉万用表、示波器等实验室基础仪器操作" },
-        { "name": "电池充放电与环境可靠性测试设备", "category": "仪器测试", "level": "plus", "detail": "【实习加分】了解充放电测试机、温湿度箱或锂电测试流程优先（入职带教）" },
-        { "name": "安规与 EMC 测试基础", "category": "仪器测试", "level": "plus", "detail": "【实习加分】了解 CNAS/TUV 实验室测试规范与电气安规概念" },
-        { "name": "C 语言与自动化脚本基础", "category": "软件与脚本", "level": "plus", "detail": "【实习加分】会 Python/Excel 脚本批量处理测试曲线数据大加分" }
+        {
+          "name": "电路与模数电基础",
+          "category": "基础理论",
+          "level": "must",
+          "detail": "【实习底线】扎实的电工学与基础电路理论"
+        },
+        {
+          "name": "技术文档与测试报告编写",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】数据敏感度高、细致严谨，能规范整理实验报告"
+        },
+        {
+          "name": "示波器与万用表实操",
+          "category": "仪器测试",
+          "level": "must",
+          "detail": "【实习底线】熟悉万用表、示波器等实验室基础仪器操作"
+        },
+        {
+          "name": "电池充放电与环境可靠性测试设备",
+          "category": "仪器测试",
+          "level": "plus",
+          "detail": "【实习加分】了解充放电测试机、温湿度箱或锂电测试流程优先（入职带教）"
+        },
+        {
+          "name": "安规与 EMC 测试基础",
+          "category": "仪器测试",
+          "level": "plus",
+          "detail": "【实习加分】了解 CNAS/TUV 实验室测试规范与电气安规概念"
+        },
+        {
+          "name": "C 语言与自动化脚本基础",
+          "category": "软件与脚本",
+          "level": "plus",
+          "detail": "【实习加分】会 Python/Excel 脚本批量处理测试曲线数据大加分"
+        }
       ],
       "interviewFocus": [
         "问电工学/电路基础、高校实验室经历与数据异常排查意识",
@@ -63,7 +114,10 @@
       "roleId": "fab-equip",
       "jdSourceType": "real-intern-jd",
       "jdSourceLabel": "参考 2025/2026 实习生公开 JD（智能工厂设备/自动化实习生）",
-      "officialTitles": ["设备工程师实习生（同安智能工厂）", "产线自动化实习生"],
+      "officialTitles": [
+        "设备工程师实习生（同安智能工厂）",
+        "产线自动化实习生"
+      ],
       "internTasks": "跟岗学习同安灯塔工厂电芯/模组自动化产线设备运行，协助开展设备日常点检保养（PM）、报警记录整理、MES 对接辅助与产线电气维护跟做。",
       "responsibilities": [
         "协助跟进同安制造基地自动化产线设备的日常点检、维护保养（PM）与台账更新",
@@ -71,12 +125,42 @@
         "协助新设备进厂验收（FAT/SAT）记录与一线操作指导书整理"
       ],
       "skills": [
-        { "name": "电气原理图识读", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】能看懂自动化产线基础电气原理图" },
-        { "name": "电路与模数电基础", "category": "基础理论", "level": "must", "detail": "【实习底线】具备扎实电工学、电路或自动控制基础" },
-        { "name": "现场故障诊断与排故思维", "category": "工程与软实力", "level": "must", "detail": "【实习底线】动手能力强、抗压、能适应制造工厂现场节奏" },
-        { "name": "设备点检保养（PM）与 OEE 改善", "category": "产线设备运维", "level": "plus", "detail": "【实习加分】了解工厂 PM 保养、FAT/SAT 验收与 OEE 概念" },
-        { "name": "主流 PLC 编程（西门子/三菱等）", "category": "PLC与自动化", "level": "plus", "detail": "【实习加分】熟悉西门子/三菱 PLC 编程或工业机器人基础者极优先" },
-        { "name": "机械识图与气动液压基础", "category": "产线设备运维", "level": "plus", "detail": "【实习加分】能看懂简单机械装配图与气动回路" }
+        {
+          "name": "电气原理图识读",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】能看懂自动化产线基础电气原理图"
+        },
+        {
+          "name": "电路与模数电基础",
+          "category": "基础理论",
+          "level": "must",
+          "detail": "【实习底线】具备扎实电工学、电路或自动控制基础"
+        },
+        {
+          "name": "现场故障诊断与排故思维",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】动手能力强、抗压、能适应制造工厂现场节奏"
+        },
+        {
+          "name": "设备点检保养（PM）与 OEE 改善",
+          "category": "产线设备运维",
+          "level": "plus",
+          "detail": "【实习加分】了解工厂 PM 保养、FAT/SAT 验收与 OEE 概念"
+        },
+        {
+          "name": "主流 PLC 编程（西门子/三菱等）",
+          "category": "PLC与自动化",
+          "level": "plus",
+          "detail": "【实习加分】熟悉西门子/三菱 PLC 编程或工业机器人基础者极优先"
+        },
+        {
+          "name": "机械识图与气动液压基础",
+          "category": "产线设备运维",
+          "level": "plus",
+          "detail": "【实习加分】能看懂简单机械装配图与气动回路"
+        }
       ],
       "interviewFocus": [
         "必问：为什么想进储能/制造行业？能不能适应灯塔工厂车间环境和快节奏？",
@@ -89,7 +173,9 @@
       "roleId": "equip-elec",
       "jdSourceType": "real-intern-jd",
       "jdSourceLabel": "参考 2025/2026 实习生/初级岗 JD（储能电气实习生）",
-      "officialTitles": ["电气工程师实习生（储能系统/工厂电气方向）"],
+      "officialTitles": [
+        "电气工程师实习生（储能系统/工厂电气方向）"
+      ],
       "internTasks": "协助储能系统或工厂配电团队完成局部电气原理图绘制（AutoCAD/EPLAN）、器件参数与 BOM 整理及基础样机调试配合。",
       "responsibilities": [
         "协助开展储能电池舱、PCS 配套或工厂产线的局部电气原理图绘制与 BOM 核对",
@@ -97,12 +183,42 @@
         "协助编写基础电气技术规范与测试验证文档"
       ],
       "skills": [
-        { "name": "电路与模数电基础", "category": "基础理论", "level": "must", "detail": "【实习底线】扎实掌握电路分析、电力电子与自动控制原理" },
-        { "name": "电气原理图识读", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】能准确识读储能/工业电气原理图" },
-        { "name": "低压配电与元器件选型", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】了解高低压配电基础及常见开关、继电器、线缆概念" },
-        { "name": "AutoCAD / EPLAN 电气制图", "category": "电气制图与选型", "level": "plus", "detail": "【实习加分】会用 AutoCAD / EPLAN 绘图，偏板级方向会 Altium Designer 更优" },
-        { "name": "电力电子拓扑（整流/斩波/逆变）", "category": "基础理论", "level": "plus", "detail": "【实习加分】理解储能变流器 PCS 与直流变换基础原理" },
-        { "name": "技术文档与测试报告编写", "category": "工程与软实力", "level": "plus", "detail": "【实习加分】协助整理电气规范与验证报告" }
+        {
+          "name": "电路与模数电基础",
+          "category": "基础理论",
+          "level": "must",
+          "detail": "【实习底线】扎实掌握电路分析、电力电子与自动控制原理"
+        },
+        {
+          "name": "电气原理图识读",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】能准确识读储能/工业电气原理图"
+        },
+        {
+          "name": "低压配电与元器件选型",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】了解高低压配电基础及常见开关、继电器、线缆概念"
+        },
+        {
+          "name": "AutoCAD / EPLAN 电气制图",
+          "category": "电气制图与选型",
+          "level": "plus",
+          "detail": "【实习加分】会用 AutoCAD / EPLAN 绘图，偏板级方向会 Altium Designer 更优"
+        },
+        {
+          "name": "电力电子拓扑（整流/斩波/逆变）",
+          "category": "基础理论",
+          "level": "plus",
+          "detail": "【实习加分】理解储能变流器 PCS 与直流变换基础原理"
+        },
+        {
+          "name": "技术文档与测试报告编写",
+          "category": "工程与软实力",
+          "level": "plus",
+          "detail": "【实习加分】协助整理电气规范与验证报告"
+        }
       ],
       "interviewFocus": [
         "问电路、电力电子、自控基础课内容及用过哪些电气绘图/仿真软件",
@@ -115,7 +231,9 @@
       "roleId": "tech-support",
       "jdSourceType": "campus-ref",
       "jdSourceLabel": "未见单独公开技术支持实习细则 · 参照 2025/2026 储能 AE/技术支持初级岗折算",
-      "officialTitles": ["储能技术支持 / 应用工程实习生（AE 方向）"],
+      "officialTitles": [
+        "储能技术支持 / 应用工程实习生（AE 方向）"
+      ],
       "internTasks": "协助整理储能系统（BMS/PCS/EMS）售前技术方案、客户技术答疑文档及培训 PPT，跟进内部项目交付资料核对。",
       "responsibilities": [
         "协助编制储能系统售前技术方案、参数对比表与客户宣讲材料",
@@ -123,11 +241,36 @@
         "配合团队对接研发与供应链，跟踪客户技术需求反馈"
       ],
       "skills": [
-        { "name": "储能系统架构（BMS / PCS / EMS）", "category": "基础理论", "level": "must", "detail": "【实习底线】理解储能系统里电池簇、BMS、PCS、EMS 各自干什么" },
-        { "name": "电气原理图识读", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】能看懂储能集装箱基本电气一次/二次框图" },
-        { "name": "客户沟通与现场抗压", "category": "工程与软实力", "level": "must", "detail": "【实习底线】表达条理清楚、抗压、有方案呈现能力" },
-        { "name": "现场故障诊断与排故思维", "category": "工程与软实力", "level": "plus", "detail": "【实习加分】具备系统级故障定位思维" },
-        { "name": "英语读写与技术交流", "category": "工程与软实力", "level": "plus", "detail": "【实习加分】海外储能支持方向看重 CET-6 与英语听说读写" }
+        {
+          "name": "储能系统架构（BMS / PCS / EMS）",
+          "category": "基础理论",
+          "level": "must",
+          "detail": "【实习底线】理解储能系统里电池簇、BMS、PCS、EMS 各自干什么"
+        },
+        {
+          "name": "电气原理图识读",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】能看懂储能集装箱基本电气一次/二次框图"
+        },
+        {
+          "name": "客户沟通与现场抗压",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】表达条理清楚、抗压、有方案呈现能力"
+        },
+        {
+          "name": "现场故障诊断与排故思维",
+          "category": "工程与软实力",
+          "level": "plus",
+          "detail": "【实习加分】具备系统级故障定位思维"
+        },
+        {
+          "name": "英语读写与技术交流",
+          "category": "工程与软实力",
+          "level": "plus",
+          "detail": "【实习加分】海外储能支持方向看重 CET-6 与英语听说读写"
+        }
       ],
       "interviewFocus": [
         "问对储能行业及 BMS/PCS/EMS 基本架构的理解",
@@ -149,7 +292,26 @@
     ]
   },
   "sources": [
-    { "label": "高校就业网海辰储能 2025/2026 暑期实习与“未来星”简章（jlu.edu.cn / ustc.edu.cn / dlmu.edu.cn）", "date": "2026-11-22" },
-    { "label": "公开招聘平台海辰厦门同安测试/设备/电气实习岗位要求（iguopin / liepin / wondercv）", "date": "2026-11-22" }
+    {
+      "label": "海辰储能官方招聘门户（cn.hithium.com/about/careers.html）",
+      "date": "2026-11-22",
+      "sourceKind": "official-portal",
+      "url": "https://cn.hithium.com/about/careers.html",
+      "lead": null
+    },
+    {
+      "label": "高校就业网海辰储能“未来星”校招简章（career.muc.edu.cn）",
+      "date": "2026-11-25",
+      "sourceKind": "campus-notice",
+      "url": "https://career.muc.edu.cn/front/zwxx.jspa?xqzwId=38471&zpxxId=32179",
+      "lead": null
+    },
+    {
+      "label": "公开招聘平台海辰厦门同安测试/设备/电气实习岗位线索（iguopin / liepin / wondercv）",
+      "date": "2026-11-22",
+      "sourceKind": "unverified-lead",
+      "url": null,
+      "lead": "iguopin / liepin / wondercv 同安暑期 8 周实习与转正答辩线索（待补具体岗位直链）"
+    }
   ]
 }

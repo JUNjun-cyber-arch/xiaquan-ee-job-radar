@@ -3,10 +3,17 @@
   "name": "南方路机",
   "fullName": "福建南方路面机械股份有限公司",
   "city": "泉州",
-  "districts": ["泉州市洛江区/丰泽区高新产业园（总部及智控研发制造基地）"],
+  "districts": [
+    "泉州市洛江区/丰泽区高新产业园（总部及智控研发制造基地）"
+  ],
   "track": "高端装备与智能制造",
   "companyType": "A股上市民企（SH 603280）",
-  "coreProducts": ["沥青/混凝土搅拌站", "机制砂成套设备", "固废资源化处理生产线", "装备智控自动化系统"],
+  "coreProducts": [
+    "沥青/混凝土搅拌站",
+    "机制砂成套设备",
+    "固废资源化处理生产线",
+    "装备智控自动化系统"
+  ],
   "researchedAt": "2026-11-22",
   "internshipProfile": {
     "internType": "日常/暑期直招实习（较少大规模独立网申，需主动直联 HR 或走省内高校宣讲）",
@@ -15,17 +22,29 @@
     "weeklyDays": "每周保证出勤 4–5 天（可结合课表与部门协商）",
     "openWindowRef": "参考 2025/2026：无固定大规模暑期网申批，春季高校宣讲会及 Boss 直聘/官网社招实习通道可提前直联 HR",
     "conversionPolicy": "导师一对一带教 + 车间/智控中心轮岗，实习表现优秀者校招可直接发正式 Offer 转正",
-    "stipendNote": "提供基础实习补贴、厂区福利食堂与住宿协助/集体宿舍（具体日薪/月薪面议，待核实）"
+    "stipendNote": "提供基础实习补贴、厂区福利食堂与住宿协助/集体宿舍（具体日薪/月薪面议，待核实）",
+    "summerFit": "negotiable",
+    "windowGroup": "rolling",
+    "evidenceStatus": "campus-inferred"
   },
   "fitForXmut": {
     "level": "高匹配（福建省内工科院校友好，适合练扎实工控/PLC 基本功）",
     "reason": "泉州本土上市装备龙头，对厦门理工学院等省内工科生非常友好；虽较少单独办大型暑期网申，但接受大三/研二日常或暑期实习，且实习能接触完整成套设备电控与西门子 PLC。"
   },
   "internshipAndRecruit": {
-    "channels": ["南方路机官网招聘板块（nflg.com）", "官方招聘公众号 / Boss 直聘直联泉州 HR", "厦门理工等福建高校春季宣讲会现场投递"],
+    "channels": [
+      "南方路机官网招聘板块（nflg.com）",
+      "官方招聘公众号 / Boss 直聘直联泉州 HR",
+      "厦门理工等福建高校春季宣讲会现场投递"
+    ],
     "program": "“导师制”一对一带教 + 车间电控装配见习 + 智控研发/调试实操轮岗",
     "timelineNote": "建议 2027 年 3–4 月主动通过官网或 Boss 联系泉州 HR 询问智控/电气暑期实习坑位（避免傻等独立网申公告）。",
-    "benefits": ["基础实习补贴（面议）", "厂区福利食堂", "集体宿舍/住宿协助", "转正留泉州可叠加泉州工科生安居、社保及落户补贴"]
+    "benefits": [
+      "基础实习补贴（面议）",
+      "厂区福利食堂",
+      "集体宿舍/住宿协助",
+      "转正留泉州可叠加泉州工科生安居、社保及落户补贴"
+    ]
   },
   "workConditionSummary": {
     "shiftWork": "实习生无流水线倒班（泉州总部研发/厂内车间正常作息）",
@@ -37,7 +56,10 @@
       "roleId": "equip-elec",
       "jdSourceType": "campus-ref",
       "jdSourceLabel": "未见大规模独立暑期实习网申 · 参照 2025/2026 智控电气实习/初级岗",
-      "officialTitles": ["电气工程师实习生（智控事业部）", "成套装备电气设计实习生"],
+      "officialTitles": [
+        "电气工程师实习生（智控事业部）",
+        "成套装备电气设计实习生"
+      ],
       "internTasks": "在导师指导下读懂搅拌站/固废产线成套电气原理图；协助用 AutoCAD/EPLAN 修改局部接线图、核对电柜元器件 BOM 清单，并下车间对照实物电柜核线。",
       "responsibilities": [
         "协助绘制与整理成套工程装备控制柜的局部电气原理图和接线图",
@@ -45,13 +67,48 @@
         "配合工程师在泉州厂内车间进行电柜核线、上电前检查与基础记录"
       ],
       "skills": [
-        { "name": "电气原理图识读", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】面试高频必查：能读懂常见电机启停、自锁互锁与控制柜原理图" },
-        { "name": "AutoCAD / EPLAN 电气制图", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】至少会用 AutoCAD 画标准电气原理图，懂 EPLAN 极加分" },
-        { "name": "低压配电与元器件选型", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】认识断路器、接触器、热继电器、中间继电器、开关电源等基础件" },
-        { "name": "主流 PLC 编程（西门子/三菱等）", "category": "PLC与自动化", "level": "plus", "detail": "【实习加分】了解西门子 S7-1200/1500 或三菱基本梯形图逻辑即可明显加分" },
-        { "name": "变频器与电机调试", "category": "PLC与自动化", "level": "plus", "detail": "【实习加分】懂三相异步电机启停与变频调速基本原理（与电机学衔接）" },
-        { "name": "技术文档与测试报告编写", "category": "工程与软实力", "level": "plus", "detail": "【实习加分】协助整理操作规程与出厂电气说明书" },
-        { "name": "SolidWorks 机械识图基础", "category": "电气制图与选型", "level": "plus", "detail": "【实习加分】了解基础机械图纸便于配合电柜安装定位" }
+        {
+          "name": "电气原理图识读",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】面试高频必查：能读懂常见电机启停、自锁互锁与控制柜原理图"
+        },
+        {
+          "name": "AutoCAD / EPLAN 电气制图",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】至少会用 AutoCAD 画标准电气原理图，懂 EPLAN 极加分"
+        },
+        {
+          "name": "低压配电与元器件选型",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】认识断路器、接触器、热继电器、中间继电器、开关电源等基础件"
+        },
+        {
+          "name": "主流 PLC 编程（西门子/三菱等）",
+          "category": "PLC与自动化",
+          "level": "plus",
+          "detail": "【实习加分】了解西门子 S7-1200/1500 或三菱基本梯形图逻辑即可明显加分"
+        },
+        {
+          "name": "变频器与电机调试",
+          "category": "PLC与自动化",
+          "level": "plus",
+          "detail": "【实习加分】懂三相异步电机启停与变频调速基本原理（与电机学衔接）"
+        },
+        {
+          "name": "技术文档与测试报告编写",
+          "category": "工程与软实力",
+          "level": "plus",
+          "detail": "【实习加分】协助整理操作规程与出厂电气说明书"
+        },
+        {
+          "name": "SolidWorks 机械识图基础",
+          "category": "电气制图与选型",
+          "level": "plus",
+          "detail": "【实习加分】了解基础机械图纸便于配合电柜安装定位"
+        }
       ],
       "interviewFocus": [
         "直接拿基础电路/电气原理图问能不能看懂，以及接触过哪些制图或 PLC 软件",
@@ -65,7 +122,10 @@
       "roleId": "plc-debug",
       "jdSourceType": "campus-ref",
       "jdSourceLabel": "未见大规模独立暑期实习网申 · 参照 2025/2026 智控 PLC 调试实习/初级岗",
-      "officialTitles": ["PLC 调试实习生", "自动化控制实习生（智控方向）"],
+      "officialTitles": [
+        "PLC 调试实习生",
+        "自动化控制实习生（智控方向）"
+      ],
       "internTasks": "协助工程师核对成套设备 I/O 点表、在厂内试车台调试传感器信号与基础 PLC 逻辑，协助制作或测试简单的 HMI 触摸屏画面。",
       "responsibilities": [
         "协助编写与测试局部 PLC 控制逻辑（如皮带机顺序启停、电机互锁）",
@@ -73,12 +133,42 @@
         "协助完善 HMI 触摸屏或上位机组态界面与厂内调试问题记录"
       ],
       "skills": [
-        { "name": "主流 PLC 编程（西门子/三菱等）", "category": "PLC与自动化", "level": "must", "detail": "【实习底线】掌握至少一种主流 PLC（西门子/三菱）基础编程思维与 I/O 概念" },
-        { "name": "电气原理图识读", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】能按原理图对照查控制柜端子和 I/O 信号" },
-        { "name": "现场故障诊断与排故思维", "category": "工程与软实力", "level": "must", "detail": "【实习底线】具备按信号链排查传感器/继电器/输出异常的逻辑思维" },
-        { "name": "HMI 触摸屏与组态软件", "category": "PLC与自动化", "level": "plus", "detail": "【实习加分】了解触摸屏或组态画面与 PLC 变量绑定的基本方式" },
-        { "name": "变频器与电机调试", "category": "PLC与自动化", "level": "plus", "detail": "【实习加分】了解变频器启停控制与模拟量/通信调速基础" },
-        { "name": "低压配电与元器件选型", "category": "电气制图与选型", "level": "plus", "detail": "【实习加分】认识现场常见光电开关、接近开关与电磁阀接线" }
+        {
+          "name": "主流 PLC 编程（西门子/三菱等）",
+          "category": "PLC与自动化",
+          "level": "must",
+          "detail": "【实习底线】掌握至少一种主流 PLC（西门子/三菱）基础编程思维与 I/O 概念"
+        },
+        {
+          "name": "电气原理图识读",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】能按原理图对照查控制柜端子和 I/O 信号"
+        },
+        {
+          "name": "现场故障诊断与排故思维",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】具备按信号链排查传感器/继电器/输出异常的逻辑思维"
+        },
+        {
+          "name": "HMI 触摸屏与组态软件",
+          "category": "PLC与自动化",
+          "level": "plus",
+          "detail": "【实习加分】了解触摸屏或组态画面与 PLC 变量绑定的基本方式"
+        },
+        {
+          "name": "变频器与电机调试",
+          "category": "PLC与自动化",
+          "level": "plus",
+          "detail": "【实习加分】了解变频器启停控制与模拟量/通信调速基础"
+        },
+        {
+          "name": "低压配电与元器件选型",
+          "category": "电气制图与选型",
+          "level": "plus",
+          "detail": "【实习加分】认识现场常见光电开关、接近开关与电磁阀接线"
+        }
       ],
       "interviewFocus": [
         "考察基本 PLC 控制逻辑思维（比如电机正反转互锁、定时启停思路）",
@@ -91,7 +181,10 @@
       "roleId": "tech-support",
       "jdSourceType": "campus-ref",
       "jdSourceLabel": "未见大规模独立暑期实习网申 · 参照 2025/2026 售后技术支持通道",
-      "officialTitles": ["售后服务实习生（电气方向）", "工程技术支持实习生"],
+      "officialTitles": [
+        "售后服务实习生（电气方向）",
+        "工程技术支持实习生"
+      ],
       "internTasks": "在泉州基地跟学搅拌站整机电气装配与出厂调试，协助整理售后常见电气故障案例与客户培训文档，视项目安排跟师父赴现场见习。",
       "responsibilities": [
         "在基地学习大型工程机械电气安装调试规范与常见报警排查流程",
@@ -99,11 +192,36 @@
         "协助开展厂内客户培训准备或跟岗见习现场调试"
       ],
       "skills": [
-        { "name": "电气原理图识读", "category": "电气制图与选型", "level": "must", "detail": "【实习底线】能看懂基本强弱电控制图纸" },
-        { "name": "现场故障诊断与排故思维", "category": "工程与软实力", "level": "must", "detail": "【实习底线】动手能力强，敢查线、会用万用表测通断电压" },
-        { "name": "客户沟通与现场抗压", "category": "工程与软实力", "level": "must", "detail": "【实习底线】沟通踏实、抗压、能接受未来转正后高频全国/海外出差" },
-        { "name": "主流 PLC 编程（西门子/三菱等）", "category": "PLC与自动化", "level": "plus", "detail": "【实习加分】会看 PLC 在线状态监控排查信号断点" },
-        { "name": "变频器与电机调试", "category": "PLC与自动化", "level": "plus", "detail": "【实习加分】了解电机过载与变频器常见故障码含义" }
+        {
+          "name": "电气原理图识读",
+          "category": "电气制图与选型",
+          "level": "must",
+          "detail": "【实习底线】能看懂基本强弱电控制图纸"
+        },
+        {
+          "name": "现场故障诊断与排故思维",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】动手能力强，敢查线、会用万用表测通断电压"
+        },
+        {
+          "name": "客户沟通与现场抗压",
+          "category": "工程与软实力",
+          "level": "must",
+          "detail": "【实习底线】沟通踏实、抗压、能接受未来转正后高频全国/海外出差"
+        },
+        {
+          "name": "主流 PLC 编程（西门子/三菱等）",
+          "category": "PLC与自动化",
+          "level": "plus",
+          "detail": "【实习加分】会看 PLC 在线状态监控排查信号断点"
+        },
+        {
+          "name": "变频器与电机调试",
+          "category": "PLC与自动化",
+          "level": "plus",
+          "detail": "【实习加分】了解电机过载与变频器常见故障码含义"
+        }
       ],
       "interviewFocus": [
         "几乎必问：如果转正走售后/调试方向，能不能接受长期去工地/项目现场出差？",
@@ -125,7 +243,26 @@
     ]
   },
   "sources": [
-    { "label": "南方路机官网招聘与校招/智控体系介绍（nflg.com）", "date": "2026-11-22" },
-    { "label": "高校就业网南方路机 2025/2026 实习培养与泉州人才政策说明（lzxk.edu.cn / jlu.edu.cn / sdu.edu.cn）", "date": "2026-11-22" }
+    {
+      "label": "南方路机官网招聘与校招公告线索（nflg.com）",
+      "date": "2026-11-22",
+      "sourceKind": "unverified-lead",
+      "url": null,
+      "lead": "nflg.com 官网招聘栏目线索（待核验直达 URL 及可协商 8 周暑期部门）"
+    },
+    {
+      "label": "高校就业网南方路机宣讲与培养简章线索（jlu.edu.cn / nankai.edu.cn / sdu.edu.cn）",
+      "date": "2026-11-22",
+      "sourceKind": "unverified-lead",
+      "url": null,
+      "lead": "jlu.edu.cn / nankai.edu.cn / sdu.edu.cn 校招宣讲简章线索（待补直链）"
+    },
+    {
+      "label": "公开招聘平台南方路机泉州设备电气/PLC 调试初级岗线索（liepin / zhipin / nowcoder）",
+      "date": "2026-11-22",
+      "sourceKind": "unverified-lead",
+      "url": null,
+      "lead": "liepin / zhipin / nowcoder 泉州电控/PLC 校招参考线索（待补直链）"
+    }
   ]
 }
