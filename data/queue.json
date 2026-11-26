@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-25",
+  "updatedAt": "2026-11-26",
   "dailyTargetCount": 2,
   "items": [
     {
@@ -142,8 +142,8 @@
       "city": "泉州",
       "track": "高端装备与智能制造",
       "priority": "A",
-      "status": "pending",
-      "researchedAt": null,
+      "status": "done",
+      "researchedAt": "2026-11-26",
       "focusHint": "（已前置优先补齐泉州装备与 PLC 样本）泉州洛江北交所上市装备厂，对比南方路机看厂内联调与电控要求"
     },
     {
@@ -153,8 +153,8 @@
       "city": "厦门",
       "track": "高端装备与智能制造",
       "priority": "A",
-      "status": "pending",
-      "researchedAt": null,
+      "status": "done",
+      "researchedAt": "2026-11-26",
       "focusHint": "海沧智能制造与电子产品测试大户，扒自动化电气与测试工程岗"
     },
     {
