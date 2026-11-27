@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-26",
+  "updatedAt": "2026-11-27",
   "dailyTargetCount": 2,
   "items": [
     {
@@ -164,8 +164,8 @@
       "city": "厦门",
       "track": "电力电子/储能与配电",
       "priority": "A",
-      "status": "pending",
-      "researchedAt": null,
+      "status": "done",
+      "researchedAt": "2026-11-27",
       "focusHint": "宁德时代与ATL合资储能/小动力电池企业，扒测试/设备/自动化岗"
     },
     {
@@ -175,8 +175,8 @@
       "city": "厦门",
       "track": "高端装备与智能制造",
       "priority": "B",
-      "status": "pending",
-      "researchedAt": null,
+      "status": "done",
+      "researchedAt": "2026-11-27",
       "focusHint": "集美新能源整车，扒三电测试/整车电气与售后技术支持"
     },
     {
