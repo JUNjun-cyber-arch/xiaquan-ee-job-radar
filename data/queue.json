@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-27",
+  "updatedAt": "2026-11-28",
   "dailyTargetCount": 2,
   "items": [
     {
@@ -186,8 +186,8 @@
       "city": "厦门",
       "track": "高端装备与智能制造",
       "priority": "B",
-      "status": "pending",
-      "researchedAt": null,
+      "status": "done",
+      "researchedAt": "2026-11-28",
       "focusHint": "集美上市制造企业，扒自动化设备电气与测试工程岗"
     },
     {
@@ -197,8 +197,8 @@
       "city": "厦门",
       "track": "半导体/光电与精密制造",
       "priority": "B",
-      "status": "pending",
-      "researchedAt": null,
+      "status": "done",
+      "researchedAt": "2026-11-28",
       "focusHint": "翔安大型电子制造厂，扒测试工程与产线自动化设备岗"
     },
     {
